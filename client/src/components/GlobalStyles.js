@@ -3,9 +3,9 @@ import { createGlobalStyle } from 'styled-components'
 export default createGlobalStyle`
   
     :root {
-    ${'' /* --primary-color: #00ae97;
+    --primary-color: #00ae97;
     --accent-bg-color: #D0F4E2;
-    --heading-font-family: 'Fredoka One', cursive; */}
+    --heading-font-family: 'Fredoka One', cursive;
     }
 
     body {
