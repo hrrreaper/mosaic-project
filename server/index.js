@@ -1,6 +1,13 @@
 const express = require('express');
 const morgan = require("morgan");
 require("dotenv").config();
+const {
+  getAllBeers,
+  getOneBeer,
+  updateBeer,
+  addBeer,
+  deleteBeer,
+} = require('./handlers')
 
 express()
   .use(express.json())
