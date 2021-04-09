@@ -3,14 +3,13 @@ import { createGlobalStyle } from 'styled-components'
 export default createGlobalStyle`
   
     :root {
-    --primary-color: rgba(0,180,0,255);
-    --accent-color: #81ff00;
+    --primary-color: #138a36;
+    --accent-color: #80ff72;
     }
 
     body {
         background-color: #FFF;
         scroll-behavior: smooth;
-        font-family: 'Baloo 2', cursive;
     }
     
     *,
@@ -24,7 +23,7 @@ export default createGlobalStyle`
     input, button, select, option,
     h1, h2, h3, h4, h5, h6, p,
     text {
-        font-family: sans-serif;
+        font-family: 'Comfortaa', cursive;
     }
 
     html, body {

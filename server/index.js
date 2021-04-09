@@ -7,12 +7,16 @@ const {
   updateBeer,
   addBeer,
   deleteBeer,
-} = require('./handlers')
+  setUsers,
+} = require('./handlers');
 
 express()
   .use(express.json())
   .use(morgan("tiny"))
 
+  .get('/beers', getAllBeers)
+  
+  .post('/api/v1/auth/google', setUsers)
 
   .use((req, res) => res.status(404).type("txt").send("🤷‍♂️"))
 
