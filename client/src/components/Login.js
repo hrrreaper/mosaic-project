@@ -43,6 +43,7 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content:flex-end;
   align-items: center;
+  font-size: .85rem;
 `;
 const LoginDiv = styled.div`
   display: flex;
@@ -51,8 +52,8 @@ const LoginDiv = styled.div`
 
 const Img = styled.img`
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   margin: 0 10px;
 `;
 
