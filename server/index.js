@@ -15,6 +15,7 @@ express()
   .use(morgan("tiny"))
 
   .get('/beers', getAllBeers)
+  .get('/beer/:_id', getOneBeer)
   
   .post('/api/v1/auth/google', setUsers)
 
