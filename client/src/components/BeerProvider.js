@@ -7,7 +7,7 @@ export const BeerProvider = ({ children }) => {
   const [beersToLoad, setBeersToLoad]=useState([]);
   const [next, setNext] = useState(5);
   const [status, setStatus] = useState("loading");
-  const beersPerPage = 10;
+  const beersPerPage = 20;
   let arrOfBeers = [];
 
     useEffect(() => {

@@ -1,13 +1,13 @@
-const { MongoClient } = require("mongodb");
-const { ObjectId } = require("mongodb");
+const { MongoClient, ObjectID } = require("mongodb");
 require("dotenv").config();
 const { MONGO_URI } = process.env;
 const { OAuth2Client } = require("google-auth-library");
 const clientId = new OAuth2Client(process.env.GOOGLE_CLIENT);
 
+
 const options = {
   useNewUrlParser: true,
-  useUnifiesTopology: true,
+  useUnifiedTopology: true,
 }
 
 const getAllBeers = async (req, res) => {
@@ -38,12 +38,11 @@ const getOneBeer = async (req, res) => {
   try {
     await client.connect();
     const db = client.db("Mosaic");
-    await db.collection("beers").findOne({ "_id": ObjectId(_id) }, (err, result) => {
-      console.log("result!", result)
-      result
-        ? res.status(201).json({ status: 201, _id, data: result })
-        : res.status(404).json({ status: 404, _id, data: "Not Found" });
-    });
+    const result = await db.collection("beers").findOne({ _id: ObjectID(_id) })
+    res.status(201).json({
+      status: 201,
+      data: result,
+    })
   } catch (err) {
     res.status(404).json({
       status: 404,
@@ -54,57 +53,93 @@ const getOneBeer = async (req, res) => {
 }
 
 const updateBeer = async(req, res) => {
-  // const client = await MongoClient(MONGO_URI, options);
-  // // const { seatId, isBooked, fullName, email } = req.body;
-  // // const _id = seatId;
-  // // const query = { _id };
-  // // const newValue = { $set: { isBooked: isBooked, fullName: fullName, email: email } };
+  const client = await MongoClient(MONGO_URI, options);
+  const { _id, brewery, beerName, beerStyle, abv, tappedOn, tappedOut, kegSize, daysOnTap, deliveryDate, kegCost, cost } = req.body;
+  const id = _id;
+  const query = { id };
+  const newValue = {
+    $set: {
+      brewery: brewery,
+      beerName: beerName,
+      beerStyle: beerStyle,
+      ABV: abv,
+      tappedOn: tappedOn,
+      tappedOut: tappedOut,
+      kegSize: kegSize,
+      daysOnTap: daysOnTap,
+      deliveryDate: deliveryDate,
+      kegCost: kegCost,
+      cost: cost
+    }
+  };
 
-  // try {
-  //   await client.connect();
-  //   const db = client.db("Mosaic");
-  //   const results = await db.collection("beers").updateOne(query, newValue);
-  //   res.status(200).json({status: 200, data: results})
+  try {
+    await client.connect();
+    const db = client.db("Mosaic");
+    const results = await db.collection("beers").updateOne(query, newValue);
+    res.status(200).json({status: 200, data: results})
 
-  // } catch (err) {
-  //   res.status(404).json({status: 404, message: err.message})
-  // }
-  // client.close();
+  } catch (err) {
+    res.status(404).json({status: 404, message: err.message})
+  }
+  client.close();
 }
 
-const addBeer = async(req, res) => {
-  // const client = await MongoClient(MONGO_URI, options);
+const addBeer = async (req, res) => {
+  const client = await MongoClient(MONGO_URI, options);
+  const { beerName, beerStyle, brewery, abv, kegSize, delivery, kegCost, cost } = req.body;
 
-  // try {
-  //   await client.connect();
-  //   const db = client.db("Mosaic");
-  //   const results = await db.collection("beers").insertOne({
+  try {
+    await client.connect();
+    const db = client.db("Mosaic");
+    const results = await db.collection("beers").insertOne({
+      beerName: beerName,
+      beerStyle: beerStyle,
+      brewery: brewery,
+      ABV: abv,
+      kegSize: kegSize,
+      deliveryDate: delivery,
+      kegCost: kegCost,
+      cost: cost
+    });
+    res.status(201).json({
+      status: 201,
+      data: results.ops,
+    })
 
-  //   });
-  //   res.status(201).json({
-  //     status: 201,
-  //     data: results,
-  //   })
-
-  // } catch (err) {
-  //   res.status(404).json({
-  //     status: 404,
-  //     message: err.message,
-  //   })
-  // }
-  // client.close();
+  } catch (err) {
+    res.status(404).json({
+      status: 404,
+      message: err.message,
+    })
+  }
+  client.close();
 }
 
-const deleteBeer = () => {
+const deleteBeer = async (req, res) => {
+  const _id = req.params._id;
+  const client = await MongoClient(MONGO_URI, options);
 
+  try {
+    await client.connect();
+    const db = client.db("Mosaic");
+    const results = await db.collection("beers").deleteOne({ _id: ObjectID(_id) });
+    res.status(204).json({
+      status: 204,
+    })
+  } catch (err) {
+    res.status(404).json({
+      status: 404,
+      message: err.message,
+    })
+  }
 }
 
 const setUsers = async (req, res) => {
 
-  //check to see if the user is already in the DB
+  //TODO check to see if the user is already in the DB
 
   const {profileObj} = req.body
-  
   const client = await MongoClient(MONGO_URI, options);
 
   try {

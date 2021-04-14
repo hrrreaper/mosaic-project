@@ -8,20 +8,11 @@ const {GOOGLE_CLIENT} = process.env;
 
 const Login = () => {
   const { userObj, handleLogin } = useContext(UserContext);
-
-  // const { signIn } = useGoogleLogin({
-  //   clientId,
-  //   onSuccess,
-  //   onFailure,
-  //   isSignedIn:true,
-  //   accessType: 'offline',
-  // })
-
   
-  return userObj !== undefined ? (
+  return userObj ? (
     <Wrapper>
-      {userObj.name ? <div>Welcome, {userObj.name}</div> : null}
-      <Img src={userObj.picture} />
+      {userObj[0].name ? <div>Hey, {userObj[0].name}!</div> : null}
+      <Img src={userObj[0].picture} />
       <Logout />
     </Wrapper>
     
