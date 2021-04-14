@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import Login from './Login';
+import SearchBar from './SearchBar'
 
 const Header = () => {
   return (
     <Wrapper>
-      <Title>  </Title>
+      <SearchBar />
       <LoginDiv>
       <Login />
       </LoginDiv>
@@ -19,12 +20,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin-left: 180px;
 `;
 
-const Title = styled.h1`
-
-`;
 
 const LoginDiv = styled.div`
   padding: 10px;

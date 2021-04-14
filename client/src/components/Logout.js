@@ -9,6 +9,7 @@ const Logout = () => {
   
   const onLogoutSuccess = () => {
     setUserObj();
+    localStorage.removeItem('user');
   };
 
   return (

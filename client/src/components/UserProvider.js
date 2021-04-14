@@ -3,9 +3,10 @@ import React, { createContext, useState } from "react";
 export const UserContext = createContext(null);
 
 export const UserProvider = ({ children }) => {
-  const [userObj, setUserObj] = useState();
+  const user = JSON.parse(localStorage.getItem('user'));
+  const [userObj, setUserObj] = useState(user);
 
-  const handleLogin = async (googleData) => {
+  const handleLogin = (googleData) => {
       fetch('/api/v1/auth/google', {
       method: "POST",
       body: JSON.stringify({
@@ -17,8 +18,9 @@ export const UserProvider = ({ children }) => {
     })
         .then((res) => res.json())
         .then((json) => {
-          console.log("json", json.data)
-          setUserObj(...json.data);
+          console.log("json", json.data);
+          setUserObj(json.data);
+          localStorage.setItem('user', JSON.stringify(json.data));
       })
   };
   

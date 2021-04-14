@@ -28,8 +28,15 @@ const AllBeers = () => {
   return (
     <Wrapper>
       <Title>
-        all the beers we've had on tap!
+        All the beers we've had on tap. Current count: {allBeers?.length}
       </Title>
+      {allBeers ? (
+        <>
+          <DivTitle>
+          <Div>BEER</Div>
+          <Div>STYLE</Div>
+          <Div>BREWERY</Div>
+          </DivTitle>
       {beersToLoad.map((beer, index) => {
         return <Beer
           key={index}
@@ -39,21 +46,22 @@ const AllBeers = () => {
           type={beer.beerStyle}
         />
       })}
-      <BtnDiv>
-      <Button onClick={handleMore}>Load beers</Button>
-      </BtnDiv>
+        <BtnDiv>
+        <Button onClick={handleMore}>Load beers</Button>
+        </BtnDiv>
+          </>
+      ) : (
+      <Loading />
+      )
+    }
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
   height: 100vh;
-  max-width: 100vw;
-  margin-left:185px
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
+  max-width: 80vw;
+  margin: auto;
 `;
 
 const BtnDiv = styled.div`
@@ -62,8 +70,22 @@ const BtnDiv = styled.div`
 
 const Title = styled.h1`
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  margin: 20px;
+`;
+
+const DivTitle = styled.div`
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.5rem;
+`;
+
+const Div = styled.div`
+  width: 20vw;
+  text-align: left;
 `;
 
 
-export default AllBeers
+export default AllBeers;
