@@ -1,30 +1,60 @@
-import React, { useContext, useEffect, } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import styled from "styled-components";
 import Loading from './Loading';
 import Button from './Button'
 import Login from './Login';
 import { BeerContext } from './BeerProvider';
-import Beer from './Beer';
+import Beer from './Beer/Beer';
 import Mosaic from '../assets/mosaictext.png';
+import UntappdBeer from './UntappdBeer';
 
 
 const Homepage = () => {
-  const {
-      allBeers,
-      sliceBeers,
-      next,
-      setNext,
-      beersPerPage,
-      beersToLoad,
-  } = useContext(BeerContext);
+  const [menuInfo, setMenuInfo] = useState([]);
   
+  useEffect(() => {
+    fetch("/menu").then((res) => {
+      res
+        .json()
+        .then((json) => {
+          setMenuInfo(json.data.items);
+        })
+        .catch((err) => {
+          console.log("ERROR",err.message)
+        });
+    });
+  }, [])
+
+  console.log("here",menuInfo)
 
   return (
     <Wrapper>
       <Title>
-        <Img src={Mosaic} />
+        <Img src={Mosaic} alt="mosaic" />
+        <div>On Tap Now:</div>
       </Title>
-      {/* //TODO add the current menu from untappd */}
+      {menuInfo ? (
+        <>
+          {menuInfo.map((beer) => {
+            return (
+              <UntappdBeer
+                key={beer.id}
+                name={beer.name}
+                img={beer.label_image}
+                brewery={beer.brewery}
+                abv={beer.abv}
+                style={beer.style}
+                description={beer.description}
+                tapped={beer.updated_at}
+              /> 
+            )
+          })}
+        </>
+      ) : (
+          <Loading />
+      )
+      }
+      
     </Wrapper>
   )
 };

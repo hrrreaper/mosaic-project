@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import styled from 'styled-components';
-import { BeerContext } from './BeerProvider';
+import { BeerContext } from '../BeerProvider';
 import Beer from './Beer';
 
 const InStock = () => {
@@ -11,7 +11,7 @@ const InStock = () => {
   return (
     <Wrapper>
       <Title>
-        Keg currently in stock not tapped:
+        Beers currently in stock:
       </Title>
       <DivTitle>
         <Div>BEER</Div>
@@ -37,7 +37,7 @@ const InStock = () => {
 
   const Wrapper = styled.div`
   margin: auto;
-  max-width: 80vw;
+  max-width: 75vw;
   `;
 
   const DivTitle = styled.div`

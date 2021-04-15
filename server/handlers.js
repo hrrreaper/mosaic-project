@@ -54,9 +54,8 @@ const getOneBeer = async (req, res) => {
 
 const updateBeer = async(req, res) => {
   const client = await MongoClient(MONGO_URI, options);
-  const { _id, brewery, beerName, beerStyle, abv, tappedOn, tappedOut, kegSize, daysOnTap, deliveryDate, kegCost, cost } = req.body;
-  const id = _id;
-  const query = { id };
+  const { brewery, beerName, beerStyle, abv, tappedOn, tappedOut, kegSize, daysOnTap,} = req.body;
+  const  _id = req.params._id;
   const newValue = {
     $set: {
       brewery: brewery,
@@ -67,16 +66,13 @@ const updateBeer = async(req, res) => {
       tappedOut: tappedOut,
       kegSize: kegSize,
       daysOnTap: daysOnTap,
-      deliveryDate: deliveryDate,
-      kegCost: kegCost,
-      cost: cost
     }
   };
 
   try {
     await client.connect();
     const db = client.db("Mosaic");
-    const results = await db.collection("beers").updateOne(query, newValue);
+    const results = await db.collection("beers").updateOne({_id: ObjectID(_id)}, newValue);
     res.status(200).json({status: 200, data: results})
 
   } catch (err) {
@@ -87,20 +83,24 @@ const updateBeer = async(req, res) => {
 
 const addBeer = async (req, res) => {
   const client = await MongoClient(MONGO_URI, options);
-  const { beerName, beerStyle, brewery, abv, kegSize, delivery, kegCost, cost } = req.body;
+  const { brewery, beerName, beerStyle, abv, tappedOn, tappedOut, kegSize, daysOnTap, delivery, kegCost, cost,  } = req.body;
 
   try {
     await client.connect();
     const db = client.db("Mosaic");
     const results = await db.collection("beers").insertOne({
+      brewery: brewery,
       beerName: beerName,
       beerStyle: beerStyle,
-      brewery: brewery,
       ABV: abv,
+      tappedOn: tappedOn,
+      tappedOut: tappedOut,
       kegSize: kegSize,
+      daysOnTap: daysOnTap,
       deliveryDate: delivery,
       kegCost: kegCost,
-      cost: cost
+      cost: cost,
+      
     });
     res.status(201).json({
       status: 201,

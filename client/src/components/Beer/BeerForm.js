@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import FormButton from './FormButton';
+import FormButton from '../FormButton';
 
 const BeerForm = () => {
   const [beerName, setBeerName] = useState();
@@ -16,7 +16,7 @@ const BeerForm = () => {
     fetch('/add/beer', {
       method: "POST",
       body: JSON.stringify({
-        beerName, beerStyle, brewery, abv, kegSize, delivery,
+        beerName, beerStyle, brewery, abv, kegSize, delivery, 
       }),
       headers: {
         "Content-Type": "application/json"

@@ -1,29 +1,26 @@
-import React, { useContext, useEffect, } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import styled from "styled-components";
-import Loading from './Loading';
-import Button from './Button'
-import { BeerContext } from './BeerProvider';
+import Loading from '../Loading';
+import Button from '../Button'
+import { BeerContext } from '../BeerProvider';
 import Beer from './Beer';
+import Pagination from '../Pagination';
 
 const AllBeers = () => {
   const {
       allBeers,
-      sliceBeers,
-      next,
-      setNext,
-      beersPerPage,
-      beersToLoad,
   } = useContext(BeerContext);
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(20);
+
+  //to limit the amount of posts shown per page
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = allBeers?.slice(indexOfFirstItem, indexOfLastItem);
   
-
-  useEffect(() => {
-      sliceBeers(0, beersPerPage);
-    }, [])
-
-  const handleMore = () => {
-    sliceBeers(next, next + beersPerPage);
-    setNext(next + beersPerPage);
-  }
+  //Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <Wrapper>
@@ -37,7 +34,7 @@ const AllBeers = () => {
           <Div>STYLE</Div>
           <Div>BREWERY</Div>
           </DivTitle>
-      {beersToLoad.map((beer, index) => {
+      {currentItems.map((beer, index) => {
         return <Beer
           key={index}
           _id={beer._id}
@@ -47,22 +44,33 @@ const AllBeers = () => {
         />
       })}
         <BtnDiv>
-        <Button onClick={handleMore}>Load beers</Button>
         </BtnDiv>
           </>
       ) : (
       <Loading />
       )
-    }
+      }
+      <PagesDiv>
+      <Pagination
+        itemsPerPage={itemsPerPage}
+        totalItems={allBeers?.length}
+        paginate={paginate}
+      />
+      </PagesDiv>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
   height: 100vh;
-  max-width: 80vw;
+  max-width: 75vw;
   margin: auto;
 `;
+
+const PagesDiv = styled.div`
+  margin-bottom: 30px;
+`;
+
 
 const BtnDiv = styled.div`
   margin: 0 20px;

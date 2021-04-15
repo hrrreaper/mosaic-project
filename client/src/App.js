@@ -4,12 +4,13 @@ import GlobalStyle from "./components/GlobalStyles";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import Sidebar from "./components/Sidebar";
-import AllBeers from "./components/AllBeers";
-import BeerDetails from "./components/BeerDetails.js";
-import BeerForm from "./components/BeerForm";
-import InStock from "./components/InStock";
-import Breweries from "./components/Breweries";
+import AllBeers from "./components/Beer/AllBeers";
+import BeerDetails from "./components/Beer/BeerDetails.js";
+import BeerForm from "./components/Beer/BeerForm";
+import InStock from "./components/Beer/InStock";
+import Breweries from "./components/Brewery/Breweries";
 import styled from "styled-components";
+import OnTap from "./components/OnTap";
 
 
 const App = () => {
@@ -29,10 +30,14 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Homepage />
-          </Route>
+            </Route>
+            
           <Route exact path="/beers">
             <AllBeers />
-          </Route>
+            </Route>
+            <Route exact path="/beers/:page">
+              <AllBeers  />
+            </Route>
           <Route path="/beer/:_id">
             <BeerDetails />
           </Route>
@@ -41,6 +46,9 @@ const App = () => {
           </Route>
           <Route path="/in-stock">
             <InStock />
+          </Route>
+          <Route path="/on-tap">
+            <OnTap />
           </Route>
           <Route path="/breweries">
             <Breweries />
