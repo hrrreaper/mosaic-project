@@ -12,12 +12,17 @@ const Breweries = () => {
   let uniqueBreweries = [...new Set(allBeers?.map(item => item.brewery))];
   
   return (
+    <>
+      <DivTitle>
+        Breweries
+      </DivTitle>
+      <SubTitle>
+        unique breweries: {uniqueBreweries.length}
+      </SubTitle>
     <Wrapper>
       {allBeers ? (
         <>
-          <DivTitle>
-          Breweries
-          </DivTitle>
+        
       {uniqueBreweries.map((brewery, index) => {
         return <Brewery
           key={index}
@@ -30,21 +35,33 @@ const Breweries = () => {
       )
       }
     </Wrapper>
-  
+  </>
   )
 };
 
 const Wrapper = styled.div`
   height: 100vh;
-  max-width: 80vw;
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 20px;
 `;
 
-const DivTitle = styled.div`
-  margin: 20px 0;
+const DivTitle = styled.h2`
+  width: 80vw;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
+`;
+
+const SubTitle = styled.h3`
+width: 80vw;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 10px 0;
 `;
 
 

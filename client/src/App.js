@@ -80,7 +80,7 @@ const SidebarDiv = styled.div`
   position: sticky;
   z-index: 10;
   top: 0;
-  width: 200px;
+  width: 215px;
   height: 100vh;
 `;
 

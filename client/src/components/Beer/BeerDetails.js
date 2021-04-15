@@ -45,11 +45,10 @@ const BeerDetails = () => {
     })
     .then((res) => res.json())
     .then((json) => {
-      setStatus("deleted");
+      console.log("this beer has been deleted from the database")
     })
-    history.push("/")
+    history.push("/beers")
   }
-
   
   const handleOnTap = () => {
     fetch(`/update/${_id}`, {
@@ -111,6 +110,7 @@ const BeerDetails = () => {
     })
   }, [updateTapOn, updateTapOut]);
   
+  
 
   return (
     <Wrapper>
@@ -148,19 +148,13 @@ const BeerDetails = () => {
       {status === "edit" && (
         <UpdateForm beer={beer} />
       )}
-
-      {status === "deleted" && (
-        <div>
-          This beer has been deleted from the database
-        </div>
-      )}
     </Wrapper>
   )
 }
 
 const BtnDiv = styled.div`
   display: flex;
-  width: 300px;
+  width: 250px;
   justify-content: space-evenly;
 `;
 
@@ -173,6 +167,7 @@ const Div = styled.div`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 35px;
   line-height: 1.5;
+  width: fit-content;
 `;
 
 const Wrapper = styled.div`
@@ -181,7 +176,7 @@ const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 `;
 
 export default BeerDetails;

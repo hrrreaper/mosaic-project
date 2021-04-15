@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react'
+import React, { createContext, useState, useEffect } from 'react';
 
 export const BeerContext = createContext(null);
 
@@ -6,6 +6,7 @@ export const BeerProvider = ({ children }) => {
   const [allBeers, setAllBeers] = useState();
   const [updateTapOn, setUpdateTapOn] = useState(false);
   const [updateTapOut, setUpdateTapOut] = useState(false);
+
 
     useEffect(() => {
     fetch("/beers").then((res) => {
@@ -22,7 +23,6 @@ export const BeerProvider = ({ children }) => {
     });
     }, []);
   
-  
     useEffect(() => {
     fetch("/beers").then((res) => {
       res
@@ -36,9 +36,8 @@ export const BeerProvider = ({ children }) => {
           console.log("ERROR",err.message)
         });
     });
-    }, [setUpdateTapOn, setUpdateTapOut]);
+    }, [updateTapOn, updateTapOut]);
   
-
   return (
     <BeerContext.Provider value={{
       allBeers,

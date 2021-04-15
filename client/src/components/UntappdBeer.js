@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const UntappdBeer = ({ name, brewery, abv, img, style, description, tapped }) => {
   
   return (

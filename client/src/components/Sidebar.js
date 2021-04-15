@@ -2,10 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from '../assets/Mosaic-graphic.png';
-import { Icon } from 'react-icons-kit'
-import { beer } from 'react-icons-kit/typicons/beer';
 import { IoBeerOutline } from 'react-icons/io5';
-
 
 const Sidebar = () => {
 
@@ -32,6 +29,12 @@ const Sidebar = () => {
         </IconSpan>
         View All Beers
       </StyledLink>
+      <StyledLink to='/add/beer'>
+        <IconSpan>
+          <BeerIcon className="beer" size={17}/>
+        </IconSpan>
+        Add a beer
+      </StyledLink>
       <StyledLink to='/breweries'>
         <IconSpan>
           <BeerIcon className="beer" size={17}/>
@@ -57,7 +60,7 @@ const Wrapper = styled.div`
 const StyledLink = styled(NavLink)`
   text-transform: uppercase;
   font-weight: 700;
-  font-size: .85rem;
+  font-size: .9rem;
   text-decoration: none;
   color: #000;
   margin: 20px 0;
@@ -70,7 +73,7 @@ const StyledLink = styled(NavLink)`
 
     .beer{
     transform: rotate(50deg);
-    color: goldenrod;
+    color: gold;
     }
   }
 
@@ -92,7 +95,7 @@ const StyledLink = styled(NavLink)`
     
     .beer{
     transform: rotate(50deg);
-    color: goldenrod;
+    color: gold;
     }
   }
 
@@ -113,7 +116,7 @@ const Nav = styled(NavLink)`
 const Logo = styled.img`
   margin-top: 10px;
   margin-bottom: 30px;
-  width: 70px;
+  width: 75px;
 `;
 
 

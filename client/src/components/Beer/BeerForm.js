@@ -9,7 +9,7 @@ const BeerForm = () => {
   const [abv, setAbv] = useState();
   const [kegSize, setKegSize] = useState();
   const [delivery, setDelivery] = useState();
-  const [btnText, setBtnText] = useState("Submit");
+  const [status, setStatus] = useState("");
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
@@ -25,12 +25,15 @@ const BeerForm = () => {
       .then((res) => res.json())
       .then((json) => {
         console.log("data from post", json.data);
-        setBtnText("Submitted!");
+        setStatus("submitted")
       })
   };
   
   return (
     <Wrapper>
+      
+      {status === "" && (
+        <Form>
       <H2>Add a new beer!</H2>
       <Label htmlFor="beerName">Beer Name:</Label>
       <Input
@@ -90,12 +93,29 @@ const BeerForm = () => {
         }}
       ></Input>
 
-      <FormButton type="submit" onClick={(ev) => handleSubmit(ev)}>{btnText}</FormButton>
+        <FormButton type="submit" onClick={(ev) => handleSubmit(ev)}>Submit</FormButton>
+        </Form>
+      )}
+
+      {status === "submitted" && (
+        <Div>Cheers! That beer's been added to the database.</Div>
+      )}
+
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
+  margin: auto;
+`;
+
+const Div = styled.div`
+  margin-top: 100px;
+  text-align: center;
+  font-size: 2rem;
+`;
+
+const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +124,7 @@ const Wrapper = styled.div`
 const Input = styled.input`
   margin-bottom: 30px;
   padding: 7px;
-  width: 300px;
+  width: 350px;
   border-radius: 5px;
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -113,7 +133,7 @@ const Input = styled.input`
 
 const Label = styled.label`
   text-transform: uppercase;
-  width: 300px;
+  width: 350px;
   font-weight: 700;
   text-align: left;
 `;
