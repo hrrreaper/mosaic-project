@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-left: 180px;
+  margin-left: 225px;
 `;
 
 

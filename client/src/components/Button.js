@@ -6,7 +6,7 @@ const Button = styled.button`
   letter-spacing: 2px;
   color: #000;
   font-weight: 400;
-  font-size: .85rem;
+  font-size: .7rem;
   border: none;
   margin: 15px 0;
   cursor: pointer;
@@ -15,7 +15,6 @@ const Button = styled.button`
   width: 150px;
   height: 40px;
   text-align: center;
-  /* box-shadow: 0 0 5px #eee; */
   background-image: linear-gradient(to right, #FDFC47 0%, #24FE41  54%, #FDFC47  100%);
   background-size: 200% auto;
 

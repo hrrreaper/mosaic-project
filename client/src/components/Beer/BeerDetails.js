@@ -1,12 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useHistory, useParams } from 'react-router';
 import styled from 'styled-components';
-import Loading from './Loading';
-import UpdateForm from './UpdateForm';
-import FormButton from './FormButton';
+import Loading from '../Loading';
+import UpdateForm from '../UpdateForm';
+import FormButton from '../FormButton';
 import moment from 'moment';
+import { BeerContext } from '../BeerProvider';
 
 const BeerDetails = () => {
+  const {
+      updateTapOut,
+      setUpdateTapOut,
+      updateTapOn,
+      setUpdateTapOn,
+  } = useContext(BeerContext);
+
   const [beer, setBeer] = useState(undefined);
   const [status, setStatus] = useState("loading");
   const { _id } = useParams();
@@ -46,21 +54,40 @@ const BeerDetails = () => {
   const handleOnTap = () => {
     fetch(`/update/${_id}`, {
       method: "PATCH",
-      body: JSON.stringify({ beerName: beer.beerName, beerStyle: beer.beerStyle, brewery: beer.brewery, abv: beer.ABV, kegSize: beer.kegSize, tappedOut: beer.tappedOut, daysOnTap: beer.daysOnTap, tappedOn: moment().format('ll') }),
+      body: JSON.stringify({
+        brewery: beer.brewery,
+        beerName: beer.beerName,
+        beerStyle: beer.beerStyle,
+        abv: beer.ABV,
+        tappedOn: moment().format('ll'),
+        tappedOut: beer.tappedOut,
+        kegSize: beer.kegSize,
+        daysOnTap: beer.daysOnTap,
+      }),
       headers: {
         "Content-Type": "application/json"
       },
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log("data from post", json.data);
+        console.log(json.data);
+        setUpdateTapOn(true)
       })
   }
 
   const handleTapOut = () => {
     fetch(`/update/${_id}`, {
       method: "PATCH",
-      body: JSON.stringify({ beerName: beer.beerName, beerStyle: beer.beerStyle, brewery: beer.brewery, abv: beer.ABV, kegSize: beer.kegSize, tappedOut:  moment().format('ll'), daysOnTap: beer.daysOnTap, tappedOn: beer.tappedOn }),
+      body: JSON.stringify({
+        brewery: beer.brewery,
+        beerName: beer.beerName,
+        beerStyle: beer.beerStyle,
+        abv: beer.ABV,
+        tappedOn: beer.tappedOn,
+        tappedOut: moment().format('ll'),
+        kegSize: beer.kegSize,
+        daysOnTap: beer.daysOnTap,
+      }),
       headers: {
         "Content-Type": "application/json"
       },
@@ -68,8 +95,22 @@ const BeerDetails = () => {
       .then((res) => res.json())
       .then((json) => {
         console.log("data from post", json.data);
+        setUpdateTapOut(true);
       })
   }
+
+  useEffect(() => {
+    fetch(`/beer/${_id}`)
+      .then((res) => res.json())
+      .then((json) => {
+        setBeer(json.data);
+        setStatus("idle");
+      })
+      .catch((err) => {
+        setStatus("error");
+    })
+  }, [updateTapOn, updateTapOut]);
+  
 
   return (
     <Wrapper>
@@ -85,10 +126,10 @@ const BeerDetails = () => {
           </Div>
       )}
       <BtnDiv>
-        {status === "idle" && (beer.tappedOn === "" || beer.tappedOn === null) && (
+        {status === "idle" && (beer.tappedOn === "" || beer.tappedOn === null ) && (
           <FormButton onClick={() => handleOnTap()}>On Tap</FormButton>
         )}
-        {status === "idle" && (beer.tappedOn !== "") && (beer.tappedOut === "" || beer.tappedOut === null) && (
+        {status === "idle" && (beer.tappedOn !== null) && (beer.tappedOn !== "") && (beer.tappedOut === "" || beer.tappedOut === null) && (
           <FormButton onClick={() => handleTapOut()}>Tap Out</FormButton>
         )}
         {status === "idle" && (
@@ -119,7 +160,7 @@ const BeerDetails = () => {
 
 const BtnDiv = styled.div`
   display: flex;
-  width: 500px;
+  width: 300px;
   justify-content: space-evenly;
 `;
 
@@ -130,7 +171,7 @@ const Span = styled.span`
 
 const Div = styled.div`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 25px;
+  padding: 35px;
   line-height: 1.5;
 `;
 

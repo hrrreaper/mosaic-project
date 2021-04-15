@@ -20,10 +20,8 @@ express()
   .delete('/beer/:_id', deleteBeer)
   .patch('/update/:_id', updateBeer)
   .post('/add/beer', addBeer)
-
   .post('/api/v1/auth/google', setUsers)
-
-  .get('https://business.untappd.com/api/v1/menus/535383?full=true', getMenu)
+  .get('/menu', getMenu)
 
   .use((req, res) => res.status(404).type("txt").send("🤷‍♂️"))
 

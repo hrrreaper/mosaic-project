@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory, useParams } from 'react-router';
 import styled from 'styled-components';
+import BeerDetails from './Beer/BeerDetails';
 import FormButton from './FormButton';
 
 const UpdateForm = ({beer}) => {
@@ -22,7 +23,7 @@ const UpdateForm = ({beer}) => {
     fetch(`/update/${_id}`, {
       method: "PATCH",
       body: JSON.stringify({
-        beerName, beerStyle, brewery, abv, kegSize, tappedOn, tappedOut, daysOnTap
+        brewery, beerName, beerStyle, abv, tappedOn, tappedOut, kegSize, daysOnTap
       }),
       headers: {
         "Content-Type": "application/json"
@@ -30,7 +31,7 @@ const UpdateForm = ({beer}) => {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log("data from post", json.data);
+        console.log("data from patch", json.data);
         setBtnText("Updated!");
         setStatus("edited");
       })
@@ -136,10 +137,7 @@ const UpdateForm = ({beer}) => {
       {status === "edited" && (
         <>
           <div>
-            <div>
-            {beerName} had been updated.
-            </div>
-            <FormButton type="submit" onClick={() => history.goBack()}>Go Back</FormButton>
+            <BeerDetails />
           </div>
         </>
       )}
