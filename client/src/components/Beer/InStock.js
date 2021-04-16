@@ -45,7 +45,7 @@ const InStock = () => {
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 `;
 
 const Div = styled.div`

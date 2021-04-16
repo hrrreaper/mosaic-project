@@ -1,12 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
 import Loading from './Loading';
-import Button from './Button'
-import Login from './Login';
-import { BeerContext } from './BeerProvider';
-import Beer from './Beer/Beer';
 import Mosaic from '../assets/mosaictext.png';
-import UntappdBeer from './UntappdBeer';
+import UntappdMenu from './UntappdMenu';
 
 
 const Homepage = () => {
@@ -37,7 +33,7 @@ const Homepage = () => {
         <>
           {menuInfo.map((beer) => {
             return (
-              <UntappdBeer
+              <UntappdMenu
                 key={beer.id}
                 name={beer.name}
                 img={beer.label_image}

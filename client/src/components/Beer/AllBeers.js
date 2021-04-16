@@ -1,10 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import styled from "styled-components";
 import Loading from '../Loading';
-import Button from '../Button'
 import { BeerContext } from '../BeerProvider';
 import Beer from './Beer';
 import Pagination from '../Pagination';
+import { IoRocketOutline } from 'react-icons/io5';
+import SearchBar from './SearchBar'
 
 const AllBeers = () => {
   const {
@@ -22,11 +23,23 @@ const AllBeers = () => {
   //Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  //unique beer count
+  let uniqueBeers = [...new Set(allBeers?.map(item => item.beerName))];
+
   return (
     <Wrapper>
+      <SearchBar />
       <Title>
-        All the beers we've had on tap. Current count: {allBeers?.length}
+        All the beers we've had on tap.
       </Title>
+      <SubTitle>
+        <SubTitleDiv>
+          Total: {allBeers?.length}
+        </SubTitleDiv>
+        <SubTitleDiv>
+          Unique: {uniqueBeers.length} <IoRocketOutline />
+        </SubTitleDiv>
+      </SubTitle>
       {allBeers ? (
         <>
           <DivTitle>
@@ -51,7 +64,7 @@ const AllBeers = () => {
       )
       }
       <PagesDiv>
-      <Pagination
+        <Pagination
         itemsPerPage={itemsPerPage}
         totalItems={allBeers?.length}
         paginate={paginate}
@@ -71,15 +84,25 @@ const PagesDiv = styled.div`
   margin-bottom: 30px;
 `;
 
-
 const BtnDiv = styled.div`
   margin: 0 20px;
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   text-align: center;
   font-size: 1.2rem;
-  margin: 20px;
+  margin: 10px;
+`;
+
+const SubTitle = styled.h3`
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-transform: lowercase;
+`;
+
+const SubTitleDiv = styled.div`
+  margin-bottom: 5px;
 `;
 
 const DivTitle = styled.div`
@@ -87,7 +110,7 @@ const DivTitle = styled.div`
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 `;
 
 const Div = styled.div`

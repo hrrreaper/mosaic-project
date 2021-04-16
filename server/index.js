@@ -9,7 +9,10 @@ const {
   deleteBeer,
   setUsers,
 } = require('./handlers');
-const { getMenu } = require('./apiRequests');
+const {
+  getMenu,
+  getBeerInfo
+} = require('./apiRequests');
 
 express()
   .use(express.json())
@@ -22,6 +25,7 @@ express()
   .post('/add/beer', addBeer)
   .post('/api/v1/auth/google', setUsers)
   .get('/menu', getMenu)
+  .get('/beer/info/:value', getBeerInfo)
 
   .use((req, res) => res.status(404).type("txt").send("🤷‍♂️"))
 
