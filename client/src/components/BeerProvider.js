@@ -14,10 +14,8 @@ export const BeerProvider = ({ children }) => {
         .json()
         .then((json) => {
           setAllBeers(json.data);
-          
         })
         .catch((err) => {
-          
           console.log("ERROR",err.message)
         });
     });

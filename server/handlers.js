@@ -83,7 +83,7 @@ const updateBeer = async(req, res) => {
 
 const addBeer = async (req, res) => {
   const client = await MongoClient(MONGO_URI, options);
-  const { brewery, beerName, beerStyle, abv, tappedOn, tappedOut, kegSize, daysOnTap, delivery, kegCost, cost,  } = req.body;
+  const { brewery, beerName, beerStyle, abv, tappedOn, tappedOut, kegSize, daysOnTap, delivery, kegCost, cost, untappdId  } = req.body;
 
   try {
     await client.connect();
@@ -100,6 +100,7 @@ const addBeer = async (req, res) => {
       deliveryDate: delivery,
       kegCost: kegCost,
       cost: cost,
+      untappdId: untappdId,
       
     });
     res.status(201).json({

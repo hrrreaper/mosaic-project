@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
 import Login from './Login';
-import SearchBar from './SearchBar'
 
 const Header = () => {
   return (
     <Wrapper>
-      <SearchBar />
       <LoginDiv>
       <Login />
       </LoginDiv>
@@ -20,7 +18,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-left: 225px;
 `;
 

@@ -7,6 +7,7 @@ import FormButton from '../FormButton';
 import moment from 'moment';
 import { BeerContext } from '../BeerProvider';
 
+
 const BeerDetails = () => {
   const {
       updateTapOut,
@@ -21,16 +22,19 @@ const BeerDetails = () => {
   const history = useHistory();
   
   useEffect(() => {
-    fetch(`/beer/${_id}`)
-      .then((res) => res.json())
-      .then((json) => {
-        setBeer(json.data);
-        setStatus("idle");
+    if (_id) {
+      fetch(`/beer/${_id}`)
+        .then((res) => res.json())
+        .then((json) => {
+          setBeer(json.data);
+          setStatus("idle");
+        })
+        .catch((err) => {
+          setStatus("error");
       })
-      .catch((err) => {
-        setStatus("error");
-    })
-  }, [])
+      
+    }
+  }, [_id])
   
   const handleUpdate = () => {
     setStatus("edit");
@@ -123,6 +127,7 @@ const BeerDetails = () => {
           <div> <Span>Tapped:</Span> {beer.tappedOn}</div>
           <div> <Span>Tapped Out:</Span> {beer.tappedOut}</div>
           <div> <Span>Days on tap:</Span> {beer.daysOnTap}</div>
+          
           </Div>
       )}
       <BtnDiv>

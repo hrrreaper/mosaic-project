@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const UntappdBeer = ({ name, brewery, abv, img, style, description, tapped }) => {
+const UntappdMenu = ({ name, brewery, abv, img, style, description, tapped }) => {
   
   return (
     <Wrapper>
@@ -66,4 +66,4 @@ const Img = styled.img`
   width: 50px;
 `;
 
-export default UntappdBeer;
+export default UntappdMenu;

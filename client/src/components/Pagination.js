@@ -47,7 +47,7 @@ const StyledLink = styled(NavLink)`
 
 const Div = styled.div`
   display: block;
-  width: 80vw;
+  width: 75vw;
 `;
 
 const Ul = styled.ul`

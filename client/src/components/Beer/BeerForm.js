@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import FormButton from '../FormButton';
+import UntappdSearch from './UntappdSearch.js.js';
 
 const BeerForm = () => {
   const [beerName, setBeerName] = useState();
@@ -31,11 +32,12 @@ const BeerForm = () => {
   
   return (
     <Wrapper>
-      
+      <UntappdSearch />
       {status === "" && (
-        <Form>
-      <H2>Add a new beer!</H2>
-      <Label htmlFor="beerName">Beer Name:</Label>
+        <Form onSubmit={(ev) => handleSubmit(ev)}>
+      <H2>or fill out the form below to add a beer</H2>
+      <Required>fields marked with * are required</Required>
+      <Label htmlFor="beerName">* Beer Name:</Label>
       <Input
         type="text"
         id="beerName"
@@ -45,7 +47,7 @@ const BeerForm = () => {
           setBeerName(ev.target.value);
         }}
       ></Input>
-      <Label htmlFor="brewery">Brewery:</Label>
+      <Label htmlFor="brewery">* Brewery:</Label>
       <Input
         type="text"
         id="brewery"
@@ -55,7 +57,7 @@ const BeerForm = () => {
           setBrewery(ev.target.value);
         }}
       ></Input>
-      <Label htmlFor="beerStyle">Style:</Label>
+      <Label htmlFor="beerStyle">* Style:</Label>
       <Input
         type="text"
         id="beerStyle"
@@ -65,11 +67,12 @@ const BeerForm = () => {
           setBeerStyle(ev.target.value);
         }}
       ></Input>
-      <Label htmlFor="abv">ABV:</Label>
+      <Label htmlFor="abv">* ABV:</Label>
       <Input
         type="text"
         id="abv"
-        name="abv"
+            name="abv"
+            required
         onChange={(ev) => {
           setAbv(ev.target.value);
         }}
@@ -93,7 +96,7 @@ const BeerForm = () => {
         }}
       ></Input>
 
-        <FormButton type="submit" onClick={(ev) => handleSubmit(ev)}>Submit</FormButton>
+        <FormButton type="submit" >Submit</FormButton>
         </Form>
       )}
 
@@ -107,6 +110,12 @@ const BeerForm = () => {
 
 const Wrapper = styled.div`
   margin: auto;
+  margin-right: 175px;
+`;
+
+const Required = styled.div`
+  margin-bottom: 20px;
+  font-size: .75rem;
 `;
 
 const Div = styled.div`
@@ -140,7 +149,7 @@ const Label = styled.label`
 
 const H2 = styled.h2`
   margin: 20px 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 `;
 
 

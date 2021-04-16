@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import GlobalStyle from "./components/GlobalStyles";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Homepage from "./components/Homepage";
 import Sidebar from "./components/Sidebar";
 import AllBeers from "./components/Beer/AllBeers";
