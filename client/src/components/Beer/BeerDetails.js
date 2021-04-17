@@ -6,18 +6,22 @@ import UpdateForm from '../UpdateForm';
 import FormButton from '../FormButton';
 import moment from 'moment';
 import { BeerContext } from '../BeerProvider';
-
+const { REACT_APP_API_ID } = process.env;
 
 const BeerDetails = () => {
+  const auth = 'Basic ' + Buffer.from("info@mosaichamilton.ca" + ':' + REACT_APP_API_ID).toString('base64');
   const {
-      updateTapOut,
-      setUpdateTapOut,
-      updateTapOn,
-      setUpdateTapOn,
+    updateTapOut,
+    setUpdateTapOut,
+    updateTapOn,
+    setUpdateTapOn,
+    setUpdateDelete,
+    update,
   } = useContext(BeerContext);
 
   const [beer, setBeer] = useState(undefined);
   const [status, setStatus] = useState("loading");
+  const [itemId, setItemId] = useState();
   const { _id } = useParams();
   const history = useHistory();
   
@@ -31,8 +35,8 @@ const BeerDetails = () => {
         })
         .catch((err) => {
           setStatus("error");
+          console.log("ERROR", err.message);
       })
-      
     }
   }, [_id])
   
@@ -51,10 +55,37 @@ const BeerDetails = () => {
     .then((json) => {
       console.log("this beer has been deleted from the database")
     })
-    history.push("/beers")
+    .catch((err) => {
+      console.log("ERROR", err.message);
+    })
+    setUpdateDelete(true);
+    history.goBack();
   }
   
   const handleOnTap = () => {
+    if (beer.untappdId) {
+      fetch('https://business.untappd.com/api/v1/sections/610810/items', {
+        method: "POST",
+        body: JSON.stringify({
+          "untappd_id": beer.untappdId
+        }),
+        headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": auth,
+      },
+      })
+        .then((res) => res.json())
+        .then((json) => {
+          console.log("get id from here", json)
+          setItemId(json.item.id);
+          setUpdateTapOn(true);
+        })
+      .catch((err) => {
+        console.log("ERROR", err.message);
+        })
+    }
+  
     fetch(`/update/${_id}`, {
       method: "PATCH",
       body: JSON.stringify({
@@ -73,10 +104,43 @@ const BeerDetails = () => {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log(json.data);
-        setUpdateTapOn(true)
+        setUpdateTapOn(true);
       })
+    .catch((err) => {
+      setStatus("error");
+      console.log("ERROR", err.message);
+    })
   }
+
+  // useEffect(() => {
+  //   if (beer) {
+  //     fetch(`/update/${_id}`, {
+  //       method: "PATCH",
+  //       body: JSON.stringify({
+  //         brewery: beer.brewery,
+  //         beerName: beer.beerName,
+  //         beerStyle: beer.beerStyle,
+  //         abv: beer.ABV,
+  //         tappedOn: beer.tappedOn,
+  //         tappedOut: beer.tappedOut,
+  //         kegSize: beer.kegSize,
+  //         daysOnTap: beer.daysOnTap,
+  //         itemId: itemId,
+  //       }),
+  //       headers: {
+  //         "Content-Type": "application/json"
+  //       },
+  //     })
+  //       .then((res) => res.json())
+  //       .then((json) => {
+  //         console.log(json);
+  //       })
+  //       .catch((err) => {
+  //         setStatus("error");
+  //         console.log("ERROR", err.message);
+  //       })
+  //   }
+  // }, [updateTapOn]);
 
   const handleTapOut = () => {
     fetch(`/update/${_id}`, {
@@ -100,6 +164,28 @@ const BeerDetails = () => {
         console.log("data from post", json.data);
         setUpdateTapOut(true);
       })
+    .catch((err) => {
+      setStatus("error");
+      console.log("ERROR",err.message)
+    })
+    
+    if (beer.untappdId) {
+      const id = itemId;
+      fetch(`https://business.untappd.com/api/v1/items/${id}`, {
+        method: "DELETE",
+        headers: {
+        "Authorization": auth,
+      },
+      })
+        .then((res) => res.json())
+        .then((json) => {
+          console.log(json);
+          setUpdateTapOut(true);
+        })
+      .catch((err) => {
+        console.log("ERROR", err.message);
+        })
+    }
   }
 
   useEffect(() => {
@@ -111,9 +197,9 @@ const BeerDetails = () => {
       })
       .catch((err) => {
         setStatus("error");
+        console.log("ERROR",err.message)
     })
-  }, [updateTapOn, updateTapOut]);
-  
+  }, [updateTapOut, updateTapOn, update]);
   
 
   return (

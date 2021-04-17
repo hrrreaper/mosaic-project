@@ -9,7 +9,9 @@ import SearchBar from './SearchBar'
 
 const AllBeers = () => {
   const {
-      allBeers,
+    allBeers,
+    filteredBeers,
+    setFilteredBeers,
   } = useContext(BeerContext);
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -18,7 +20,7 @@ const AllBeers = () => {
   //to limit the amount of posts shown per page
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = allBeers?.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = filteredBeers?.slice(indexOfFirstItem, indexOfLastItem);
   
   //Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -47,7 +49,7 @@ const AllBeers = () => {
           <Div>STYLE</Div>
           <Div>BREWERY</Div>
           </DivTitle>
-      {currentItems.map((beer, index) => {
+      {currentItems?.map((beer, index) => {
         return <Beer
           key={index}
           _id={beer._id}
@@ -66,7 +68,7 @@ const AllBeers = () => {
       <PagesDiv>
         <Pagination
         itemsPerPage={itemsPerPage}
-        totalItems={allBeers?.length}
+        totalItems={filteredBeers?.length}
         paginate={paginate}
       />
       </PagesDiv>
