@@ -9,13 +9,13 @@ const FormButton = styled.button`
   font-size: .80rem;
   border: none;
   margin: 15px 0;
+  margin-right: 10px;
   cursor: pointer;
   border-radius: 5px;
   transition: 0.5s;
   width: fit-content;
   height: 25px;
   text-align: center;
-  /* box-shadow: 0 0 5px #eee; */
   background-image: linear-gradient(to right, #FDFC47 0%, #24FE41  54%, #FDFC47  100%);
   background-size: 200% auto;
 

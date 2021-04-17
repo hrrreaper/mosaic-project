@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { useHistory, useParams } from 'react-router';
 import styled from 'styled-components';
 import BeerDetails from './Beer/BeerDetails';
 import FormButton from './FormButton';
+import { BeerContext } from './BeerProvider';
 
-const UpdateForm = ({beer}) => {
+const UpdateForm = ({ beer }) => {
+  const {
+    setUpdate,
+  } = useContext(BeerContext);
   const [beerName, setBeerName] = useState(beer.beerName);
   const [beerStyle, setBeerStyle] = useState(beer.beerStyle);
   const [brewery, setBrewery] = useState(beer.brewery);
@@ -34,6 +38,7 @@ const UpdateForm = ({beer}) => {
         console.log("data from patch", json.data);
         setBtnText("Updated!");
         setStatus("edited");
+        setUpdate(true);
       })
   };
 
@@ -47,7 +52,7 @@ const UpdateForm = ({beer}) => {
         type="text"
         id="beerName"
         name="beerName"
-        value={beerName}
+        value={beerName || ''}
         onChange={(ev) => {
           setBeerName(ev.target.value);
         }}
@@ -57,7 +62,7 @@ const UpdateForm = ({beer}) => {
         type="text"
         id="brewery"
         name="brewery"
-        value={brewery}
+        value={brewery || ''}
         onChange={(ev) => {
           setBrewery(ev.target.value);
         }}
@@ -67,7 +72,7 @@ const UpdateForm = ({beer}) => {
         type="text"
         id="beerStyle"
         name="beerStyle"
-        value={beerStyle}
+        value={beerStyle || ''}
         onChange={(ev) => {
           setBeerStyle(ev.target.value);
         }}
@@ -77,7 +82,7 @@ const UpdateForm = ({beer}) => {
         type="text"
         id="abv"
         name="abv"
-        value={abv}
+        value={abv || ''}
         onChange={(ev) => {
           setAbv(ev.target.value);
         }}
@@ -87,7 +92,7 @@ const UpdateForm = ({beer}) => {
         type="text"
         id="kegSize"
         name="kegSize"
-        value={kegSize}
+        value={kegSize || ''}
         onChange={(ev) => {
           setKegSize(ev.target.value);
         }}
@@ -97,7 +102,7 @@ const UpdateForm = ({beer}) => {
         type="text"
         id="tapped"
         name="tapped"
-        value={tappedOn}
+        value={tappedOn || ''}
         onChange={(ev) => {
           setTappedOn(ev.target.value);
         }}
@@ -107,7 +112,7 @@ const UpdateForm = ({beer}) => {
         type="text"
         id="tappedOut"
         name="tappedOut"
-        value={tappedOut}
+        value={tappedOut || ''}
         onChange={(ev) => {
           setTappedOut(ev.target.value);
         }}
@@ -117,7 +122,7 @@ const UpdateForm = ({beer}) => {
         type="text"
         id="daysOnTap"
         name="daysOnTap"
-        value={daysOnTap}
+        value={daysOnTap || ''}
         onChange={(ev) => {
           setDaysOnTap(ev.target.value);
         }}

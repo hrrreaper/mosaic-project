@@ -3,7 +3,7 @@ import { GoogleLogin } from 'react-google-login';
 import styled from 'styled-components';
 import Logout from './Logout';
 import { UserContext } from '../UserProvider';
-const {GOOGLE_CLIENT} = process.env;
+const {REACT_APP_GOOGLE_CLIENT} = process.env;
 
 
 const Login = () => {
@@ -19,7 +19,7 @@ const Login = () => {
   ) : (
       <LoginDiv>
         <GoogleLogin
-          clientId={GOOGLE_CLIENT}
+          clientId={REACT_APP_GOOGLE_CLIENT}
           buttonText="Log in with Google"
           onSuccess={handleLogin}
           onFailure={handleLogin}

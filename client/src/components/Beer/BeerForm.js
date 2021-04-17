@@ -71,8 +71,8 @@ const BeerForm = () => {
       <Input
         type="text"
         id="abv"
-            name="abv"
-            required
+        name="abv"
+        required
         onChange={(ev) => {
           setAbv(ev.target.value);
         }}
@@ -110,7 +110,6 @@ const BeerForm = () => {
 
 const Wrapper = styled.div`
   margin: auto;
-  margin-right: 175px;
 `;
 
 const Required = styled.div`
@@ -128,10 +127,11 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 `;
 
 const Input = styled.input`
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 7px;
   width: 350px;
   border-radius: 5px;
