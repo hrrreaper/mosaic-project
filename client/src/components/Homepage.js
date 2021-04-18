@@ -20,16 +20,13 @@ const Homepage = () => {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log("json",json)
         setMenuInfo(json.items);
         setStatus('idle');
       })
       .catch((err) => {
         console.log("ERROR", err.message);
       })
-  }, [])
-
-  console.log("here",menuInfo)
+  }, []);
 
   return (
     <Wrapper>

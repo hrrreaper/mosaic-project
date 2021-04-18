@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React, { useContext }  from "react";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import GlobalStyle from "./components/GlobalStyles";
 import Header from "./components/Header/Header";
 import Homepage from "./components/Homepage";
@@ -11,13 +11,21 @@ import InStock from "./components/Beer/InStock";
 import Breweries from "./components/Brewery/Breweries";
 import styled from "styled-components";
 import OnTap from "./components/OnTap";
-
+import { UserContext } from './components/Context/UserProvider';
+import MainSignIn from "./components/MainSignIn";
 
 const App = () => {
+
+  const { userObj } = useContext(UserContext);
+
+  //redirects to the login page unless you are signed in (once you're signed in it saves your user info in local storage and the db)
+
   return (
     <Wrapper>
       <BrowserRouter>
         <GlobalStyle />
+        {userObj && (
+          <>
         <HeaderGrid>
         <Header />
         </HeaderGrid>
@@ -26,12 +34,21 @@ const App = () => {
         <Sidebar />
           </SidebarDiv>
         </SidebarGrid>
+          </>
+        )}
         <MainGrid>
-        <Switch>
+          <Switch>
+            {userObj ? (
           <Route exact path="/">
             <Homepage />
             </Route>
-            
+            ) : (
+                <Route exact path="/">
+                <MainSignIn />
+            </Route>
+            )}
+            {userObj ? (
+              <>
           <Route exact path="/beers">
             <AllBeers />
             </Route>
@@ -53,6 +70,10 @@ const App = () => {
           <Route path="/breweries">
             <Breweries />
           </Route>
+            </>
+            ) : (
+                <Redirect to="/" />
+            )}
           </Switch>
           </MainGrid>
       </BrowserRouter>

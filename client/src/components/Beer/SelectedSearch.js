@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { BeerContext } from '../BeerProvider';
+import { BeerContext } from '../Context/BeerProvider';
 import { useHistory } from 'react-router';
 import styled from 'styled-components';
 import FormButton from '../FormButton';

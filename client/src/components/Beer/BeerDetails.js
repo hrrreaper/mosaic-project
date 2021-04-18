@@ -5,7 +5,7 @@ import Loading from '../Loading';
 import UpdateForm from '../UpdateForm';
 import FormButton from '../FormButton';
 import moment from 'moment';
-import { BeerContext } from '../BeerProvider';
+import { BeerContext } from '../Context/BeerProvider';
 const { REACT_APP_API_ID } = process.env;
 
 const BeerDetails = () => {
@@ -22,6 +22,7 @@ const BeerDetails = () => {
   const [beer, setBeer] = useState(undefined);
   const [status, setStatus] = useState("loading");
   const [itemId, setItemId] = useState();
+  const [idFlag, setIdFlag] = useState(false);
   const { _id } = useParams();
   const history = useHistory();
   
@@ -62,6 +63,7 @@ const BeerDetails = () => {
     history.goBack();
   }
   
+  //first checking to see if the beer has an untappd id. If it does call untappd API and add it to our draft menu. Then update it in the DB with todays date as the tapped on date.
   const handleOnTap = () => {
     if (beer.untappdId) {
       fetch('https://business.untappd.com/api/v1/sections/610810/items', {
@@ -77,9 +79,10 @@ const BeerDetails = () => {
       })
         .then((res) => res.json())
         .then((json) => {
-          console.log("get id from here", json)
+          console.log("get id from here", json.item.id)
           setItemId(json.item.id);
           setUpdateTapOn(true);
+          setIdFlag(true);
         })
       .catch((err) => {
         console.log("ERROR", err.message);
@@ -97,6 +100,7 @@ const BeerDetails = () => {
         tappedOut: beer.tappedOut,
         kegSize: beer.kegSize,
         daysOnTap: beer.daysOnTap,
+        itemId: itemId,
       }),
       headers: {
         "Content-Type": "application/json"
@@ -112,37 +116,43 @@ const BeerDetails = () => {
     })
   }
 
-  // useEffect(() => {
-  //   if (beer) {
-  //     fetch(`/update/${_id}`, {
-  //       method: "PATCH",
-  //       body: JSON.stringify({
-  //         brewery: beer.brewery,
-  //         beerName: beer.beerName,
-  //         beerStyle: beer.beerStyle,
-  //         abv: beer.ABV,
-  //         tappedOn: beer.tappedOn,
-  //         tappedOut: beer.tappedOut,
-  //         kegSize: beer.kegSize,
-  //         daysOnTap: beer.daysOnTap,
-  //         itemId: itemId,
-  //       }),
-  //       headers: {
-  //         "Content-Type": "application/json"
-  //       },
-  //     })
-  //       .then((res) => res.json())
-  //       .then((json) => {
-  //         console.log(json);
-  //       })
-  //       .catch((err) => {
-  //         setStatus("error");
-  //         console.log("ERROR", err.message);
-  //       })
-  //   }
-  // }, [updateTapOn]);
+  //when you handleOnTap gets called try to save the item id to the database
+  //NOT WORKING RIGHT NOW
+  useEffect(() => {
+    if (beer) {
+      fetch(`/update/${_id}`, {
+        method: "PATCH",
+        body: JSON.stringify({
+          brewery: beer.brewery,
+          beerName: beer.beerName,
+          beerStyle: beer.beerStyle,
+          abv: beer.ABV,
+          tappedOn: moment().format('ll'),
+          tappedOut: beer.tappedOut,
+          kegSize: beer.kegSize,
+          daysOnTap: beer.daysOnTap,
+          itemId: itemId,
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        },
+      })
+        .then((res) => res.json())
+        .then((json) => {
+          console.log("should only run when handleOnTap is called", json.data);
+        })
+        .catch((err) => {
+          setStatus("error");
+          console.log("ERROR", err.message);
+        })
+    }
+  }, [idFlag, itemId]);
 
   const handleTapOut = () => {
+    const tapDate = new Date(beer.tappedOn);
+    const tapOutDate = new Date(moment().format("ll"));
+    const diffInTime = tapOutDate.getTime() - tapDate.getTime();
+    const diffInDays = diffInTime / (1000 * 3600 * 24);
     fetch(`/update/${_id}`, {
       method: "PATCH",
       body: JSON.stringify({
@@ -153,7 +163,7 @@ const BeerDetails = () => {
         tappedOn: beer.tappedOn,
         tappedOut: moment().format('ll'),
         kegSize: beer.kegSize,
-        daysOnTap: beer.daysOnTap,
+        daysOnTap: diffInDays,
       }),
       headers: {
         "Content-Type": "application/json"

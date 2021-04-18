@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { GoogleLogin } from 'react-google-login';
 import styled from 'styled-components';
 import Logout from './Logout';
-import { UserContext } from '../UserProvider';
+import { UserContext } from '../Context/UserProvider';
 const {REACT_APP_GOOGLE_CLIENT} = process.env;
 
 

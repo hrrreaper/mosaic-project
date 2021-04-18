@@ -11,18 +11,6 @@ const Sidebar = () => {
       <Nav to='/'>
       <Logo src={logo} alt="logo"/>
       </Nav>
-      <StyledLink to='/on-tap'>
-      <IconSpan>
-          <BeerIcon className="beer" size={17} />
-        </IconSpan>
-      Beers on Tap
-      </StyledLink>
-      <StyledLink to='/in-stock'>
-        <IconSpan>
-          <BeerIcon className="beer" size={17}/>
-        </IconSpan>
-        Beers in stock
-      </StyledLink>
       <StyledLink to='/beers'>
         <IconSpan>
           <BeerIcon className="beer" size={17}/>
@@ -34,6 +22,18 @@ const Sidebar = () => {
           <BeerIcon className="beer" size={17}/>
         </IconSpan>
         Add a beer
+      </StyledLink>
+      <StyledLink to='/on-tap'>
+      <IconSpan>
+          <BeerIcon className="beer" size={17} />
+        </IconSpan>
+      Beers on Tap
+      </StyledLink>
+      <StyledLink to='/in-stock'>
+        <IconSpan>
+          <BeerIcon className="beer" size={17}/>
+        </IconSpan>
+        Beers in stock
       </StyledLink>
       <StyledLink to='/breweries'>
         <IconSpan>

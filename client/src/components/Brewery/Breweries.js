@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import styled from 'styled-components';
-import { BeerContext } from '../BeerProvider';
+import { BeerContext } from '../Context/BeerProvider';
 import Loading from '../Loading';
 import Brewery from './Brewery';
 
@@ -40,11 +40,11 @@ const Breweries = () => {
 };
 
 const Wrapper = styled.div`
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-left: 20px;
 `;
 
