@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import styled from 'styled-components';
-import { BeerContext } from '../BeerProvider';
+import { BeerContext } from '../Context/BeerProvider';
 import Beer from './Beer';
 
 const InStock = () => {

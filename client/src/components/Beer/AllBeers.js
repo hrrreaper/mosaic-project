@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import styled from "styled-components";
 import Loading from '../Loading';
-import { BeerContext } from '../BeerProvider';
+import { BeerContext } from '../Context/BeerProvider';
 import Beer from './Beer';
 import Pagination from '../Pagination';
 import { IoRocketOutline } from 'react-icons/io5';
@@ -51,7 +51,8 @@ const AllBeers = () => {
           </DivTitle>
       {currentItems?.map((beer, index) => {
         return <Beer
-          key={index}
+          key={beer._id}
+          index={index}
           _id={beer._id}
           name={beer.beerName}
           brewery={beer.brewery}
@@ -59,7 +60,8 @@ const AllBeers = () => {
         />
       })}
         <BtnDiv>
-        </BtnDiv>
+          </BtnDiv>
+          
           </>
       ) : (
       <Loading />

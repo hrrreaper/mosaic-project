@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { BeerContext } from '../BeerProvider';
+import React, { useState, useContext } from 'react';
+import { BeerContext } from '../Context/BeerProvider';
 import styled from 'styled-components';
 import SelectedSearch from './SelectedSearch';
 

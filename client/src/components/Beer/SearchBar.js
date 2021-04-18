@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { FiFilter } from "react-icons/fi";
 import styled from 'styled-components';
-import { BeerContext } from "../BeerProvider";
+import { BeerContext } from "../Context/BeerProvider";
 
 const SearchBar = () => {
   const {

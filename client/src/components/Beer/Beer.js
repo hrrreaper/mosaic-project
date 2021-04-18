@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 
-const Beer = ({ name, type, brewery, _id, abv }) => {
+const Beer = ({ name, type, brewery, _id, abv, index }) => {
   
   return (
     <Wrapper>

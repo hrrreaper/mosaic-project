@@ -2,11 +2,10 @@ import React, { useContext, useState } from 'react';
 import styled from 'styled-components';
 import { FiSearch } from "react-icons/fi";
 import UntappdSearchItem from './UntappdSearchItem';
-import { BeerContext } from '../BeerProvider';
 const { REACT_APP_API_ID } = process.env;
 
 const UntappdSearch = () => {
-  const { showResults, setShowResults } = useContext(BeerContext);
+
   const auth = 'Basic ' + Buffer.from("info@mosaichamilton.ca" + ':' + REACT_APP_API_ID).toString('base64');
   const [value, setValue] = useState('');
   const [results, setResults] = useState([]);
