@@ -1,16 +1,27 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import styled from 'styled-components';
+import { v4 as uuidv4 } from 'uuid';
 import { BeerContext } from '../Context/BeerProvider';
 import Loading from '../Loading';
-import Brewery from './Brewery';
+const { REACT_APP_MAP_ID } = process.env;
 
 const Breweries = () => {
   const {
       allBeers,
   } = useContext(BeerContext);
 
+  const [value, setValue] = useState();
+  const [status, setStatus] = useState(false);
   let uniqueBreweries = [...new Set(allBeers?.map(item => item.brewery))];
-  
+  const sortedBreweries = uniqueBreweries.sort();
+
+  let uniqueBeers = [...new Set(allBeers?.map(beer => {
+    if (beer.brewery === value) {
+      return beer.beerName;
+    }
+  }))];
+    
+
   return (
     <>
       <DivTitle>
@@ -19,37 +30,113 @@ const Breweries = () => {
       <SubTitle>
         unique breweries: {uniqueBreweries.length}
       </SubTitle>
+      <SubTitle>
+        Select a brewery to view details.
+      </SubTitle>
     <Wrapper>
       {allBeers ? (
         <>
-        
-      {uniqueBreweries.map((brewery, index) => {
-        return <Brewery
-          key={index}
-          brewery={brewery}
-        />
+        <Select
+          value={value} 
+          onChange={(ev) => {
+            setValue(ev.target.value);
+              }}
+          onClick={() => {
+            if (value === "select a brewery") {
+              setStatus(false);
+            } else {
+              setStatus(true);
+            }
+          }}
+            >
+          <option defaultValue="select a brewery">select a brewery</option>
+        {sortedBreweries.map((brewery, index) => {
+        return (
+          <option
+            value={brewery}
+            key={uuidv4()}
+          >
+            {brewery}
+        </option>
+        )
       })}
+      </Select>
           </>
       ) : (
       <Loading />
-      )
-      }
+      )}
+
+        {status === true && (
+        <DetailsWrapper>
+          <iframe
+          width="500"
+          height="400"
+          style={{ border: 0 }}
+          loading="lazy"
+          src={`https://www.google.com/maps/embed/v1/place?key=${REACT_APP_MAP_ID}
+          &q=${value}`}>
+          </iframe>
+            
+            <BeerList>
+              <SubTitle>Beers we've had on draught from this brewery:</SubTitle>
+
+              {uniqueBeers.map((beer) => {
+                return <Beer key={uuidv4()} >{beer}</Beer>
+              })}
+            </BeerList>
+        </DetailsWrapper>  
+      )}
+        
     </Wrapper>
   </>
   )
 };
 
+const Select = styled.select`
+  width: 40%;
+  height: 35px;
+  background: white;
+  color: gray;
+  padding-left: 5px;
+  font-size: 14px;
+  border: 1px solid grey;
+
+  option {
+    color: black;
+    background: white;
+    display: flex;
+    height: 20px;
+    padding: 0px 2px 1px;
+  }
+`;
+
 const Wrapper = styled.div`
-  height: 80vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+`;
+const DetailsWrapper = styled.div`
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+`;
+
+const BeerList = styled.div`
   margin-left: 20px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+`;
+
+const Beer = styled.div`
+  font-size: .8rem;
+  text-overflow:
 `;
 
 const DivTitle = styled.h2`
-  width: 80vw;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -57,7 +144,6 @@ const DivTitle = styled.h2`
 `;
 
 const SubTitle = styled.h3`
-width: 80vw;
   text-align: center;
   font-weight: 700;
   font-size: 1rem;

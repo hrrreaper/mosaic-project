@@ -1,7 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import styled from 'styled-components';
 import { FiSearch } from "react-icons/fi";
 import UntappdSearchItem from './UntappdSearchItem';
+import FormButton from '../FormButton';
 const { REACT_APP_API_ID } = process.env;
 
 const UntappdSearch = () => {
@@ -28,7 +30,6 @@ const UntappdSearch = () => {
       })
     }
   }
-
     
   const handleChange = (ev) => {
     setValue(ev.target.value.toLowerCase());
@@ -41,6 +42,7 @@ const UntappdSearch = () => {
       <Input
         type="text"
         value={value}
+        placeholder="find a beer through untappd"
         id='beer'
         name='beer'
         onChange={(ev) => handleChange(ev)}
@@ -49,16 +51,17 @@ const UntappdSearch = () => {
             handleSubmit(ev)
           }
         }}
-      ></Input>
-      <SearchButton
+        ></Input>
+        
+      <FormButton
       onClick={(ev) => handleSubmit(ev)}
       >
           <BtnText>
           <Txt>search</Txt>  <FiSearch size={15}/>
           </BtnText>
-      </SearchButton>
+      </FormButton>
 
-        <ClearButton
+        <FormButton
           onClick={(ev) => {
             ev.preventDefault();
             setResults();
@@ -66,13 +69,14 @@ const UntappdSearch = () => {
         }}
         >
         clear
-        </ClearButton>
+        </FormButton>
         </Form>
 
       {results && (
         <ListWrapper>
           <List>
             <UntappdSearchItem
+              key={uuidv4()}
               results={results}
               setResults={setResults}
               value={value}
@@ -108,29 +112,30 @@ const Txt = styled.span`
   margin-right: 5px;
 `;
 
-const SearchButton = styled.button`
-  background-color: transparent;
-  border: 1px solid lightgrey;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 5px;
-  margin-left: 10px;
-`;
-const ClearButton = styled.button`
-  background-color: transparent;
-  border: 1px solid lightgrey;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 5px;
-  margin-left: 10px;
-`;
+// const SearchButton = styled.button`
+//   background-color: transparent;
+//   border: 1px solid grey;
+//   cursor: pointer;
+//   padding: 5px;
+//   border-radius: 5px;
+//   margin-left: 10px;
+// `;
+// const ClearButton = styled.button`
+//   background-color: transparent;
+//   border: 1px solid grey;
+//   cursor: pointer;
+//   padding: 5px;
+//   border-radius: 5px;
+//   margin-left: 10px;
+// `;
 
 const Input = styled.input`
   border-radius: 5px;
-  border: 1px solid lightgrey;
+  border: 1px solid grey;
   outline:none;
   width: 400px;
   height:30px;
+  margin-right:10px;
 `;
 
 const Label = styled.label`

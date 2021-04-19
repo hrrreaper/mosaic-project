@@ -6,6 +6,7 @@ import Beer from './Beer';
 import Pagination from '../Pagination';
 import { IoRocketOutline } from 'react-icons/io5';
 import SearchBar from './SearchBar'
+import { v4 as uuidv4 } from 'uuid';
 
 const AllBeers = () => {
   const {
@@ -51,7 +52,7 @@ const AllBeers = () => {
           </DivTitle>
       {currentItems?.map((beer, index) => {
         return <Beer
-          key={beer._id}
+          key={uuidv4()}
           index={index}
           _id={beer._id}
           name={beer.beerName}
@@ -59,8 +60,6 @@ const AllBeers = () => {
           type={beer.beerStyle}
         />
       })}
-        <BtnDiv>
-          </BtnDiv>
           
           </>
       ) : (
@@ -69,9 +68,9 @@ const AllBeers = () => {
       }
       <PagesDiv>
         <Pagination
-        itemsPerPage={itemsPerPage}
-        totalItems={filteredBeers?.length}
-        paginate={paginate}
+          itemsPerPage={itemsPerPage}
+          totalItems={filteredBeers?.length}
+          paginate={paginate}
       />
       </PagesDiv>
     </Wrapper>
@@ -86,10 +85,6 @@ const Wrapper = styled.div`
 
 const PagesDiv = styled.div`
   margin-bottom: 30px;
-`;
-
-const BtnDiv = styled.div`
-  margin: 0 20px;
 `;
 
 const Title = styled.h2`
@@ -110,16 +105,15 @@ const SubTitleDiv = styled.div`
 `;
 
 const DivTitle = styled.div`
-  margin: 10px 20px;
+  margin: 10px;
   display: flex;
-  justify-content: space-between;
   font-weight: 700;
-  font-size: 1.3rem;
 `;
 
 const Div = styled.div`
-  width: 20vw;
+  width: 25vw;
   text-align: left;
+  font-size: 1.2rem;
 `;
 
 

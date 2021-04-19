@@ -1,6 +1,7 @@
 [
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Mosaic Comes to Town",
     "beerStyle": "Session IPA",
     "ABV": 4.9,
@@ -13,7 +14,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Berry Good Sour",
     "beerStyle": "Sour",
     "ABV": 5,
@@ -27,6 +29,7 @@
   },
   {
     "brewery": "Indie Alehouse",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Breakfast Porter",
     "beerStyle": "Porter",
     "ABV": 7.2,
@@ -39,7 +42,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Happy Accident",
     "beerStyle": "Hazy Pale Ale",
     "ABV": 5.5,
@@ -52,7 +56,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Glow Up",
     "beerStyle": "Dry Hopped American Wheat",
     "ABV": 5.9,
@@ -65,7 +70,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Classic Lager",
     "ABV": 4.5,
@@ -79,6 +85,7 @@
   },
   {
     "brewery": "Indie Alehouse",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Shadow Chaser IPA",
     "beerStyle": "IPA",
     "ABV": 5.5,
@@ -91,7 +98,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Rhubarb Saison",
     "beerStyle": "Saison",
     "ABV": 5.1,
@@ -104,7 +112,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Animal Magnetism",
     "beerStyle": "DIPA",
     "ABV": 8.2,
@@ -117,7 +126,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Jam up the Mash",
     "beerStyle": "Sour",
     "ABV": 5.2,
@@ -130,7 +140,8 @@
     "cost": ""
   },
   {
-    "brewery": "Mash Paddle",
+    "brewery": "Mash Paddle Brewing Company",
+    "breweryLocation": "Brantford, Ontario",
     "beerName": "Citranatti Bengal",
     "beerStyle": "Session IPA",
     "ABV": 4.5,
@@ -143,7 +154,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Cheer Up Pale Ale",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -156,7 +168,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Lunch Money",
     "beerStyle": "Blonde Ale",
     "ABV": 4.8,
@@ -169,7 +182,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Surround Sound",
     "beerStyle": "New England DIPA",
     "ABV": 8.2,
@@ -182,7 +196,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Spark House Red Ale",
     "beerStyle": "Red Ale",
     "ABV": 5,
@@ -195,7 +210,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Pompous Ass",
     "beerStyle": "ESB",
     "ABV": 4.2,
@@ -208,7 +224,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Menagerie - Mosaic",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -221,7 +238,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Classic Lager",
     "ABV": 4.5,
@@ -234,7 +252,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Berry Good Sour",
     "beerStyle": "Sour",
     "ABV": 5,
@@ -247,7 +266,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Meanwhile...down in Moxee",
     "beerStyle": "New England IPA",
     "ABV": 6.5,
@@ -260,7 +280,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Chocolate Milk Stout",
     "beerStyle": "Milk Stout",
     "ABV": 6.6,
@@ -274,6 +295,7 @@
   },
   {
     "brewery": "Beyond the Pale",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Aromatherapy",
     "beerStyle": "NEIPA",
     "ABV": 6.5,
@@ -286,7 +308,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Lunch Money",
     "beerStyle": "Blonde Ale",
     "ABV": 4.8,
@@ -299,7 +322,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Menagerie - Mosaic",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -312,7 +336,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Sunseeker",
     "beerStyle": "Pale Ale",
     "ABV": 4.7,
@@ -325,7 +350,8 @@
     "cost": ""
   },
   {
-    "brewery": "Red Circle",
+    "brewery": "Red Circle Brewing Company",
+    "breweryLocation": "Kitchener, Ontario",
     "beerName": "Carlotta",
     "beerStyle": "Pale Ale",
     "ABV": 5.2,
@@ -338,7 +364,8 @@
     "cost": ""
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Persian Lime Gose",
     "beerStyle": "Gose",
     "ABV": 4.5,
@@ -351,7 +378,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nickelbrook",
+    "brewery": "Nickel Brook Brewing",
+    "breweryLocation": "Burlington, Ontario",
     "beerName": "Naughty Neighbour",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -364,7 +392,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Classic Lager",
     "ABV": 4.5,
@@ -377,7 +406,8 @@
     "cost": ""
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Glow Cloud",
     "beerStyle": "IPA",
     "ABV": 6.8,
@@ -391,6 +421,7 @@
   },
   {
     "brewery": "Beyond the Pale",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Rye Guy",
     "beerStyle": "West Coast IPA",
     "ABV": 6.7,
@@ -403,7 +434,8 @@
     "cost": ""
   },
   {
-    "brewery": "Clifford",
+    "brewery": "Clifford Brewing Company",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Porter",
     "beerStyle": "Porter",
     "ABV": 5.9,
@@ -416,7 +448,8 @@
     "cost": ""
   },
   {
-    "brewery": "Clifford",
+    "brewery": "Clifford Brewing Company",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Devil's Punch Bowl",
     "beerStyle": "India Pale Lager",
     "ABV": 4.8,
@@ -429,7 +462,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "In the Palms w/ Mango & Guava",
     "beerStyle": "IPA",
     "ABV": 6,
@@ -442,7 +476,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nickelbrook",
+    "brewery": "Nickel Brook Brewing",
+    "breweryLocation": "Burlington, Ontario",
     "beerName": "Cheeky Bastard",
     "beerStyle": "Stout",
     "ABV": 4.5,
@@ -455,7 +490,8 @@
     "cost": "$7.50"
   },
   {
-    "brewery": "Merit",
+    "brewery": "Merit Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Real Real",
     "beerStyle": "American Sour Saison",
     "ABV": 6.5,
@@ -468,7 +504,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Turtle Roll IPA",
     "beerStyle": "IPA",
     "ABV": 7,
@@ -481,7 +518,8 @@
     "cost": ""
   },
   {
-    "brewery": "Red Circle",
+    "brewery": "Red Circle Brewing Company",
+    "breweryLocation": "Kitchener, Ontario",
     "beerName": "Louis",
     "beerStyle": "Imperial IPA",
     "ABV": 8,
@@ -494,7 +532,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Espressway",
     "beerStyle": "Stout",
     "ABV": 6.5,
@@ -507,7 +546,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Classic Lager",
     "ABV": 4.5,
@@ -520,7 +560,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Life in the Clouds",
     "beerStyle": "IPA",
     "ABV": 6.1,
@@ -533,7 +574,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Pavlova: Mr West Collab",
     "beerStyle": "Breakfast Sour",
     "ABV": 5,
@@ -546,7 +588,8 @@
     "cost": ""
   },
   {
-    "brewery": "Halo",
+    "brewery": "Halo Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Shapeshifter",
     "beerStyle": "Sour IPA",
     "ABV": 6.5,
@@ -559,7 +602,8 @@
     "cost": ""
   },
   {
-    "brewery": "Halo",
+    "brewery": "Halo Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Event Horizon",
     "beerStyle": "Foreign Extra Stout with Sarsaparilla",
     "ABV": 6,
@@ -572,7 +616,8 @@
     "cost": ""
   },
   {
-    "brewery": "Halo",
+    "brewery": "Halo Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "New Wave",
     "beerStyle": "IPA",
     "ABV": 6.7,
@@ -585,7 +630,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Plum Gose",
     "beerStyle": "Gose",
     "ABV": 4.5,
@@ -598,7 +644,8 @@
     "cost": ""
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Passion Fruit Gose",
     "beerStyle": "Gose",
     "ABV": 5.2,
@@ -611,7 +658,8 @@
     "cost": "$9.00"
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Sauv Blanc Gose",
     "beerStyle": "Gose",
     "ABV": 4.8,
@@ -624,7 +672,8 @@
     "cost": ""
   },
   {
-    "brewery": "Founders",
+    "brewery": "Founders Brewing",
+    "breweryLocation": "Grand Rapids, MI",
     "beerName": "Centennial IPA",
     "beerStyle": "IPA",
     "ABV": 7.2,
@@ -637,7 +686,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Spark House Red Ale",
     "beerStyle": "Red Ale",
     "ABV": 5,
@@ -650,7 +700,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Menagerie - Mosaic",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -663,7 +714,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Menagerie - Mosaic",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -676,7 +728,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Sunnyside Session IPA",
     "beerStyle": "Session IPA",
     "ABV": 3.9,
@@ -689,7 +742,8 @@
     "cost": "$8.00"
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Over My Dad Body",
     "beerStyle": "Pilsner",
     "ABV": 5,
@@ -702,7 +756,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Classic Lager",
     "ABV": 4.5,
@@ -715,7 +770,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Arkell Best Bitter",
     "beerStyle": "English Bitter",
     "ABV": 4,
@@ -728,7 +784,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Glitz & Glamour",
     "beerStyle": "Brut IPA",
     "ABV": 4.3,
@@ -741,7 +798,8 @@
     "cost": "$8.00"
   },
   {
-    "brewery": "Merit",
+    "brewery": "Merit Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Keep On",
     "beerStyle": "IPA",
     "ABV": 5,
@@ -754,7 +812,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Rule of Three",
     "beerStyle": "DIPA",
     "ABV": 7.5,
@@ -767,7 +826,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Null and Void",
     "beerStyle": "Triple IPA",
     "ABV": 10,
@@ -780,7 +840,8 @@
     "cost": "***Only selling this one as a 12oz -$7***"
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Sunsplit",
     "beerStyle": "IPA",
     "ABV": 6.5,
@@ -793,7 +854,8 @@
     "cost": ""
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Beware the Cat",
     "beerStyle": "Margarita IPA (IPA with Lime, Sea Salt, Lactose)",
     "ABV": 6.8,
@@ -806,7 +868,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "IPA 10",
     "beerStyle": "Nano IPA",
     "ABV": 3.4,
@@ -819,7 +882,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Lunch Money",
     "beerStyle": "Blonde Ale",
     "ABV": 4.8,
@@ -832,7 +896,8 @@
     "cost": "$6.60"
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Lunch Money",
     "beerStyle": "Blonde Ale",
     "ABV": 4.8,
@@ -845,7 +910,8 @@
     "cost": "$6.50"
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Lunch Money",
     "beerStyle": "Blonde Ale",
     "ABV": 4.8,
@@ -858,7 +924,8 @@
     "cost": "$6.50"
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Lo Viste Mojito Sour",
     "beerStyle": "Sour",
     "ABV": 4,
@@ -871,7 +938,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Eephus Oatmeal Brown Ale",
     "beerStyle": "Brown Ale",
     "ABV": 5.5,
@@ -885,6 +953,7 @@
   },
   {
     "brewery": "Indie Alehouse",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Couch Surfer",
     "beerStyle": "Session IPA",
     "ABV": 4.5,
@@ -897,7 +966,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Dog Day Sour IPA w/Mango, Guava & Rasberry",
     "beerStyle": "Sour IPA",
     "ABV": 6.5,
@@ -910,7 +980,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Nita",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Brut IPA",
     "beerStyle": "Brut IPA",
     "ABV": 6.7,
@@ -923,7 +994,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Nita",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Lone Wolf McAle",
     "beerStyle": "Ginger Amber Ale",
     "ABV": 5.5,
@@ -936,7 +1008,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rainhard",
+    "brewery": "Rainhard Brewing Company",
+    "breweryLocation": "York, Ontario",
     "beerName": "Four on the Floor",
     "beerStyle": "German Pilsner",
     "ABV": 5,
@@ -949,7 +1022,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Rainhard",
+    "brewery": "Rainhard Brewing Company",
+    "breweryLocation": "York, Ontario",
     "beerName": "Kapow",
     "beerStyle": "IPA",
     "ABV": 6.5,
@@ -962,7 +1036,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Guava Gose",
     "beerStyle": "Gose",
     "ABV": 4.9,
@@ -975,7 +1050,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -988,7 +1064,8 @@
     "cost": "$6.00"
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Sunshine - Pride Beer",
     "beerStyle": "Blonde Ale w/ Rasberry & Hibiscus",
     "ABV": 5,
@@ -1001,7 +1078,8 @@
     "cost": "$7.50"
   },
   {
-    "brewery": "Founders",
+    "brewery": "Founders Brewing",
+    "breweryLocation": "Grand Rapids, MI",
     "beerName": "KBS",
     "beerStyle": "Bourbon Barrel Aged Stout",
     "ABV": 12.2,
@@ -1014,7 +1092,8 @@
     "cost": ""
   },
   {
-    "brewery": "Founders",
+    "brewery": "Founders Brewing",
+    "breweryLocation": "Grand Rapids, MI",
     "beerName": "Green Zebra",
     "beerStyle": "Gose",
     "ABV": 4.6,
@@ -1027,7 +1106,8 @@
     "cost": ""
   },
   {
-    "brewery": "Founders",
+    "brewery": "Founders Brewing",
+    "breweryLocation": "Grand Rapids, MI",
     "beerName": "Dankwood",
     "beerStyle": "Imperial Red IPA aged in Bourbon Barrels",
     "ABV": 12.2,
@@ -1040,7 +1120,8 @@
     "cost": ""
   },
   {
-    "brewery": "Founders",
+    "brewery": "Founders Brewing",
+    "breweryLocation": "Grand Rapids, MI",
     "beerName": "Blushing Monk",
     "beerStyle": "Belgian Ale w/ Rasberries",
     "ABV": 9.2,
@@ -1053,7 +1134,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Octopus Wants to Fight",
     "beerStyle": "IPA",
     "ABV": 6.2,
@@ -1066,7 +1148,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Over My Dad Body",
     "beerStyle": "Pilsner",
     "ABV": 5,
@@ -1079,7 +1162,8 @@
     "cost": "$8.00"
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Peach Paradise Milkshake IPA",
     "beerStyle": "IPA",
     "ABV": 5.2,
@@ -1092,7 +1176,8 @@
     "cost": "$8.00"
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -1105,7 +1190,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Crazy Straw",
     "beerStyle": "Gose w/ Lime, Pepper, & Cardamom",
     "ABV": 4.2,
@@ -1118,7 +1204,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Beach Umbrella",
     "beerStyle": "Gose w/ Watermelon & Basil",
     "ABV": 4.2,
@@ -1131,7 +1218,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Crazy Straw",
     "beerStyle": "Gose w/ Lime, Pepper, & Cardamom",
     "ABV": 4.2,
@@ -1144,7 +1232,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Beach Umbrella",
     "beerStyle": "Gose w/ Watermelon & Basil",
     "ABV": 4.2,
@@ -1157,7 +1246,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Jutsu",
     "beerStyle": "Hazy Pale Ale",
     "ABV": 5.6,
@@ -1170,7 +1260,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Jelly King",
     "beerStyle": "Dry Hopped Sour w/ Strawberry & Rhubarb",
     "ABV": 4.7,
@@ -1183,7 +1274,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Hazy State",
     "beerStyle": "Hazy Session IPA",
     "ABV": 4.1,
@@ -1196,7 +1288,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Nothing Evolutionary: Lervig Collab",
     "beerStyle": "Hazy Pale Ale",
     "ABV": 4.3,
@@ -1209,7 +1302,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bench Brewing",
+    "brewery": "Bench Brewing Company",
+    "breweryLocation": "Beamsville, Ontario",
     "beerName": "Twenty Mile",
     "beerStyle": "Farmhouse Ale",
     "ABV": 5.3,
@@ -1222,7 +1316,8 @@
     "cost": ""
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Bloom",
     "beerStyle": "Hibiscus Pale Ale",
     "ABV": 5.9,
@@ -1235,7 +1330,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Fruit Dry Hopped Sour",
     "beerStyle": "Dry Hopped Sour w/ Fruit",
     "ABV": 5.5,
@@ -1248,7 +1344,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Surround Sound V4",
     "beerStyle": "Douple IPA",
     "ABV": 8.2,
@@ -1261,7 +1358,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Not A Word Spoken",
     "beerStyle": "Apricot IPA",
     "ABV": 7,
@@ -1274,7 +1372,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -1287,7 +1386,8 @@
     "cost": ""
   },
   {
-    "brewery": "Jackass",
+    "brewery": "Jackass Brewing",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Verbena Zinger",
     "beerStyle": "Lemon Verbena Sour",
     "ABV": 5.7,
@@ -1300,7 +1400,8 @@
     "cost": "$8.00"
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Beach Break",
     "beerStyle": "Lager w/ Lime",
     "ABV": 3.5,
@@ -1313,7 +1414,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Cherry Picker",
     "beerStyle": "Sour",
     "ABV": 5,
@@ -1326,7 +1428,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nickelbrook",
+    "brewery": "Nickel Brook Brewing",
+    "breweryLocation": "Burlington, Ontario",
     "beerName": "Beach Goon",
     "beerStyle": "Kviek Pale Ale",
     "ABV": 5.8,
@@ -1339,7 +1442,8 @@
     "cost": ""
   },
   {
-    "brewery": "Henderson",
+    "brewery": "Henderson Brewing Company",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "BEST",
     "beerStyle": "Amber Ale",
     "ABV": 5.5,
@@ -1352,7 +1456,8 @@
     "cost": ""
   },
   {
-    "brewery": "Spearhead",
+    "brewery": "Spearhead Brewing Company",
+    "breweryLocation": "Kingston,Ontario",
     "beerName": "Mojito Radler",
     "beerStyle": "Radler",
     "ABV": 2.5,
@@ -1365,7 +1470,8 @@
     "cost": ""
   },
   {
-    "brewery": "Spearhead",
+    "brewery": "Spearhead Brewing Company",
+    "breweryLocation": "Kingston,Ontario",
     "beerName": "Chardonney Summer Ale",
     "beerStyle": "Blonde Ale",
     "ABV": 4.3,
@@ -1378,7 +1484,8 @@
     "cost": ""
   },
   {
-    "brewery": "Elora",
+    "brewery": "Elora Brewing Company",
+    "breweryLocation": "Elora, Ontario",
     "beerName": "Aurum Pale Ale",
     "beerStyle": "PAle Ale with raspberries",
     "ABV": 5.5,
@@ -1391,7 +1498,8 @@
     "cost": ""
   },
   {
-    "brewery": "Elora",
+    "brewery": "Elora Brewing Company",
+    "breweryLocation": "Elora, Ontario",
     "beerName": "Friends Forever (collab with Toque)",
     "beerStyle": "NE Pale Ale",
     "ABV": 5.5,
@@ -1404,7 +1512,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Jutsu",
     "beerStyle": "Hazy Pale Ale",
     "ABV": 5.6,
@@ -1417,7 +1526,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Jelly King",
     "beerStyle": "Dry Hopped Sour w/ Guava",
     "ABV": 4.7,
@@ -1430,7 +1540,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -1443,7 +1554,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -1457,6 +1569,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Cactus Head",
     "beerStyle": "DDH IPA",
     "ABV": 6.5,
@@ -1469,7 +1582,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Sunnyside Session IPA",
     "beerStyle": "Session IPA",
     "ABV": 3.9,
@@ -1482,7 +1596,8 @@
     "cost": "$8.00"
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Brut Pale Ale",
     "beerStyle": "Brut Pale Ale",
     "ABV": 4.8,
@@ -1495,7 +1610,8 @@
     "cost": "$8.00"
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Menagerie - Idaho Gem",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -1508,7 +1624,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Gummy Venus",
     "beerStyle": "Sour w/ Pineapple, Orange, Lactose & Rosemary.",
     "ABV": 7,
@@ -1521,7 +1638,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Gimme Gimme",
     "beerStyle": "Sour w/ Mango, Tangerine & Lactose",
     "ABV": 5,
@@ -1534,7 +1652,8 @@
     "cost": ""
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Kittens In Space",
     "beerStyle": "Session IPA",
     "ABV": 4.2,
@@ -1547,7 +1666,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "An IPA, No Fruit collab w/ Dominion City",
     "beerStyle": "IPA",
     "ABV": 6.8,
@@ -1560,7 +1680,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Nita",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Mr Brown Has Gone Coconuts",
     "beerStyle": "Brown Ale w/ Coconut",
     "ABV": 5.5,
@@ -1573,7 +1694,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nita",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Biju",
     "beerStyle": "Brut IPA",
     "ABV": 6.7,
@@ -1586,7 +1708,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Switchback Pilsner",
     "beerStyle": "Pilsner",
     "ABV": 4.5,
@@ -1599,7 +1722,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Thought Patterns (Stigbergets collab)",
     "beerStyle": "Dry Hopped Lager w/ Mosaic",
     "ABV": 4.5,
@@ -1613,6 +1737,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Inner Eye",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -1625,7 +1750,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Two Flags",
     "beerStyle": "IPA",
     "ABV": 7,
@@ -1638,7 +1764,8 @@
     "cost": ""
   },
   {
-    "brewery": "Kensington",
+    "brewery": "Kensington Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Broken Point",
     "beerStyle": "NEPA",
     "ABV": 5.5,
@@ -1652,6 +1779,7 @@
   },
   {
     "brewery": "Kensington",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "In the Fields",
     "beerStyle": "Blackberry & Basil Ale",
     "ABV": 4.6,
@@ -1664,7 +1792,8 @@
     "cost": ""
   },
   {
-    "brewery": "Jackass",
+    "brewery": "Jackass Brewing",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Sunkiss",
     "beerStyle": "IPA",
     "ABV": 6.5,
@@ -1677,7 +1806,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -1690,7 +1820,8 @@
     "cost": ""
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Road Jam",
     "beerStyle": "Pilsner w/ Raspberry & Lemongrass",
     "ABV": 5.5,
@@ -1703,7 +1834,8 @@
     "cost": ""
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Clementine Gose",
     "beerStyle": "Gose",
     "ABV": 4.8,
@@ -1716,7 +1848,8 @@
     "cost": ""
   },
   {
-    "brewery": "Red Circle",
+    "brewery": "Red Circle Brewing Company",
+    "breweryLocation": "Kitchener, Ontario",
     "beerName": "Night Shift Coffee Porter",
     "beerStyle": "Porter",
     "ABV": 5,
@@ -1729,7 +1862,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rainhard",
+    "brewery": "Rainhard Brewing Company",
+    "breweryLocation": "York, Ontario",
     "beerName": "Riot Queen collab w/ Society of Beer Drinking Ladies",
     "beerStyle": "Berliner Weisse w/ Peach & Ginger",
     "ABV": 3,
@@ -1742,7 +1876,8 @@
     "cost": ""
   },
   {
-    "brewery": "Halo",
+    "brewery": "Halo Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Ion Cannon",
     "beerStyle": "Gose w/ Strawberry & Kiwi",
     "ABV": 4.5,
@@ -1755,7 +1890,8 @@
     "cost": ""
   },
   {
-    "brewery": "Halo",
+    "brewery": "Halo Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Test Patterns",
     "beerStyle": "Single Hop Pale Ale w/ Mosaic",
     "ABV": 5.6,
@@ -1768,7 +1904,8 @@
     "cost": ""
   },
   {
-    "brewery": "Clifford",
+    "brewery": "Clifford Brewing Company",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Marigold",
     "beerStyle": "Belgian Golden Ale",
     "ABV": 6.5,
@@ -1781,7 +1918,8 @@
     "cost": ""
   },
   {
-    "brewery": "Clifford",
+    "brewery": "Clifford Brewing Company",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Supercrawl",
     "beerStyle": "Hazy Pale Ale",
     "ABV": 5.2,
@@ -1794,7 +1932,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Beki",
     "beerStyle": "Lemonade Sour w/ Rasberry & Mint",
     "ABV": "",
@@ -1807,7 +1946,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Berrry Good w/ Lemon Zest (cask)",
     "beerStyle": "Sour",
     "ABV": 5.5,
@@ -1820,7 +1960,8 @@
     "cost": ""
   },
   {
-    "brewery": "Merit",
+    "brewery": "Merit Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Cali Creamsicle",
     "beerStyle": "Milkshake IPA w/ West Coast Citrus",
     "ABV": 6.3,
@@ -1833,7 +1974,8 @@
     "cost": ""
   },
   {
-    "brewery": "Merit",
+    "brewery": "Merit Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "All Together Now (Collective Arts collab)",
     "beerStyle": "Sour w/ Butterfly Pea Flower",
     "ABV": 5.3,
@@ -1846,7 +1988,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -1859,7 +2002,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Upside IPA",
     "beerStyle": "IPA",
     "ABV": 6.8,
@@ -1872,7 +2016,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nita",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Percy Mapleton",
     "beerStyle": "Maple Porter",
     "ABV": 6.7,
@@ -1885,7 +2030,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "All Together Now (Merit collab)",
     "beerStyle": "IPA w/ Sasquatch & Citra",
     "ABV": 5.4,
@@ -1898,7 +2044,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Crop Circles",
     "beerStyle": "Belgian IPA",
     "ABV": 6,
@@ -1911,7 +2058,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Pumpkin Ale",
     "beerStyle": "Pumpin Ale",
     "ABV": 6,
@@ -1924,7 +2072,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Red Sky At Night",
     "beerStyle": "Peach Cranberry Radler",
     "ABV": 2.5,
@@ -1937,7 +2086,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bench Brewing",
+    "brewery": "Bench Brewing Company",
+    "breweryLocation": "Beamsville, Ontario",
     "beerName": "Cherry Grove",
     "beerStyle": "Sour w/Cherries",
     "ABV": 6.2,
@@ -1950,7 +2100,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "IPA 11",
     "beerStyle": "Lactose IPA",
     "ABV": 5.8,
@@ -1964,6 +2115,7 @@
   },
   {
     "brewery": "Flying Monkeys",
+    "breweryLocation": "Barrie, Ontario",
     "beerName": "Wonderstar",
     "beerStyle": "Botanical Lager",
     "ABV": 4.5,
@@ -1976,7 +2128,8 @@
     "cost": ""
   },
   {
-    "brewery": "Clifford",
+    "brewery": "Clifford Brewing Company",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Vienna Lager",
     "beerStyle": "Vienna Lager",
     "ABV": 5.2,
@@ -1989,7 +2142,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -2002,7 +2156,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nickelbrook",
+    "brewery": "Nickel Brook Brewing",
+    "breweryLocation": "Burlington, Ontario",
     "beerName": "Brett's Yer Uncle",
     "beerStyle": "Brett Dry Hopped Sour",
     "ABV": 5,
@@ -2016,6 +2171,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Under A House in Northern Italy",
     "beerStyle": "Amaretto Coffee Stout",
     "ABV": 7,
@@ -2028,7 +2184,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "High Grade",
     "beerStyle": "IPA",
     "ABV": 6.6,
@@ -2041,7 +2198,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "CASK - Sweater Weather",
     "beerStyle": "Stout",
     "ABV": 7,
@@ -2054,7 +2212,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Hop Charmer #2",
     "beerStyle": "DNE IPA",
     "ABV": 7.5,
@@ -2067,7 +2226,8 @@
     "cost": ""
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Greenwood IPA",
     "beerStyle": "IPA",
     "ABV": 6.3,
@@ -2080,7 +2240,8 @@
     "cost": ""
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Simcoe Pale Ale",
     "beerStyle": "Pale Ale",
     "ABV": 5.2,
@@ -2093,7 +2254,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -2106,7 +2268,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Old Buddy",
     "beerStyle": "Espresso Brown Ale",
     "ABV": 5.4,
@@ -2119,7 +2282,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -2132,7 +2296,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Wet Hop",
     "beerStyle": "Wheat Pale Ale",
     "ABV": 5,
@@ -2145,7 +2310,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Jelly King",
     "beerStyle": "Sour with Raspberry, Cherry & Plum",
     "ABV": 5.6,
@@ -2158,7 +2324,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Spark House Red Ale",
     "beerStyle": "Red Ale",
     "ABV": 5,
@@ -2171,7 +2338,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Starboard",
     "beerStyle": "NE IPA",
     "ABV": 5.4,
@@ -2184,7 +2352,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Daisy Hazy Pale Ale",
     "beerStyle": "Hazy Pale Ale",
     "ABV": 5.1,
@@ -2197,7 +2366,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Paper Salesman",
     "beerStyle": "Pale Ale",
     "ABV": 5.6,
@@ -2210,7 +2380,8 @@
     "cost": ""
   },
   {
-    "brewery": "Elora",
+    "brewery": "Elora Brewing Company",
+    "breweryLocation": "Elora, Ontario",
     "beerName": "Elora Australis",
     "beerStyle": "IPA",
     "ABV": 6.1,
@@ -2223,7 +2394,8 @@
     "cost": ""
   },
   {
-    "brewery": "Jackass",
+    "brewery": "Jackass Brewing",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Pearalyzer",
     "beerStyle": "IPA",
     "ABV": 6.8,
@@ -2236,7 +2408,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -2249,7 +2422,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "County Brown Ale",
     "beerStyle": "Brown Ale",
     "ABV": 5,
@@ -2262,7 +2436,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Loire",
     "beerStyle": "IPA w/ Sauv Blanc Juice",
     "ABV": 6.8,
@@ -2275,7 +2450,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Audio/Visual",
     "beerStyle": "Lager",
     "ABV": 4.9,
@@ -2288,7 +2464,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Voodoo Haze Mama",
     "beerStyle": "New England IPA",
     "ABV": 7.2,
@@ -2301,7 +2478,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Wheat Ale w/ Earl Grey",
     "beerStyle": "Wheat Ale",
     "ABV": 5,
@@ -2314,7 +2492,8 @@
     "cost": ""
   },
   {
-    "brewery": "Merit",
+    "brewery": "Merit Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Three String",
     "beerStyle": "Porter",
     "ABV": 6.4,
@@ -2328,6 +2507,7 @@
   },
   {
     "brewery": "Flying Monkeys",
+    "breweryLocation": "Barrie, Ontario",
     "beerName": "Freakshow Crush",
     "beerStyle": "Hazy IPA",
     "ABV": 6.2,
@@ -2341,6 +2521,7 @@
   },
   {
     "brewery": "Flying Monkeys",
+    "breweryLocation": "Barrie, Ontario",
     "beerName": "Reapers and Mowers",
     "beerStyle": "Dark Lager",
     "ABV": 5.2,
@@ -2353,7 +2534,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nita",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Mr Brown Has Gone Coconuts",
     "beerStyle": "Brown Ale w/ Coconut",
     "ABV": 5.2,
@@ -2366,7 +2548,8 @@
     "cost": ""
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "If You Hear Any Noise",
     "beerStyle": "Black Forest Cake Sour w/ SOBDL",
     "ABV": 5,
@@ -2379,7 +2562,8 @@
     "cost": ""
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Big Train",
     "beerStyle": "Zero IBU IPA",
     "ABV": 6.1,
@@ -2392,7 +2576,8 @@
     "cost": ""
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Vanilla Latte",
     "beerStyle": "Coffee/Vanilla Milk Stout",
     "ABV": 6.3,
@@ -2405,7 +2590,8 @@
     "cost": ""
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Drink Me",
     "beerStyle": "IPA",
     "ABV": 7,
@@ -2418,7 +2604,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -2431,7 +2618,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Upside",
     "beerStyle": "IPA",
     "ABV": 6.8,
@@ -2444,7 +2632,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Crop Circles",
     "beerStyle": "Belgian IPA",
     "ABV": 6,
@@ -2457,7 +2646,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Hop Charmer #2",
     "beerStyle": "DEIPA",
     "ABV": 7.5,
@@ -2470,7 +2660,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "High Grade",
     "beerStyle": "IPA",
     "ABV": 6.6,
@@ -2483,7 +2674,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Beki",
     "beerStyle": "Lemonade Sour w/ Blueberry, Ginger & Lemon",
     "ABV": 5.6,
@@ -2496,7 +2688,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rainhard",
+    "brewery": "Rainhard Brewing Company",
+    "breweryLocation": "York, Ontario",
     "beerName": "Rage & Love",
     "beerStyle": "Sour w/ Plum & Cardamum",
     "ABV": 5.4,
@@ -2509,7 +2702,8 @@
     "cost": ""
   },
   {
-    "brewery": "Little Beasts",
+    "brewery": "Little Beasts Brewery",
+    "breweryLocation": "Whitby, Ontario",
     "beerName": "La petite duchesse",
     "beerStyle": "Belgian Style Table Saison",
     "ABV": 4.5,
@@ -2522,7 +2716,8 @@
     "cost": ""
   },
   {
-    "brewery": "Little Beasts",
+    "brewery": "Little Beasts Brewery",
+    "breweryLocation": "Whitby, Ontario",
     "beerName": "Valkyrie",
     "beerStyle": "Hazy Pale Ale",
     "ABV": 5.5,
@@ -2535,7 +2730,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Wet Hop",
     "beerStyle": "Wheat Pale Ale",
     "ABV": 5,
@@ -2548,7 +2744,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Baltic Porter aged in Rum Barrels, w/ Prunes, Raisins and Dates",
     "beerStyle": "Baltic Porter",
     "ABV": 9.6,
@@ -2561,7 +2758,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Imperial Stout aged 21 months in Bourbon Barrels w/ Cacao Nibs & Cassia Bark",
     "beerStyle": "Imperial Stout",
     "ABV": 11.5,
@@ -2574,7 +2772,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Imperial Stout aged in Bourbon Barrels w/ Chocolate & Pistachio Cannolis",
     "beerStyle": "Imperial Stout",
     "ABV": 8.4,
@@ -2587,7 +2786,8 @@
     "cost": ""
   },
   {
-    "brewery": "Sidelaunch",
+    "brewery": "Side Launch Brewing Company",
+    "breweryLocation": "Collingwood, Ontario",
     "beerName": "Wheat",
     "beerStyle": "Wheat",
     "ABV": 5.3,
@@ -2600,7 +2800,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Hazelnut Brown Ale w/ Vanilla & Habernero",
     "beerStyle": "Brown Ale",
     "ABV": 5.5,
@@ -2613,7 +2814,8 @@
     "cost": ""
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Ol' Factory",
     "beerStyle": "Dry Hopped Pilsner",
     "ABV": 5,
@@ -2626,7 +2828,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Workers Comp",
     "beerStyle": "Farmhouse Ale",
     "ABV": 4.8,
@@ -2639,7 +2842,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "No Limits",
     "beerStyle": "Hefeweizen",
     "ABV": 5,
@@ -2652,7 +2856,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Lil' Heaven",
     "beerStyle": "Session IPA",
     "ABV": 4.8,
@@ -2665,7 +2870,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Two Roads",
+    "brewery": "Two Roads Brewing Company",
+    "breweryLocation": "Stratford, CT",
     "beerName": "Road Jam",
     "beerStyle": "Pilsner w/ Raspberry & Lemongrass",
     "ABV": 5,
@@ -2678,7 +2884,8 @@
     "cost": "$8.50"
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -2691,7 +2898,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Chocolate Milk Stout",
     "beerStyle": "Milk Stout",
     "ABV": 6.6,
@@ -2704,7 +2912,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Crispy Forever",
     "beerStyle": "Dry Hopped Helles",
     "ABV": 4.5,
@@ -2717,7 +2926,8 @@
     "cost": ""
   },
   {
-    "brewery": "Camerons",
+    "brewery": "Cameron's Brewing Company",
+    "breweryLocation": "Oakville, Ontario",
     "beerName": "Singel For The Weekend",
     "beerStyle": "Foeader Aged Table Beer",
     "ABV": 5.6,
@@ -2730,7 +2940,8 @@
     "cost": ""
   },
   {
-    "brewery": "Merit",
+    "brewery": "Merit Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Unwritten",
     "beerStyle": "Chai Milk Stout",
     "ABV": 5,
@@ -2743,7 +2954,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Pinky Swear",
     "beerStyle": "NE IPA",
     "ABV": 6.2,
@@ -2756,7 +2968,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Nearly Noble",
     "beerStyle": "Lagered Ale",
     "ABV": 4.5,
@@ -2769,7 +2982,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nita",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Cranshaw's Spruced IPA",
     "beerStyle": "IPA",
     "ABV": 6.7,
@@ -2782,7 +2996,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Sunsplit IPA",
     "beerStyle": "IPA",
     "ABV": 6.5,
@@ -2795,7 +3010,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Something Beautiful",
     "beerStyle": "Pale Ale",
     "ABV": 5,
@@ -2808,7 +3024,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -2821,7 +3038,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -2834,7 +3052,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "County Brown Ale",
     "beerStyle": "Brown Ale",
     "ABV": 5,
@@ -2847,7 +3066,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Starboard",
     "beerStyle": "NE IPA",
     "ABV": 5.4,
@@ -2861,6 +3081,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Devils Trill X - Trill Communication",
     "beerStyle": "Kviek IPA",
     "ABV": 6.9,
@@ -2874,6 +3095,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Inner Eye",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -2886,7 +3108,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Wet Hop",
     "beerStyle": "Wheat Pale Ale",
     "ABV": 5,
@@ -2899,7 +3122,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "IPA 12",
     "beerStyle": "IPA",
     "ABV": 6.9,
@@ -2912,7 +3136,8 @@
     "cost": ""
   },
   {
-    "brewery": "Mash Paddle",
+    "brewery": "Mash Paddle Brewing Company",
+    "breweryLocation": "Brantford, Ontario",
     "beerName": "The Vancouver Maneuver",
     "beerStyle": "IPA",
     "ABV": 6.6,
@@ -2925,7 +3150,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nickelbrook",
+    "brewery": "Nickel Brook Brewing",
+    "breweryLocation": "Burlington, Ontario",
     "beerName": "Deadly Amigo",
     "beerStyle": "Tequila Barrel Aged Gose",
     "ABV": 6.5,
@@ -2938,7 +3164,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Menagerie Southern Passion",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -2951,7 +3178,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Menagerie Southern Passion",
     "beerStyle": "Pale Ale",
     "ABV": 5.5,
@@ -2964,7 +3192,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Dream Pop",
     "beerStyle": "Dry Hopped Kettle Sour",
     "ABV": 6.2,
@@ -2977,7 +3206,8 @@
     "cost": ""
   },
   {
-    "brewery": "Elora",
+    "brewery": "Elora Brewing Company",
+    "breweryLocation": "Elora, Ontario",
     "beerName": "Shine",
     "beerStyle": "IPA",
     "ABV": 6.4,
@@ -2990,7 +3220,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Menawhile.... Down in Moxee",
     "beerStyle": "NE IPA",
     "ABV": 6.5,
@@ -3003,7 +3234,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Rosie!",
     "beerStyle": "Belgian Dubbel w/ Cherry & Rasberry",
     "ABV": 6.4,
@@ -3016,7 +3248,8 @@
     "cost": ""
   },
   {
-    "brewery": "Little Beasts",
+    "brewery": "Little Beasts Brewery",
+    "breweryLocation": "Whitby, Ontario",
     "beerName": "Wait So Long",
     "beerStyle": "Tropical Stout",
     "ABV": 7,
@@ -3029,7 +3262,8 @@
     "cost": ""
   },
   {
-    "brewery": "Little Beasts",
+    "brewery": "Little Beasts Brewery",
+    "breweryLocation": "Whitby, Ontario",
     "beerName": "Saison d'automne",
     "beerStyle": "Boysenberry Saison",
     "ABV": 7.5,
@@ -3042,7 +3276,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Jelly King",
     "beerStyle": "Sour with Raspberry",
     "ABV": 5.6,
@@ -3055,7 +3290,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Monogamy",
     "beerStyle": "IPA w/ Sabro",
     "ABV": 6,
@@ -3068,7 +3304,8 @@
     "cost": ""
   },
   {
-    "brewery": "Sidelaunch",
+    "brewery": "Side Launch Brewing Company",
+    "breweryLocation": "Collingwood, Ontario",
     "beerName": "Dry Hopped Sour",
     "beerStyle": "Sour",
     "ABV": 4.2,
@@ -3081,7 +3318,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Oh Snap!",
     "beerStyle": "Session IPA",
     "ABV": 4.8,
@@ -3094,7 +3332,8 @@
     "cost": ""
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Mocha Latte",
     "beerStyle": "Chocolate/Coffee Milk Stout",
     "ABV": 6.4,
@@ -3107,7 +3346,8 @@
     "cost": ""
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Same IPA, Australian Hops",
     "beerStyle": "IPA",
     "ABV": 6.8,
@@ -3120,7 +3360,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -3133,7 +3374,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Not A Word Spoken",
     "beerStyle": "Apricot IPA",
     "ABV": 5.9,
@@ -3147,6 +3389,7 @@
   },
   {
     "brewery": "Flying Monkeys",
+    "breweryLocation": "Barrie, Ontario",
     "beerName": "Confederation Amber Ale",
     "beerStyle": "Amber Ale",
     "ABV": 5,
@@ -3159,7 +3402,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bench Brewing",
+    "brewery": "Bench Brewing Company",
+    "breweryLocation": "Beamsville, Ontario",
     "beerName": "Short Hills",
     "beerStyle": "East Coast IPA",
     "ABV": 6.5,
@@ -3172,7 +3416,8 @@
     "cost": ""
   },
   {
-    "brewery": "Matron",
+    "brewery": "Matron Fine Beer",
+    "breweryLocation": "Bloomfield, Ontario",
     "beerName": "Janky",
     "beerStyle": "IPA",
     "ABV": 6,
@@ -3185,7 +3430,8 @@
     "cost": ""
   },
   {
-    "brewery": "Matron",
+    "brewery": "Matron Fine Beer",
+    "breweryLocation": "Bloomfield, Ontario",
     "beerName": "Forthright",
     "beerStyle": "Farmhouse Ale",
     "ABV": 5,
@@ -3199,6 +3445,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Paradise Lost",
     "beerStyle": "Spiced Cherry Sour",
     "ABV": 6,
@@ -3212,6 +3459,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Shumei",
     "beerStyle": "IPA",
     "ABV": 7,
@@ -3224,7 +3472,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "First Among Equals",
     "beerStyle": "IPA",
     "ABV": 6,
@@ -3237,7 +3486,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Paper Salesman",
     "beerStyle": "Pale Ale",
     "ABV": 5.6,
@@ -3250,7 +3500,8 @@
     "cost": ""
   },
   {
-    "brewery": "Jackass",
+    "brewery": "Jackass Brewing",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "After 830",
     "beerStyle": "Mint Porter",
     "ABV": 6.3,
@@ -3263,7 +3514,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nita",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Mr Brown Has Gone Coconuts",
     "beerStyle": "Brown Ale w/ Coconut",
     "ABV": 5.5,
@@ -3276,7 +3528,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nita",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Opa",
     "beerStyle": "IPA",
     "ABV": 6.1,
@@ -3289,7 +3542,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Switchback Pilsner",
     "beerStyle": "Pilsner",
     "ABV": 4.5,
@@ -3302,7 +3556,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Jule Byrg",
     "beerStyle": "Amber Lager",
     "ABV": 5.9,
@@ -3315,7 +3570,8 @@
     "cost": ""
   },
   {
-    "brewery": "Camerons",
+    "brewery": "Cameron's Brewing Company",
+    "breweryLocation": "Oakville, Ontario",
     "beerName": "Black Forrest Dark Lager",
     "beerStyle": "Dark Lager",
     "ABV": 4.5,
@@ -3328,7 +3584,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Canuck Pale Ale",
     "beerStyle": "Pale Ale",
     "ABV": 5.2,
@@ -3341,7 +3598,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Octopus Wants To Fight",
     "beerStyle": "IPA",
     "ABV": 6.2,
@@ -3354,7 +3612,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rainhard",
+    "brewery": "Rainhard Brewing Company",
+    "breweryLocation": "York, Ontario",
     "beerName": "Kapow!",
     "beerStyle": "IPA",
     "ABV": 6.5,
@@ -3367,7 +3626,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rainhard",
+    "brewery": "Rainhard Brewing Company",
+    "breweryLocation": "York, Ontario",
     "beerName": "Armed N Citra",
     "beerStyle": "Pale Ale",
     "ABV": 5.2,
@@ -3380,7 +3640,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "BEKI",
     "beerStyle": "Lemonade Sour w/ Lavender",
     "ABV": 5.4,
@@ -3393,7 +3654,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Blueberry Sour w/ Cacoa Nibs",
     "beerStyle": "Sour",
     "ABV": 6.9,
@@ -3406,7 +3668,8 @@
     "cost": ""
   },
   {
-    "brewery": "Camerons",
+    "brewery": "Cameron's Brewing Company",
+    "breweryLocation": "Oakville, Ontario",
     "beerName": "Black Forrest Dark Lager",
     "beerStyle": "Dark Lager",
     "ABV": 4.5,
@@ -3419,7 +3682,8 @@
     "cost": ""
   },
   {
-    "brewery": "Camerons",
+    "brewery": "Cameron's Brewing Company",
+    "breweryLocation": "Oakville, Ontario",
     "beerName": "Singel For The Weekend",
     "beerStyle": "Foader Aged Belgian Table Beer",
     "ABV": 5.6,
@@ -3432,7 +3696,8 @@
     "cost": ""
   },
   {
-    "brewery": "Camerons",
+    "brewery": "Cameron's Brewing Company",
+    "breweryLocation": "Oakville, Ontario",
     "beerName": "Jurassic IPA",
     "beerStyle": "IPA",
     "ABV": 6.8,
@@ -3446,6 +3711,7 @@
   },
   {
     "brewery": "Dragan Brewing",
+    "breweryLocation": "Norfolk County, Ontario",
     "beerName": "Garnet",
     "beerStyle": "Pale Ale",
     "ABV": 5,
@@ -3459,6 +3725,7 @@
   },
   {
     "brewery": "Dragan Brewing",
+    "breweryLocation": "Norfolk County, Ontario",
     "beerName": "Garnet",
     "beerStyle": "Pale Ale",
     "ABV": 5,
@@ -3471,7 +3738,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": 4.5,
@@ -3484,7 +3752,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "SPA",
     "beerStyle": "Pale Ale",
     "ABV": 4.5,
@@ -3497,7 +3766,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "In The Palms",
     "beerStyle": "IPA",
     "ABV": 6,
@@ -3510,7 +3780,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Jelly King",
     "beerStyle": "Sour w/ Kiwi & Passionfruit",
     "ABV": 5.6,
@@ -3523,7 +3794,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "That Grape Juice Beer",
     "beerStyle": "Pale Ale w/ Grape Juice",
     "ABV": 7.7,
@@ -3536,7 +3808,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Provincial IPA",
     "beerStyle": "IPA",
     "ABV": 6.5,
@@ -3549,7 +3822,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Something Simple",
     "beerStyle": "Pale Beer (collab w/ Sonnan Hill)",
     "ABV": 4,
@@ -3562,7 +3836,8 @@
     "cost": ""
   },
   {
-    "brewery": "Merit",
+    "brewery": "Merit Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Whoa Whoa",
     "beerStyle": "Hazy IPA",
     "ABV": 5,
@@ -3575,7 +3850,8 @@
     "cost": ""
   },
   {
-    "brewery": "Clifford",
+    "brewery": "Clifford Brewing Company",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Porter",
     "beerStyle": "Porter",
     "ABV": 5.9,
@@ -3588,7 +3864,8 @@
     "cost": ""
   },
   {
-    "brewery": "Nita",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Perfectum",
     "beerStyle": "Irish Stout",
     "ABV": 5,
@@ -3602,6 +3879,7 @@
   },
   {
     "brewery": "Town Brewery",
+    "breweryLocation": "Whitby, Ontario",
     "beerName": "Ducks Fly Together",
     "beerStyle": "IPA",
     "ABV": 6.5,
@@ -3614,7 +3892,8 @@
     "cost": ""
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Go-Ahead",
     "beerStyle": "Raspberry Hibiscus Gose",
     "ABV": "",
@@ -3627,7 +3906,8 @@
     "cost": ""
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Greenwood IPA",
     "beerStyle": "IPA",
     "ABV": "",
@@ -3640,7 +3920,8 @@
     "cost": ""
   },
   {
-    "brewery": "Clifford",
+    "brewery": "Clifford Brewing Company",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Artificial Paradise",
     "beerStyle": "IPA",
     "ABV": "",
@@ -3653,7 +3934,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -3666,7 +3948,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "SPA",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -3679,7 +3962,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bench Brewing",
+    "brewery": "Bench Brewing Company",
+    "breweryLocation": "Beamsville, Ontario",
     "beerName": "Short Hills",
     "beerStyle": "IPA",
     "ABV": "",
@@ -3692,7 +3976,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bench Brewing",
+    "brewery": "Bench Brewing Company",
+    "breweryLocation": "Beamsville, Ontario",
     "beerName": "Greenfields",
     "beerStyle": "Dry Hopped Sour",
     "ABV": "",
@@ -3705,10 +3990,11 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Life In The Clouds",
     "beerStyle": "IPA",
-    "ABV": "",
+    "ABV": 6.5,
     "tappedOn": "Jul. 11, 2020",
     "tappedOut": "Jul. 24, 2020",
     "kegSize": "30L",
@@ -3718,7 +4004,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Sunnyside Session IPA",
     "beerStyle": "Session IPA",
     "ABV": "",
@@ -3731,7 +4018,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Hazy Mama",
     "beerStyle": "IPA",
     "ABV": "",
@@ -3745,6 +4033,7 @@
   },
   {
     "brewery": "Town Brewery",
+    "breweryLocation": "Whitby, Ontario",
     "beerName": "Greatest Riches",
     "beerStyle": "Peach Green Tea Sour",
     "ABV": "",
@@ -3758,6 +4047,7 @@
   },
   {
     "brewery": "Town Brewery",
+    "breweryLocation": "Whitby, Ontario",
     "beerName": "Tourbilllon",
     "beerStyle": "Tart Grissete w/ Lemon & Sea Salt",
     "ABV": 4,
@@ -3770,7 +4060,8 @@
     "cost": ""
   },
   {
-    "brewery": "Mashpaddle",
+    "brewery": "Mash Paddle Brewing Company",
+    "breweryLocation": "Brantford, Ontario",
     "beerName": "I Don't Practice Sangria",
     "beerStyle": "Boysenberry Sour",
     "ABV": "",
@@ -3783,7 +4074,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -3796,7 +4088,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Cruel Summer",
     "beerStyle": "Session IPA",
     "ABV": 3.5,
@@ -3809,7 +4102,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Off The Grid",
     "beerStyle": "Hazy Pale Ale",
     "ABV": "",
@@ -3822,7 +4116,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bench Brewing",
+    "brewery": "Bench Brewing Company",
+    "breweryLocation": "Beamsville, Ontario",
     "beerName": "Jordan Harbour",
     "beerStyle": "Belgian Pale Ale",
     "ABV": "",
@@ -3835,7 +4130,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "High Grade",
     "beerStyle": "IPA",
     "ABV": "",
@@ -3848,7 +4144,8 @@
     "cost": ""
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Greenwood IPA",
     "beerStyle": "IPA",
     "ABV": "",
@@ -3861,7 +4158,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Town & Country",
     "beerStyle": "Blonde Ale",
     "ABV": "",
@@ -3874,7 +4172,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Two Flags",
     "beerStyle": "IPA",
     "ABV": "",
@@ -3888,6 +4187,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Inner Eye",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -3900,7 +4200,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Guava Gose",
     "beerStyle": "Gose",
     "ABV": "",
@@ -3913,7 +4214,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -3926,7 +4228,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "SPA",
     "beerStyle": "Special Pale Ale",
     "ABV": "",
@@ -3939,7 +4242,8 @@
     "cost": ""
   },
   {
-    "brewery": "Counterpart",
+    "brewery": "Counterpart Brewing",
+    "breweryLocation": "Niagara Falls, Ontario",
     "beerName": "Amongst the Stars",
     "beerStyle": "IPA",
     "ABV": "",
@@ -3952,7 +4256,8 @@
     "cost": ""
   },
   {
-    "brewery": "Counterpart",
+    "brewery": "Counterpart Brewing",
+    "breweryLocation": "Niagara Falls, Ontario",
     "beerName": "Spin",
     "beerStyle": "IPA",
     "ABV": "",
@@ -3966,6 +4271,7 @@
   },
   {
     "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Pinky Swear",
     "beerStyle": "IPA",
     "ABV": "",
@@ -3978,7 +4284,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -3991,7 +4298,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Shubie",
     "beerStyle": "Sour Rasberry IPA",
     "ABV": 6.9,
@@ -4005,6 +4313,7 @@
   },
   {
     "brewery": "Town Brewery",
+    "breweryLocation": "Whitby, Ontario",
     "beerName": "Square Wheels",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4018,6 +4327,7 @@
   },
   {
     "brewery": "Town Brewery",
+    "breweryLocation": "Whitby, Ontario",
     "beerName": "Outside Jokes",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -4030,7 +4340,8 @@
     "cost": ""
   },
   {
-    "brewery": "1000 Islands Brewing Brewing",
+    "brewery": "1000 Islands Brewing",
+    "breweryLocation": "Brockvile, Ontario",
     "beerName": "Brown Ale",
     "beerStyle": "Brown Ale",
     "ABV": "",
@@ -4043,7 +4354,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Roman Candle",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4057,6 +4369,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Inner Eye",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -4069,7 +4382,8 @@
     "cost": ""
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Hello, Friends",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4082,7 +4396,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Beki",
     "beerStyle": "Sour with Cherry & Lime",
     "ABV": "",
@@ -4095,7 +4410,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -4108,7 +4424,8 @@
     "cost": ""
   },
   {
-    "brewery": "Elora",
+    "brewery": "Elora Brewing Company",
+    "breweryLocation": "Elora, Ontario",
     "beerName": "Shine",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4121,7 +4438,8 @@
     "cost": ""
   },
   {
-    "brewery": "Elora",
+    "brewery": "Elora Brewing Company",
+    "breweryLocation": "Elora, Ontario",
     "beerName": "Elora Borealis",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -4134,7 +4452,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Barrel Aged Imperial Porter",
     "beerStyle": "Porter",
     "ABV": 11.5,
@@ -4147,7 +4466,8 @@
     "cost": "SAVE FOR CHEESE"
   },
   {
-    "brewery": "Bench Brewing",
+    "brewery": "Bench Brewing Company",
+    "breweryLocation": "Beamsville, Ontario",
     "beerName": "Short Hills",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4160,7 +4480,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Jelly King Pink Guava",
     "beerStyle": "Sour",
     "ABV": "",
@@ -4173,7 +4494,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Early Bird",
     "beerStyle": "Cherry Sour",
     "ABV": "",
@@ -4186,7 +4508,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Citrus Circus Fruited Ale",
     "beerStyle": "Lemon Lime Cherry Sour",
     "ABV": "",
@@ -4199,7 +4522,8 @@
     "cost": ""
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Greenwood IPA",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4212,7 +4536,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "High Grade",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4225,7 +4550,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Big Chill",
     "beerStyle": "Hazy IPA",
     "ABV": "",
@@ -4238,7 +4564,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Foamslayer",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -4251,7 +4578,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": 1971,
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -4264,7 +4592,8 @@
     "cost": ""
   },
   {
-    "brewery": "Counterpart",
+    "brewery": "Counterpart Brewing",
+    "breweryLocation": "Niagara Falls, Ontario",
     "beerName": "Aftermath",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4277,7 +4606,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -4291,6 +4621,7 @@
   },
   {
     "brewery": "1000 Islands Brewing",
+    "breweryLocation": "Brockvile, Ontario",
     "beerName": "Brown",
     "beerStyle": "Brown Ale",
     "ABV": "",
@@ -4304,6 +4635,7 @@
   },
   {
     "brewery": "1000 Islands Brewing",
+    "breweryLocation": "Brockvile, Ontario",
     "beerName": "Amber",
     "beerStyle": "Amber Ale",
     "ABV": "",
@@ -4316,7 +4648,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Roman Candle",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4329,7 +4662,8 @@
     "cost": ""
   },
   {
-    "brewery": "NIta",
+    "brewery": "Nita Beer Company",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Cherry Sour",
     "beerStyle": "Sour",
     "ABV": "",
@@ -4342,7 +4676,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rainhard",
+    "brewery": "Rainhard Brewing Company",
+    "breweryLocation": "York, Ontario",
     "beerName": "Gravity Blast",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4355,7 +4690,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rainhard",
+    "brewery": "Rainhard Brewing Company",
+    "breweryLocation": "York, Ontario",
     "beerName": "Weekend Warrior",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -4368,7 +4704,8 @@
     "cost": ""
   },
   {
-    "brewery": "Jackass",
+    "brewery": "Jackass Brewing",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Bramble On",
     "beerStyle": "Sour",
     "ABV": "",
@@ -4381,7 +4718,8 @@
     "cost": ""
   },
   {
-    "brewery": "Jackass",
+    "brewery": "Jackass Brewing",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "Hazy IPA",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4395,6 +4733,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Inner Eye",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -4407,7 +4746,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -4420,9 +4760,10 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "County Dark",
-    "beerStyle": "",
+    "beerStyle": "Brown Ale",
     "ABV": "",
     "tappedOn": "Sep. 28, 2020",
     "tappedOut": "Oct. 13, 2020",
@@ -4433,9 +4774,10 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "West Coast Pale Ale collab w/ GLB",
-    "beerStyle": "",
+    "beerStyle": "Pale Ale",
     "ABV": "",
     "tappedOn": "Sep. 16, 2020",
     "tappedOut": "Sep. 28, 2020",
@@ -4446,7 +4788,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Karma Citra",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4459,7 +4802,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rorschach",
+    "brewery": "Rorschach Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Truth Serum",
     "beerStyle": "DDH IPA",
     "ABV": "",
@@ -4472,7 +4816,8 @@
     "cost": ""
   },
   {
-    "brewery": "Mashpaddle",
+    "brewery": "Mash Paddle Brewing Company",
+    "breweryLocation": "Brantford, Ontario",
     "beerName": "Vancouver Man",
     "beerStyle": "West Coast IPA",
     "ABV": "",
@@ -4485,7 +4830,8 @@
     "cost": ""
   },
   {
-    "brewery": "Counterpart",
+    "brewery": "Counterpart Brewing",
+    "breweryLocation": "Niagara Falls, Ontario",
     "beerName": "Dreamstate",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4498,7 +4844,8 @@
     "cost": ""
   },
   {
-    "brewery": "Counterpart",
+    "brewery": "Counterpart Brewing",
+    "breweryLocation": "Niagara Falls, Ontario",
     "beerName": "Coffee Roller",
     "beerStyle": "Oatmeal Stout w/ Coffee",
     "ABV": "",
@@ -4511,9 +4858,10 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
-    "beerStyle": "",
+    "beerStyle": "Lager",
     "ABV": "",
     "tappedOn": "Oct. 10, 2020",
     "tappedOut": "Oct. 24, 2020",
@@ -4524,9 +4872,10 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "India Brown Ale",
-    "beerStyle": "",
+    "beerStyle": "Brown Ale",
     "ABV": "",
     "tappedOn": "Oct. 13, 2020",
     "tappedOut": "Nov. 1, 2020",
@@ -4538,8 +4887,9 @@
   },
   {
     "brewery": "1000 Islands Brewing",
-    "beerName": "Pumpkin ALe",
-    "beerStyle": "",
+    "breweryLocation": "Brockvile, Ontario",
+    "beerName": "Pumpkin Ale",
+    "beerStyle": "Ale",
     "ABV": "",
     "tappedOn": "Oct. 24, 2020",
     "tappedOut": "Nov. 2, 2020",
@@ -4551,8 +4901,9 @@
   },
   {
     "brewery": "1000 Islands Brewing",
+    "breweryLocation": "Brockvile, Ontario",
     "beerName": "Dunkel",
-    "beerStyle": "",
+    "beerStyle": "Beligian",
     "ABV": "",
     "tappedOn": "Oct. 10, 2020",
     "tappedOut": "Oct. 24, 2020",
@@ -4563,9 +4914,10 @@
     "cost": ""
   },
   {
-    "brewery": "Barncat",
+    "brewery": "Barncat Artisan Ales",
+    "breweryLocation": "Cambridge, Ontario",
     "beerName": "IPA",
-    "beerStyle": "",
+    "beerStyle": "IPA",
     "ABV": "",
     "tappedOn": "Oct. 25, 2020",
     "tappedOut": "Nov. 12, 2020",
@@ -4576,9 +4928,10 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Starboard",
-    "beerStyle": "",
+    "beerStyle": "IPA",
     "ABV": "",
     "tappedOn": "Oct. 25, 2020",
     "tappedOut": "Nov. 3, 2020",
@@ -4589,7 +4942,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "High Grade",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4602,9 +4956,10 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Blueberry Chai IPA",
-    "beerStyle": "",
+    "beerStyle": "IPA",
     "ABV": "",
     "tappedOn": "Oct. 25, 2020",
     "tappedOut": "Nov. 20, 2020",
@@ -4615,7 +4970,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellingotn",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -4628,7 +4984,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rainhard",
+    "brewery": "Rainhard Brewing Company",
+    "breweryLocation": "York, Ontario",
     "beerName": "Armed N Citra",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -4641,7 +4998,8 @@
     "cost": ""
   },
   {
-    "brewery": "Dominion City",
+    "brewery": "Dominion City Brewery",
+    "breweryLocation": "Ottawa, Ontario",
     "beerName": "Provincial IPA with Nugget",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4654,7 +5012,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rorschach",
+    "brewery": "Rorschach Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Truth Serum",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4667,7 +5026,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rorschach",
+    "brewery": "Rorschach Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Master Status",
     "beerStyle": "Double Dry Hopped IPA",
     "ABV": "",
@@ -4681,8 +5041,9 @@
   },
   {
     "brewery": "1000 Islands Brewing",
+    "breweryLocation": "Brockvile, Ontario",
     "beerName": "Apple Pie Wheat",
-    "beerStyle": "",
+    "beerStyle": "Wheat",
     "ABV": "",
     "tappedOn": "Nov. 4, 2020",
     "tappedOut": "Nov. 10, 2020",
@@ -4694,6 +5055,7 @@
   },
   {
     "brewery": "1000 Islands Brewing",
+    "breweryLocation": "Brockvile, Ontario",
     "beerName": "Irish Red Ale",
     "beerStyle": "Red Ale",
     "ABV": "",
@@ -4706,7 +5068,8 @@
     "cost": ""
   },
   {
-    "brewery": "Clifford",
+    "brewery": "Clifford Brewing Company",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Marigold",
     "beerStyle": "Beligian Ale",
     "ABV": "",
@@ -4719,7 +5082,8 @@
     "cost": ""
   },
   {
-    "brewery": "Clifford",
+    "brewery": "Clifford Brewing Company",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Lager",
     "beerStyle": "Vienna Lager",
     "ABV": "",
@@ -4732,7 +5096,8 @@
     "cost": ""
   },
   {
-    "brewery": "Counterpart",
+    "brewery": "Counterpart Brewing",
+    "breweryLocation": "Niagara Falls, Ontario",
     "beerName": "Tidal",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4746,6 +5111,7 @@
   },
   {
     "brewery": "Blood Brothers",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Inner Eye",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -4758,8 +5124,9 @@
     "cost": ""
   },
   {
-    "brewery": "Reverence",
-    "beerName": "",
+    "brewery": "Reverence Barrel Works",
+    "breweryLocation": "Cambridge, Ontario",
+    "beerName": "Barrel Aged Sour",
     "beerStyle": "Brett Sour",
     "ABV": "",
     "tappedOn": "Nov. 20, 2020",
@@ -4771,7 +5138,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellingotn",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -4784,7 +5152,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Coffee Cream Ale",
     "beerStyle": "Cream Ale",
     "ABV": "",
@@ -4797,20 +5166,22 @@
     "cost": ""
   },
   {
-    "brewery": "Camerons",
+    "brewery": "Cameron's Brewing Company",
+    "breweryLocation": "Oakville, Ontario",
     "beerName": "Crooked Nose",
     "beerStyle": "Stout",
     "ABV": "",
     "tappedOn": "Mar. 16, 2021",
-    "tappedOut": "",
+    "tappedOut": "Apr. 2, 2021",
     "kegSize": "",
-    "daysOnTap": "",
+    "daysOnTap": 17,
     "deliveryDate": "",
     "kegCost": "",
     "cost": ""
   },
   {
-    "brewery": "Camerons",
+    "brewery": "Cameron's Brewing Company",
+    "breweryLocation": "Oakville, Ontario",
     "beerName": "Crooked Nose",
     "beerStyle": "Stout",
     "ABV": "",
@@ -4823,7 +5194,8 @@
     "cost": ""
   },
   {
-    "brewery": "Camerons",
+    "brewery": "Cameron's Brewing Company",
+    "breweryLocation": "Oakville, Ontario",
     "beerName": "Cruising Through the Galaxy",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4836,7 +5208,8 @@
     "cost": ""
   },
   {
-    "brewery": "Flux",
+    "brewery": "Flux Brewing Company",
+    "breweryLocation": "Scotland, Ontario",
     "beerName": "Clockwork",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4849,7 +5222,8 @@
     "cost": ""
   },
   {
-    "brewery": "Flux",
+    "brewery": "Flux Brewing Company",
+    "breweryLocation": "Scotland, Ontario",
     "beerName": "Jacked Up",
     "beerStyle": "Porter",
     "ABV": "",
@@ -4862,7 +5236,8 @@
     "cost": ""
   },
   {
-    "brewery": "Godspeed",
+    "brewery": "Godspeed Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Green Tea IPA",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4876,6 +5251,7 @@
   },
   {
     "brewery": "1000 Islands Brewing",
+    "breweryLocation": "Brockvile, Ontario",
     "beerName": "Brown Ale",
     "beerStyle": "Brown",
     "ABV": "",
@@ -4889,6 +5265,7 @@
   },
   {
     "brewery": "Town Brewery",
+    "breweryLocation": "Whitby, Ontario",
     "beerName": "Absolutely Anytime",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4901,7 +5278,8 @@
     "cost": ""
   },
   {
-    "brewery": "Halo",
+    "brewery": "Halo Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Magic Missile",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -4914,7 +5292,8 @@
     "cost": ""
   },
   {
-    "brewery": "Halo",
+    "brewery": "Halo Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Stellar Void",
     "beerStyle": "Stout",
     "ABV": "",
@@ -4927,7 +5306,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Berry Good",
     "beerStyle": "Sour",
     "ABV": "",
@@ -4940,7 +5320,8 @@
     "cost": ""
   },
   {
-    "brewery": "Camerons",
+    "brewery": "Cameron's Brewing Company",
+    "breweryLocation": "Oakville, Ontario",
     "beerName": "Cruising Through the Galaxy",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4953,7 +5334,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -4966,7 +5348,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Big Chill",
     "beerStyle": "IPA",
     "ABV": "",
@@ -4980,6 +5363,7 @@
   },
   {
     "brewery": "1000 Islands Brewing",
+    "breweryLocation": "Brockvile, Ontario",
     "beerName": "Brown",
     "beerStyle": "Brown",
     "ABV": "",
@@ -4992,7 +5376,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Jam Up w/ Boysenberry",
     "beerStyle": "Sour",
     "ABV": "",
@@ -5005,7 +5390,8 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Hazy State",
     "beerStyle": "Session IPA",
     "ABV": "",
@@ -5018,7 +5404,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "High Grade",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5031,7 +5418,8 @@
     "cost": ""
   },
   {
-    "brewery": "Grain & Grit",
+    "brewery": "Grain and Grit",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Invisible Friend",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -5045,6 +5433,7 @@
   },
   {
     "brewery": "1000 Islands Brewing",
+    "breweryLocation": "Brockvile, Ontario",
     "beerName": "Amber Ale",
     "beerStyle": "Amber",
     "ABV": "",
@@ -5058,6 +5447,7 @@
   },
   {
     "brewery": "1000 Islands Brewing",
+    "breweryLocation": "Brockvile, Ontario",
     "beerName": "Peach Sour",
     "beerStyle": "Sour",
     "ABV": "",
@@ -5070,7 +5460,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Burst",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -5083,7 +5474,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "As Far Back As I Can Remember",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5096,7 +5488,8 @@
     "cost": ""
   },
   {
-    "brewery": "Left Field",
+    "brewery": "Left Field Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Greenfield",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5109,7 +5502,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -5122,7 +5516,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "SPA",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -5135,7 +5530,8 @@
     "cost": ""
   },
   {
-    "brewery": "Fairweather",
+    "brewery": "Fairweather Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "High Grade",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5148,7 +5544,8 @@
     "cost": ""
   },
   {
-    "brewery": "Elora",
+    "brewery": "Elora Brewing Company",
+    "breweryLocation": "Elora, Ontario",
     "beerName": "Wandering Monk",
     "beerStyle": "Belgian IPA",
     "ABV": "",
@@ -5161,7 +5558,8 @@
     "cost": ""
   },
   {
-    "brewery": "Elora",
+    "brewery": "Elora Brewing Company",
+    "breweryLocation": "Elora, Ontario",
     "beerName": "Aurora Borealis",
     "beerStyle": "Pale Ale",
     "ABV": "",
@@ -5174,10 +5572,11 @@
     "cost": ""
   },
   {
-    "brewery": "Collective Arts",
+    "brewery": "Collective Arts Brewing",
+    "breweryLocation": "Hamilton, Ontario",
     "beerName": "Matter of Fact",
     "beerStyle": "Blonde",
-    "ABV": "",
+    "ABV": 4.9,
     "tappedOn": "",
     "tappedOut": "",
     "kegSize": "",
@@ -5187,7 +5586,8 @@
     "cost": ""
   },
   {
-    "brewery": "Camerons",
+    "brewery": "Cameron's Brewing Company",
+    "breweryLocation": "Oakville, Ontario",
     "beerName": "Cruising Through the Galaxy",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5200,7 +5600,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rorschach",
+    "brewery": "Rorschach Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Truth Serum",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5213,7 +5614,8 @@
     "cost": ""
   },
   {
-    "brewery": "Rorschach",
+    "brewery": "Rorschach Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Truth Serum",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5226,7 +5628,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -5239,7 +5642,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Upside",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5252,7 +5656,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "Haze Mama",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5265,7 +5670,8 @@
     "cost": ""
   },
   {
-    "brewery": "Great Lakes",
+    "brewery": "Great Lakes Brewery",
+    "breweryLocation": "Etobicoke, Ontario",
     "beerName": "As Far Back As I Can Remember",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5278,7 +5684,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Sparkhouse",
     "beerStyle": "Red",
     "ABV": "",
@@ -5291,7 +5698,8 @@
     "cost": ""
   },
   {
-    "brewery": "Lake of Bays",
+    "brewery": "Lake of Bays Brewing Company",
+    "breweryLocation": "Baysville, Ontario",
     "beerName": "Foghorn",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5304,7 +5712,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Roman Candle",
     "beerStyle": "IPA",
     "ABV": "",
@@ -5317,7 +5726,8 @@
     "cost": ""
   },
   {
-    "brewery": "Bellwoods",
+    "brewery": "Bellwoods Brewery",
+    "breweryLocation": "Toronto, Ontario",
     "beerName": "Jelly King",
     "beerStyle": "Sour",
     "ABV": "",
@@ -5330,7 +5740,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Helles",
     "beerStyle": "Lager",
     "ABV": "",
@@ -5343,7 +5754,8 @@
     "cost": ""
   },
   {
-    "brewery": "Wellington",
+    "brewery": "Wellington Brewery",
+    "breweryLocation": "Guelph, Ontario",
     "beerName": "Upside",
     "beerStyle": "IPA",
     "ABV": "",

@@ -17,6 +17,7 @@ const SelectedSearch = ({ beer, results }) => {
   const beerName = beer.name;
   const beerStyle = beer.style;
   const brewery = beer.brewery;
+  const breweryLocation = beer.brewery_location;
   const abv = beer.abv;
   const untappdId = beer.untappd_id;
   const itemId = beer.id;
@@ -27,7 +28,7 @@ const SelectedSearch = ({ beer, results }) => {
     fetch('/add/beer', {
       method: "POST",
       body: JSON.stringify({
-        beerName, beerStyle, brewery, abv, untappdId, itemId
+        beerName, beerStyle, brewery,  breweryLocation, abv, untappdId,
       }),
       headers: {
         "Content-Type": "application/json"
@@ -40,7 +41,6 @@ const SelectedSearch = ({ beer, results }) => {
         setSubmit(true);
       })
   }
-  console.log(beer);
   return (
     <>
       {beer && status === '' && showResults === false && (
@@ -101,7 +101,6 @@ const BtnWrapper = styled.div`
 `;
 
 const ImgWrapper = styled.div`
-  
 `;
 
 const Img = styled.img`

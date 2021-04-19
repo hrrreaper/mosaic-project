@@ -3,7 +3,6 @@ import { GoogleLogout } from 'react-google-login';
 import { UserContext } from '../Context/UserProvider';
 const {GOOGLE_CLIENT} = process.env;
 
-
 const Logout = () => {
   const { setUserObj } = useContext(UserContext);
   
@@ -15,8 +14,11 @@ const Logout = () => {
   return (
     <div>
       <GoogleLogout
+        buttonText="logout"
         clientId={GOOGLE_CLIENT}
         onLogoutSuccess={onLogoutSuccess}
+        style={{ borderRadius: "5px" }}
+        icon={false}
         />
     </div>  
   )

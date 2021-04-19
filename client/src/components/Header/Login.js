@@ -11,7 +11,7 @@ const Login = () => {
   
   return userObj ? (
     <Wrapper>
-      {userObj[0].name ? <div>Hey, {userObj[0].name}!</div> : null}
+      {userObj[0].name ? <div>Cheers, {userObj[0].name}!</div> : null}
       <Img src={userObj[0].picture} />
       <Logout />
     </Wrapper>
@@ -20,10 +20,12 @@ const Login = () => {
       <LoginDiv>
         <GoogleLogin
           clientId={REACT_APP_GOOGLE_CLIENT}
-          buttonText="Log in with Google"
+          buttonText="login with Google"
           onSuccess={handleLogin}
           onFailure={handleLogin}
           cookiePolicy={'single_host_origin'}
+          isSignedIn={true}
+          style={{borderRadius:"5px"}}
         />
       </LoginDiv>
   )

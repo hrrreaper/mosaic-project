@@ -47,7 +47,7 @@ const UpdateForm = ({ beer }) => {
     {status === "" && (
       <Form>
       <H2>Update beer:</H2>
-      <label htmlFor="beerName">Beer Name:</label>
+      <Label htmlFor="beerName">Beer Name:</Label>
       <Input
         type="text"
         id="beerName"
@@ -57,7 +57,7 @@ const UpdateForm = ({ beer }) => {
           setBeerName(ev.target.value);
         }}
       ></Input>
-      <label htmlFor="brewery">Brewery:</label>
+      <Label htmlFor="brewery">Brewery:</Label>
       <Input
         type="text"
         id="brewery"
@@ -67,7 +67,7 @@ const UpdateForm = ({ beer }) => {
           setBrewery(ev.target.value);
         }}
       ></Input>
-      <label htmlFor="beerStyle">Style:</label>
+      <Label htmlFor="beerStyle">Style:</Label>
       <Input
         type="text"
         id="beerStyle"
@@ -77,7 +77,7 @@ const UpdateForm = ({ beer }) => {
           setBeerStyle(ev.target.value);
         }}
       ></Input>
-      <label htmlFor="abv">ABV:</label>
+      <Label htmlFor="abv">ABV:</Label>
       <Input
         type="text"
         id="abv"
@@ -87,7 +87,7 @@ const UpdateForm = ({ beer }) => {
           setAbv(ev.target.value);
         }}
       ></Input>
-      <label htmlFor="kegSize">Keg Size:</label>
+      <Label htmlFor="kegSize">Keg Size:</Label>
       <Input
         type="text"
         id="kegSize"
@@ -97,7 +97,7 @@ const UpdateForm = ({ beer }) => {
           setKegSize(ev.target.value);
         }}
       ></Input>
-      <label htmlFor="tapped">Tapped On:</label>
+      <Label htmlFor="tapped">Tapped On:</Label>
       <Input
         type="text"
         id="tapped"
@@ -107,7 +107,7 @@ const UpdateForm = ({ beer }) => {
           setTappedOn(ev.target.value);
         }}
       ></Input>
-      <label htmlFor="tappedOut">Tapped Out:</label>
+      <Label htmlFor="tappedOut">Tapped Out:</Label>
       <Input
         type="text"
         id="tappedOut"
@@ -117,7 +117,7 @@ const UpdateForm = ({ beer }) => {
           setTappedOut(ev.target.value);
         }}
           ></Input>
-        <label htmlFor="daysOnTap">Days on Tap:</label>
+        <Label htmlFor="daysOnTap">Days on Tap:</Label>
       <Input
         type="text"
         id="daysOnTap"
@@ -155,6 +155,13 @@ const Wrapper = styled.div`
   font-size: 1rem;
 `;
 
+const Label = styled.label`
+  text-transform: uppercase;
+  width: 350px;
+  font-weight: 700;
+  text-align: left;
+  font-size: .9rem;
+`;
 const BtnDiv = styled.div`
   display: flex;
   justify-content: space-evenly;

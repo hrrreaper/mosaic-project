@@ -30,12 +30,10 @@ const SearchBar = () => {
     <Wrapper>
       <Input
         type="text"
+        placeholder="find a beer"
         value={searchItem}
         onChange={(ev)=> handleChange(ev)} />
-      
         <FiFilter size={20}/>
-      
-
       </Wrapper>
     </>
   )
@@ -49,6 +47,7 @@ const Wrapper = styled.div`
 
 const Input = styled.input`
   border-radius: 5px;
+  padding: 5px;
   border: 1px solid grey;
   outline:none;
   margin-right: 5px;
