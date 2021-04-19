@@ -133,7 +133,7 @@ const BeerList = styled.div`
 
 const Beer = styled.div`
   font-size: .8rem;
-  text-overflow:
+  
 `;
 
 const DivTitle = styled.h2`
