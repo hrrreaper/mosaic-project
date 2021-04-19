@@ -127,11 +127,11 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 `;
 
 const Input = styled.input`
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 7px;
   width: 350px;
   border-radius: 5px;
@@ -145,6 +145,8 @@ const Label = styled.label`
   width: 350px;
   font-weight: 700;
   text-align: left;
+  margin: 10px 0;
+  font-size: .9rem;
 `;
 
 const H2 = styled.h2`

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
 import styled from 'styled-components';
 import Loading from '../Loading';
@@ -79,14 +79,14 @@ const BeerDetails = () => {
       })
         .then((res) => res.json())
         .then((json) => {
-          console.log("get id from here", json.item.id)
           setItemId(json.item.id);
           setUpdateTapOn(true);
           setIdFlag(true);
+          console.log("get id from here", json.item.id)
         })
       .catch((err) => {
         console.log("ERROR", err.message);
-        })
+      })
     }
   
     fetch(`/update/${_id}`, {
@@ -95,6 +95,7 @@ const BeerDetails = () => {
         brewery: beer.brewery,
         beerName: beer.beerName,
         beerStyle: beer.beerStyle,
+        breweryLocation: beer.breweryLocation,
         abv: beer.ABV,
         tappedOn: moment().format('ll'),
         tappedOut: beer.tappedOut,
@@ -111,7 +112,6 @@ const BeerDetails = () => {
         setUpdateTapOn(true);
       })
     .catch((err) => {
-      setStatus("error");
       console.log("ERROR", err.message);
     })
   }
@@ -119,13 +119,14 @@ const BeerDetails = () => {
   //when you handleOnTap gets called try to save the item id to the database
   //NOT WORKING RIGHT NOW
   useEffect(() => {
-    if (beer) {
+    if (beer && itemId) {
       fetch(`/update/${_id}`, {
         method: "PATCH",
         body: JSON.stringify({
           brewery: beer.brewery,
           beerName: beer.beerName,
           beerStyle: beer.beerStyle,
+          breweryLocation: beer.breweryLocation,
           abv: beer.ABV,
           tappedOn: moment().format('ll'),
           tappedOut: beer.tappedOut,
@@ -142,28 +143,33 @@ const BeerDetails = () => {
           console.log("should only run when handleOnTap is called", json.data);
         })
         .catch((err) => {
-          setStatus("error");
           console.log("ERROR", err.message);
         })
     }
-  }, [idFlag, itemId]);
+  }, [idFlag]);
+
 
   const handleTapOut = () => {
+    //calculate the number of days the beer has been on tap///
+
     const tapDate = new Date(beer.tappedOn);
     const tapOutDate = new Date(moment().format("ll"));
     const diffInTime = tapOutDate.getTime() - tapDate.getTime();
     const diffInDays = diffInTime / (1000 * 3600 * 24);
+
     fetch(`/update/${_id}`, {
       method: "PATCH",
       body: JSON.stringify({
         brewery: beer.brewery,
         beerName: beer.beerName,
         beerStyle: beer.beerStyle,
+        breweryLocation: beer.breweryLocation,
         abv: beer.ABV,
         tappedOn: beer.tappedOn,
         tappedOut: moment().format('ll'),
         kegSize: beer.kegSize,
         daysOnTap: diffInDays,
+        itemId: beer.itemId,
       }),
       headers: {
         "Content-Type": "application/json"
@@ -175,17 +181,17 @@ const BeerDetails = () => {
         setUpdateTapOut(true);
       })
     .catch((err) => {
-      setStatus("error");
       console.log("ERROR",err.message)
     })
     
-    if (beer.untappdId) {
-      const id = itemId;
+    if (beer.untappdId && beer.itemId) {
+      //if the beer has an untappd id delete it from the menu /// not working yet
+      const id = beer.itemId;
       fetch(`https://business.untappd.com/api/v1/items/${id}`, {
         method: "DELETE",
         headers: {
         "Authorization": auth,
-      },
+        },
       })
         .then((res) => res.json())
         .then((json) => {
@@ -206,7 +212,6 @@ const BeerDetails = () => {
         setStatus("idle");
       })
       .catch((err) => {
-        setStatus("error");
         console.log("ERROR",err.message)
     })
   }, [updateTapOut, updateTapOn, update]);
@@ -219,6 +224,7 @@ const BeerDetails = () => {
           <div> <Span>Beer:</Span> {beer.beerName}</div>
           <div> <Span>Style:</Span> {beer.beerStyle}</div>
           <div> <Span>Brewery:</Span> {beer.brewery}</div>
+          <div> <Span>Location:</Span> {beer.breweryLocation}</div>
           <div> <Span>ABV:</Span> {beer.ABV}</div>
           <div> <Span>Tapped:</Span> {beer.tappedOn}</div>
           <div> <Span>Tapped Out:</Span> {beer.tappedOut}</div>

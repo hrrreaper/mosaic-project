@@ -17,16 +17,19 @@ const InStock = () => {
         <Div>BEER</Div>
         <Div>STYLE</Div>
         <Div>BREWERY</Div>
+        <TapDiv>TAP</TapDiv>
       </DivTitle>
       
       {allBeers?.map((beer, index) => {
         if (!beer.tappedOn) {
-        return <Beer
-          key={index}
-          _id={beer._id}
-          name={beer.beerName}
-          brewery={beer.brewery}
-          type={beer.beerStyle}
+          return <Beer
+            key={index}
+            _id={beer._id}
+            name={beer.beerName}
+            brewery={beer.brewery}
+            type={beer.beerStyle}
+            tappedOn={true}
+            beer={beer}
         />
           
         }
@@ -37,19 +40,24 @@ const InStock = () => {
 
   const Wrapper = styled.div`
   margin: auto;
-  max-width: 75vw;
+  max-width: 80vw;
   `;
 
   const DivTitle = styled.div`
   margin: 10px 20px;
   display: flex;
-  justify-content: space-between;
   font-weight: 700;
   font-size: 1.3rem;
+  max-width: 80vw;
 `;
 
 const Div = styled.div`
-  width: 20vw;
+  width: 500px;
+  text-align: left;
+  font-size: 1.2rem;
+`;
+const TapDiv = styled.div`
+  width: 150px;
   text-align: left;
 `;
 

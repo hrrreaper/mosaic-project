@@ -17,7 +17,7 @@ const OnTap = () => {
         <Div>BEER</Div>
         <Div>STYLE</Div>
         <Div>BREWERY</Div>
-        <AbvDiv>ABV</AbvDiv>
+        <AbvDiv>TAP OUT</AbvDiv>
       </DivTitle>
       
       {allBeers?.map((beer, index) => {
@@ -29,6 +29,8 @@ const OnTap = () => {
           brewery={beer.brewery}
           type={beer.beerStyle}
           abv={beer.ABV}
+          tapOut={true}
+          beer={beer}
         />
           
         }
@@ -37,12 +39,13 @@ const OnTap = () => {
   )
 }
 
-  const Wrapper = styled.div`
+const Wrapper = styled.div`
   margin: auto;
-  max-width: 75vw;
+  max-width: 80vw;
   `;
 
-  const DivTitle = styled.div`
+const DivTitle = styled.div`
+  max-width: 80vw;
   margin: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -51,12 +54,14 @@ const OnTap = () => {
 `;
 
 const Div = styled.div`
-  width: 20vw;
+  width: 500px;
   text-align: left;
+  font-size: 1.2rem;
 `;
 const AbvDiv = styled.div`
-  width: 10vw;
+  width: 200px;
   text-align: left;
+  font-size: 1.2rem;
 `;
 
 const Title = styled.div`

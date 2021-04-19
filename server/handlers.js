@@ -54,13 +54,14 @@ const getOneBeer = async (req, res) => {
 
 const updateBeer = async(req, res) => {
   const client = await MongoClient(MONGO_URI, options);
-  const { brewery, beerName, beerStyle, abv, tappedOn, tappedOut, kegSize, daysOnTap, itemId} = req.body;
+  const { brewery, beerName, beerStyle, breweryLocation, abv, tappedOn, tappedOut, kegSize, daysOnTap, itemId} = req.body;
   const  _id = req.params._id;
   const newValue = {
     $set: {
       brewery: brewery,
       beerName: beerName,
       beerStyle: beerStyle,
+      breweryLocation: breweryLocation,
       ABV: abv,
       tappedOn: tappedOn,
       tappedOut: tappedOut,
@@ -84,7 +85,7 @@ const updateBeer = async(req, res) => {
 
 const addBeer = async (req, res) => {
   const client = await MongoClient(MONGO_URI, options);
-  const { brewery, beerName, beerStyle, abv, tappedOn, tappedOut, kegSize, daysOnTap, delivery, kegCost, cost, untappdId, itemId  } = req.body;
+  const { brewery, beerName, beerStyle, breweryLocation, abv, tappedOn, tappedOut, kegSize, daysOnTap, delivery, kegCost, cost, untappdId, itemId  } = req.body;
 
   try {
     await client.connect();
@@ -93,6 +94,7 @@ const addBeer = async (req, res) => {
       brewery: brewery,
       beerName: beerName,
       beerStyle: beerStyle,
+      breweryLocation: breweryLocation,
       ABV: abv,
       tappedOn: tappedOn,
       tappedOut: tappedOut,

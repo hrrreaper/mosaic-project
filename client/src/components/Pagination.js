@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { v4 as uuidv4 } from 'uuid';
 
 const Pagination = ({ itemsPerPage, totalItems, paginate }) => {
   const pageNumbers = [];
@@ -13,11 +14,12 @@ const Pagination = ({ itemsPerPage, totalItems, paginate }) => {
     <Div>
       <Ul>
         {pageNumbers.map(number => (
-            <StyledLink
-              onClick={() => paginate(number)}
+          <StyledLink
+            key={uuidv4()}
+            onClick={() => paginate(number)}
             to={`/beers/${number}`}
           >
-            <Li key={number} >{number}</Li>
+            <Li key={uuidv4()} >{number}</Li>
           </StyledLink>
           
         ))}

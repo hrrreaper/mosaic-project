@@ -69,7 +69,7 @@ const App = () => {
           </Route>
           <Route path="/breweries">
             <Breweries />
-          </Route>
+                </Route>
             </>
             ) : (
                 <Redirect to="/" />
