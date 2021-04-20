@@ -51,17 +51,32 @@ const UntappdSearchItem = ({ results }) => {
 }
 
 const Wrapper = styled.div`
+
+@media (max-width: 768px) {
+    width:60vw;
+  }
 `;
 
 const Results = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:50vw;
+  }
 `;
 
 const Img = styled.img`
   width: 40px;
   height: 40px;
+
+  @media (max-width: 768px) {
+    display:none;
+
+  }
 `;
 
 const TextDiv = styled.div`
@@ -77,7 +92,7 @@ const Div = styled.div`
 const Span = styled.span`
   font-weight: 700;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: .7rem;
 `;
 
 const Search = styled.li`

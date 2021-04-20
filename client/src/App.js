@@ -26,6 +26,7 @@ const App = () => {
         <GlobalStyle />
         {userObj && (
           <>
+            
         <HeaderGrid>
         <Header />
         </HeaderGrid>
@@ -91,6 +92,9 @@ const Wrapper = styled.div`
 
 const HeaderGrid = styled.div`
   grid-area: header;
+  display: inline;
+  float: right;
+  width: 60vw;
 `;
 
 const SidebarGrid = styled.div`
@@ -103,6 +107,10 @@ const SidebarDiv = styled.div`
   top: 0;
   width: 215px;
   height: 100vh;
+
+  @media (max-width: 768px) {
+    width: 110px;
+  }
 `;
 
 const MainGrid = styled.div`

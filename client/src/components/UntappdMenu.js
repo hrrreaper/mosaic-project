@@ -37,25 +37,48 @@ const Name = styled.div`
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: .9rem;
+  }
+  
 `;
 const Brewery = styled.div`
   font-size: .9rem;
   margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+    font-size: .8rem;
+  }
+  
 `;
 
 const Abv = styled.div`
   font-size: .85rem;
   margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+    font-size: .75rem;
+  }
+  
 `;
 
 const Info = styled.div`
   font-size: .85rem;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: .75rem;
+  }
 `;
 
 const Style = styled.div`
   font-size: .85rem;
   margin-bottom: 10px;
+  
+  @media (max-width: 768px) {
+    font-size: .75rem;
+  }
 `;
 
 const BeerInfo = styled.div`
@@ -64,6 +87,10 @@ const BeerInfo = styled.div`
 
 const Img = styled.img`
   width: 50px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export default UntappdMenu;

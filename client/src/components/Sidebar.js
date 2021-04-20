@@ -15,7 +15,7 @@ const Sidebar = () => {
         <IconSpan>
           <BeerIcon className="beer" size={17}/>
         </IconSpan>
-        View All Beers
+        All Beers
       </StyledLink>
       <StyledLink to='/add/beer'>
         <IconSpan>
@@ -27,19 +27,19 @@ const Sidebar = () => {
       <IconSpan>
           <BeerIcon className="beer" size={17} />
         </IconSpan>
-      Beers on Tap
+      Beer on Tap
       </StyledLink>
       <StyledLink to='/in-stock'>
         <IconSpan>
           <BeerIcon className="beer" size={17}/>
         </IconSpan>
-        Beers in stock
+        Beer in stock
       </StyledLink>
       <StyledLink to='/breweries'>
         <IconSpan>
           <BeerIcon className="beer" size={17}/>
         </IconSpan>
-        View All Breweries
+        Breweries
       </StyledLink>
     </Wrapper>
   )
@@ -55,18 +55,29 @@ const Wrapper = styled.div`
   width: 215px;
   top: 0;
   background-color: rgba(0,200,0,0.1);
+
+  @media (max-width: 768px) {
+    width: 110px;
+    height: 100vh;
+  }
 `;
 
 const StyledLink = styled(NavLink)`
   text-transform: uppercase;
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 1rem;
   text-decoration: none;
   color: #000;
   margin: 20px 0;
-  margin-left: 15px;
+  margin-left: 20px;
   padding-bottom: 10px;
   width: fit-content;
+
+    @media (max-width: 768px) {
+    font-size: .7rem;
+    display: flex;
+    flex-direction: column;
+  }
   
   &.active {
     color: rgba(0,200,0,0.7);
@@ -107,6 +118,10 @@ const IconSpan = styled.span`
 
 const BeerIcon = styled(IoBeerOutline)`
   transition: ease-in-out .4s;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Nav = styled(NavLink)`
@@ -117,6 +132,10 @@ const Logo = styled.img`
   margin-top: 10px;
   margin-bottom: 30px;
   width: 75px;
+
+  @media (max-width: 768px) {
+    width: 35px;
+  }
 `;
 
 

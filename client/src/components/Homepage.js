@@ -68,10 +68,18 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   text-align: center;
   font-size: 2rem;
+  
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const Img = styled.img`
   width: 300px;
+
+  @media (max-width: 768px) {
+    width: 200px;
+  }
 `;
 
 export default Homepage;

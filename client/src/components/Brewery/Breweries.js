@@ -42,7 +42,7 @@ const Breweries = () => {
             setValue(ev.target.value);
               }}
           onClick={() => {
-            if (value === "select a brewery") {
+            if (value === "select a brewery" || value === undefined) {
               setStatus(false);
             } else {
               setStatus(true);
@@ -98,30 +98,28 @@ const Select = styled.select`
   background: white;
   color: gray;
   padding-left: 5px;
-  font-size: 14px;
+  font-size: 1rem;
   border: 1px solid grey;
 
   option {
-    color: black;
-    background: white;
-    display: flex;
-    height: 20px;
-    padding: 0px 2px 1px;
+    font-size: .85rem;
+    color: #000;
   }
 `;
 
 const Wrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
+
 const DetailsWrapper = styled.div`
   margin: 15px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 `;
 
 const BeerList = styled.div`
@@ -133,7 +131,6 @@ const BeerList = styled.div`
 
 const Beer = styled.div`
   font-size: .8rem;
-  
 `;
 
 const DivTitle = styled.h2`

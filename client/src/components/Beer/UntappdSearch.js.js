@@ -93,7 +93,12 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px
+  margin-top: 50px;
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 `;
 
 const Form = styled.form`
@@ -101,39 +106,29 @@ const Form = styled.form`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 `;
 const BtnText = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 `;
 
 const Txt = styled.span`
   margin-right: 5px;
 `;
 
-// const SearchButton = styled.button`
-//   background-color: transparent;
-//   border: 1px solid grey;
-//   cursor: pointer;
-//   padding: 5px;
-//   border-radius: 5px;
-//   margin-left: 10px;
-// `;
-// const ClearButton = styled.button`
-//   background-color: transparent;
-//   border: 1px solid grey;
-//   cursor: pointer;
-//   padding: 5px;
-//   border-radius: 5px;
-//   margin-left: 10px;
-// `;
-
 const Input = styled.input`
   border-radius: 5px;
   border: 1px solid grey;
   outline:none;
-  width: 400px;
+  width: 30vw;
   height:30px;
   margin-right:10px;
 `;

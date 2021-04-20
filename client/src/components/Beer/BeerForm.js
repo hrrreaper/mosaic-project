@@ -110,6 +110,11 @@ const BeerForm = () => {
 
 const Wrapper = styled.div`
   margin: auto;
+  width: 80vw;
+
+    @media (max-width: 768px) {
+    margin-left: 20px;
+  } 
 `;
 
 const Required = styled.div`
@@ -128,6 +133,11 @@ const Form = styled.form`
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    width: 200px;
+  align-items: flex-start;
+  }
 `;
 
 const Input = styled.input`
@@ -138,6 +148,11 @@ const Input = styled.input`
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   outline: none;
+
+  @media (max-width: 768px) {
+    width: 200px;
+  }
+  
 `;
 
 const Label = styled.label`
@@ -147,11 +162,21 @@ const Label = styled.label`
   text-align: left;
   margin: 10px 0;
   font-size: .9rem;
+
+    @media (max-width: 768px) {
+    font-size: .7rem;
+    
+  }
+  
 `;
 
 const H2 = styled.h2`
   margin: 20px 0;
   font-size: 1.2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  } 
 `;
 
 

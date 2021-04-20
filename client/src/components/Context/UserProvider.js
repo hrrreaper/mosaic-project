@@ -18,9 +18,12 @@ export const UserProvider = ({ children }) => {
     })
         .then((res) => res.json())
         .then((json) => {
-          setUserObj(json.data);
           localStorage.setItem('user', JSON.stringify(json.data));
-      })
+          setUserObj(json.data);
+        })
+        .catch((err) => {
+      console.log(err.message)
+    } )
   };
   
 

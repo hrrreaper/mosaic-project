@@ -32,6 +32,11 @@ const FormButton = styled.button`
     box-shadow: 3px 3px 5px -2px rgba(0,200,0,0.7);
     background-position: -90% 100%;
   }
+
+  @media (max-width: 768px) {
+    margin: 3px 0;
+  }
+
 `;
 
 export default FormButton
