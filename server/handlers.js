@@ -84,7 +84,7 @@ const updateBeer = async(req, res) => {
 
 const addBeer = async (req, res) => {
   const client = await MongoClient(MONGO_URI, options);
-  const { brewery, beerName, beerStyle, breweryLocation, abv, tappedOn, tappedOut, kegSize, daysOnTap, delivery, kegCost, cost, untappdId, itemId  } = req.body;
+  const { brewery, beerName, beerStyle, breweryLocation, abv, tappedOn, tappedOut, kegSize, daysOnTap, delivery, kegCost, cost, untappdId, logo, itemId  } = req.body;
 
   try {
     await client.connect();
@@ -103,6 +103,7 @@ const addBeer = async (req, res) => {
       kegCost: kegCost,
       cost: cost,
       untappdId: untappdId,
+      logo: logo,
       itemId: itemId
       
     });
@@ -140,8 +141,6 @@ const deleteBeer = async (req, res) => {
 }
 
 const setUsers = async (req, res) => {
-
-  //TODO check to see if the user is already in the DB
   
   const {profileObj} = req.body
   const client = await MongoClient(MONGO_URI, options);

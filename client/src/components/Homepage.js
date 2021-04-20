@@ -36,6 +36,7 @@ const Homepage = () => {
       </Title>
       {menuInfo && status === "idle" ? (
         <>
+              <Menu>
           {menuInfo.map((beer) => {
             return (
               <UntappdMenu
@@ -47,9 +48,10 @@ const Homepage = () => {
                 style={beer.style}
                 description={beer.description}
                 tapped={beer.updated_at}
-              /> 
+                />
             )
           })}
+              </Menu>  
         </>
       ) : (
           <Loading />
@@ -60,9 +62,21 @@ const Homepage = () => {
   )
 };
 
+const Menu = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+`;
+
 const Wrapper = styled.div`
-  height: 100vh;
   max-width: 100vw;
+  padding-bottom: 50px;
 `;
 
 const Title = styled.h1`

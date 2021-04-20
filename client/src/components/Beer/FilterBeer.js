@@ -3,7 +3,7 @@ import { FiFilter } from "react-icons/fi";
 import styled from 'styled-components';
 import { BeerContext } from "../Context/BeerProvider";
 
-const SearchBar = () => {
+const FilterBeer = () => {
   const {
     allBeers,
     filteredBeers,
@@ -40,7 +40,7 @@ const SearchBar = () => {
 }
 
 const Wrapper = styled.div`
-  margin: 5px;
+  margin-left: 20px;
   display: flex;
   align-items: center;
 `;
@@ -54,4 +54,4 @@ const Input = styled.input`
 `;
 
 
-export default SearchBar
+export default FilterBeer;

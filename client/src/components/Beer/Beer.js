@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import moment from 'moment';
 import { BeerContext } from '../Context/BeerProvider';
-import SmallButton from '../SmallButton';
+import SmallButton from '../Buttons/SmallButton';
 const { REACT_APP_API_ID } = process.env;
 
 const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
@@ -16,7 +16,8 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
   const [itemId, setItemId] = useState();
   const [idFlag, setIdFlag] = useState();
 
-  const handleTapOn = () => {
+  const handleTapOn = (ev) => {
+    
     if (beer.untappdId) {
       fetch('https://business.untappd.com/api/v1/sections/610810/items', {
         method: "POST",
@@ -65,6 +66,7 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
     .catch((err) => {
       console.log("ERROR", err.message);
     })
+    ev.stopPropagation();
   }
 
   //when you handleOnTap gets called try to save the item id to the database
@@ -99,7 +101,8 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
     }
   }, [idFlag]);
   
-  const handleTapOut = () => {
+  const handleTapOut = (ev) => {
+    
     //calculate the number of days the beer has been on tap///
     const tapDate = new Date(beer.tappedOn);
     const tapOutDate = new Date(moment().format("ll"));
@@ -151,6 +154,7 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
         console.log("ERROR", err.message);
         })
     }
+    ev.stopPropagation();
   }
   
   return (
@@ -159,76 +163,125 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
         ev.stopPropagation();
         history.push(`/beer/${_id}`)
       }}>
-      <Div>{name}</Div> 
-      <Div>{type}</Div>
-      <Div>{brewery}</Div>
-      </BeerBtn>
+        {tappedOn || tapOut ? (
+          <>
+          <Td>{name}</Td>
+          <TypeTd>{type}</TypeTd>
+          <Td>{brewery}</Td>
+          </>
+        ) : (
+          <>
+          <NameTd>{name}</NameTd>
+          <NameTd>{type}</NameTd>
+          <NameTd>{brewery}</NameTd>
+          </>
+        )}
         {tappedOn && (
-        <TapDiv>
+        <TapTd>
           
-          <SmallButton onClick={() => handleTapOn()}>tap on</SmallButton>
-          </TapDiv>
+          <SmallButton onClick={(ev) => handleTapOn(ev)}>tap it</SmallButton>
+          </TapTd>
         )}
         {tapOut && (
-        <TapDiv>
+        <TapTd>
           
-          <SmallButton onClick={() => handleTapOut()}>tap out</SmallButton>
-          </TapDiv>
+          <SmallButton onClick={(ev) => handleTapOut(ev)}>tap out</SmallButton>
+          </TapTd>
         )}
+      </BeerBtn>
     </Wrapper>
   )
 }
 
-const Button = styled.button`
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid grey;
-
-    &:hover {
-    text-transform: uppercase;
-    box-shadow: rgba(0, 250, 0, 0.3) 0px 2px 8px 0px;
-  }
-`;
-
-const Div = styled.div`
-  text-transform: uppercase;
-  font-size: .8rem;
-  text-align: left;
-  width:23vw;
-`;
-
-const TapDiv = styled.div`
+const TypeTd = styled.td`
   text-transform: uppercase;
   font-size: .8rem;
   text-align: left;
   width: 20vw;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    font-size: .7rem;
+    width:20vw;
+    margin-right: 3px;
+  }
+`;
+const NameTd = styled.td`
+  text-transform: uppercase;
+  font-size: .8rem;
+  text-align: left;
+  width: 25vw;
+  
+  @media (max-width: 768px) {
+    font-size: .7rem;
+    width: 20vw;
+    margin-right: 5px;
+    overflow-wrap: break-word;
+  }
+  @media (max-width: 500px) {
+    font-size: .6rem;
+    width:20vw;
+    margin-right: 5px;
+    overflow-wrap: break-word;
+  }
+`;
+const Td = styled.td`
+  text-transform: uppercase;
+  font-size: .8rem;
+  text-align: left;
+  width: 20vw;
+  
+
+  @media (max-width: 768px) {
+    font-size: .7rem;
+    width: 25vw;
+    margin-right: 5px;
+    overflow-wrap: break-word;
+  }
+  @media (max-width: 500px) {
+    font-size: .6rem;
+    width: 27vw;
+    margin-right: 5px;
+    overflow-wrap: break-word;
+  }
+`;
+
+const TapTd = styled.td`
+  text-transform: uppercase;
+  font-size: .75rem;
+  text-align: left;
+  width: 10vw;
+  
 `;
 
 const BeerBtn = styled.button`
   text-decoration: none;
   outline: none;
   color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
+  background-color: transparent; 
   border: none;
   cursor: pointer;
+  padding: 3px;
+  margin: 3px 0;
+  vertical-align: middle;
 `;
 
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  max-width: 80vw;
-  margin: 10px;
-  padding: 5px;
+const Wrapper = styled.tr`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: ease-in-out 500ms;
+  line-height: 1.5;
+  font-size: 1.2rem;
 
   &:hover {
     font-weight: 700;
     transform: scale(1.02);
-    box-shadow: rgba(0, 250, 0, 0.3) 0px 2px 8px 0px;
+
+    &:nth-child(even) {
+    background-color: none;
+  }
   }
 
   &:nth-child(even) {

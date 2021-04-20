@@ -1,7 +1,7 @@
 import React, {useContext}  from 'react';
 import styled from 'styled-components';
-import { BeerContext } from './Context/BeerProvider';
-import Beer from './Beer/Beer';
+import { BeerContext } from '../Context/BeerProvider';
+import Beer from '../Beer/Beer';
 
 const OnTap = () => {
     const {
@@ -13,12 +13,13 @@ const OnTap = () => {
       <Title>
         Beer currently on tap:
       </Title>
-      <DivTitle>
-        <Div>BEER</Div>
-        <Div>STYLE</Div>
-        <Div>BREWERY</Div>
-        <AbvDiv>TAP OUT</AbvDiv>
-      </DivTitle>
+      <table>
+      <TableHeader>
+        <Th>BEER</Th>
+        <TypeTh>STYLE</TypeTh>
+        <Th>BREWERY</Th>
+        <TapTh>TAP OUT</TapTh>
+      </TableHeader>
       
       {allBeers?.map((beer, index) => {
         if ((beer.tappedOn !== null) && (beer.tappedOn !== "") && (beer.tappedOut === "" || beer.tappedOut === null)) {
@@ -35,40 +36,60 @@ const OnTap = () => {
           
         }
       })}
+        
+        </table>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  margin: auto;
-  max-width: 80vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   `;
 
-const DivTitle = styled.div`
-  max-width: 80vw;
-  margin: 10px 20px;
+const TableHeader = styled.tr`
+  margin: 10px 0;
   display: flex;
-  justify-content: space-between;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+
+  @media (max-width: 768px) {
+    font-size: .8rem;
+  }
 `;
 
-const Div = styled.div`
-  width: 500px;
+const Th = styled.th`
+  width: 20vw;
   text-align: left;
-  font-size: 1.2rem;
+
+  @media (max-width: 500px) {
+    width: 27vw;
+  }
 `;
-const AbvDiv = styled.div`
-  width: 200px;
+const TypeTh = styled.th`
+  width: 20vw;
   text-align: left;
-  font-size: 1.2rem;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+`;
+const TapTh = styled.th`
+  width: 10vw;
+  text-align: left;
 `;
 
 const Title = styled.div`
   text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 

@@ -1,9 +1,9 @@
 import React, { useState, useContext } from 'react'
 import { useHistory, useParams } from 'react-router';
 import styled from 'styled-components';
-import BeerDetails from './Beer/BeerDetails';
-import FormButton from './FormButton';
-import { BeerContext } from './Context/BeerProvider';
+import BeerDetails from './BeerDetails';
+import FormButton from '../Buttons/FormButton';
+import { BeerContext } from '../Context/BeerProvider';
 
 const UpdateForm = ({ beer }) => {
   const {

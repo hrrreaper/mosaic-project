@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import FormButton from '../FormButton';
-import UntappdSearch from './UntappdSearch.js.js';
+import React, { useState, useContext } from 'react';
+import { BeerContext } from '../Context/BeerProvider';
+import styled, { keyframes } from 'styled-components';
+import FormButton from '../Buttons/FormButton';
+import { GiHops } from "react-icons/gi";
 
 const BeerForm = () => {
+  const {
+    setSubmit,
+  } = useContext(BeerContext);
   const [beerName, setBeerName] = useState();
   const [beerStyle, setBeerStyle] = useState();
   const [brewery, setBrewery] = useState();
@@ -26,13 +30,13 @@ const BeerForm = () => {
       .then((res) => res.json())
       .then((json) => {
         console.log("data from post", json.data);
-        setStatus("submitted")
+        setStatus("submitted");
+        setSubmit(true);
       })
   };
   
   return (
     <Wrapper>
-      <UntappdSearch />
       {status === "" && (
         <Form onSubmit={(ev) => handleSubmit(ev)}>
       <H2>or fill out the form below to add a beer</H2>
@@ -86,31 +90,54 @@ const BeerForm = () => {
           setKegSize(ev.target.value);
         }}
       ></Input>
-      <Label htmlFor="delivery">Delivery Date:</Label>
-      <Input
+          {/* <Label htmlFor="delivery">Delivery Date:</Label> */}
+      {/* <Input
         type="text"
         id="delivery"
         name="delivery"
         onChange={(ev) => {
           setDelivery(ev.target.value);
         }}
-      ></Input>
+      ></Input> */}
 
         <FormButton type="submit" >Submit</FormButton>
         </Form>
       )}
 
       {status === "submitted" && (
-        <Div>Cheers! That beer's been added to the database.</Div>
+        <Div>Cheers! That beer's been added to the database. <HopSpan><GiHops className="hop" /></HopSpan></Div>
       )}
 
     </Wrapper>
   )
 }
 
+
+const rock = keyframes`
+   0% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+`;
+
+const HopSpan = styled.span`
+  color: rgba(0,200,0,0.7);
+
+  .hop {
+  animation: ${rock} 2s ease-in-out forwards infinite;
+  }
+`;
+
 const Wrapper = styled.div`
   margin: auto;
-  width: 80vw;
+  width: 75vw;
 
     @media (max-width: 768px) {
     margin-left: 20px;
@@ -125,7 +152,7 @@ const Required = styled.div`
 const Div = styled.div`
   margin-top: 100px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 `;
 
 const Form = styled.form`
@@ -165,7 +192,6 @@ const Label = styled.label`
 
     @media (max-width: 768px) {
     font-size: .7rem;
-    
   }
   
 `;
@@ -178,6 +204,5 @@ const H2 = styled.h2`
     font-size: 1rem;
   } 
 `;
-
 
 export default BeerForm;

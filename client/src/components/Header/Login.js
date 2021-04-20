@@ -8,7 +8,6 @@ const {REACT_APP_GOOGLE_CLIENT} = process.env;
 
 const Login = () => {
   const { userObj, handleLogin } = useContext(UserContext);
-  console.log(userObj)
   
   return userObj ? (
     <Wrapper>
@@ -25,11 +24,12 @@ const Login = () => {
           onSuccess={handleLogin}
           onFailure={handleLogin}
           cookiePolicy={'single_host_origin'}
-          style={{borderRadius:"5px"}}
+          className="google"
         />
       </LoginDiv>
   )
 };
+
 
 const Wrapper = styled.div`
   display: flex;
@@ -48,9 +48,6 @@ const LoginDiv = styled.div`
 `;
 
 const Div = styled.div`
-  @media (max-width: 768px) {
-    display:none;
-  }
 `;
 
 const Img = styled.img`
@@ -60,7 +57,9 @@ const Img = styled.img`
   margin: 0 10px;
 
   @media (max-width: 768px) {
-    display:none;
+    /* display:none; */
+    height: 20px;
+  width: 20px;
   }
 `;
 

@@ -11,17 +11,17 @@ const Sidebar = () => {
       <Nav to='/'>
       <Logo src={logo} alt="logo"/>
       </Nav>
-      <StyledLink to='/beers'>
-        <IconSpan>
-          <BeerIcon className="beer" size={17}/>
-        </IconSpan>
-        All Beers
-      </StyledLink>
       <StyledLink to='/add/beer'>
         <IconSpan>
           <BeerIcon className="beer" size={17}/>
         </IconSpan>
         Add a beer
+      </StyledLink>
+      <StyledLink to='/beers'>
+        <IconSpan>
+          <BeerIcon className="beer" size={17}/>
+        </IconSpan>
+        All Beers
       </StyledLink>
       <StyledLink to='/on-tap'>
       <IconSpan>
@@ -51,36 +51,47 @@ const Wrapper = styled.div`
   position: fixed;
   z-index: 10;
   float: left;
-  height: 100vh;
+  height: 110vh;
   width: 215px;
   top: 0;
-  background-color: rgba(0,200,0,0.1);
+  background-color: rgba(0,250,0,0.1);
 
   @media (max-width: 768px) {
     width: 110px;
-    height: 100vh;
+    
+  }
+
+  @media (max-width: 500px) {
+    width: 85px;
   }
 `;
 
 const StyledLink = styled(NavLink)`
   text-transform: uppercase;
+  height: fit-content;
   font-weight: 700;
   font-size: 1rem;
   text-decoration: none;
   color: #000;
   margin: 20px 0;
-  margin-left: 20px;
+  margin-left: 25px;
   padding-bottom: 10px;
   width: fit-content;
 
     @media (max-width: 768px) {
+    margin-left: 10px;
     font-size: .7rem;
     display: flex;
     flex-direction: column;
   }
+
+  @media (max-width: 500px) {
+    margin-left: 5px;
+    font-size: .55rem;
+  }
   
   &.active {
-    color: rgba(0,200,0,0.7);
+    color: rgba(0,200,0,0.8);
 
     .beer{
     transform: rotate(50deg);
@@ -93,7 +104,7 @@ const StyledLink = styled(NavLink)`
     display: block;
     width: 0;
     height: 3px;
-    background: rgba(0,200,0,0.7);
+    background: rgba(0,200,0,0.8);
     transition: width ease-out .5s;
     margin-top: 5px;
   }
@@ -102,7 +113,7 @@ const StyledLink = styled(NavLink)`
     width: 100%;}
 
   &:hover {
-    color: rgba(0,200,0,0.7);
+    color: rgba(0,200,0,0.8);
     
     .beer{
     transform: rotate(50deg);

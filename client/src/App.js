@@ -4,18 +4,19 @@ import GlobalStyle from "./components/GlobalStyles";
 import Header from "./components/Header/Header";
 import Homepage from "./components/Homepage";
 import Sidebar from "./components/Sidebar";
-import AllBeers from "./components/Beer/AllBeers";
-import BeerDetails from "./components/Beer/BeerDetails.js";
-import BeerForm from "./components/Beer/BeerForm";
-import InStock from "./components/Beer/InStock";
+import BeerDetails from "./components/Beer/BeerDetails";
+import AllBeers from "./components/BeerViews/AllBeers";
+import InStock from "./components/BeerViews/InStock";
+import OnTap from "./components/BeerViews/OnTap";
 import Breweries from "./components/Brewery/Breweries";
 import styled from "styled-components";
-import OnTap from "./components/OnTap";
 import { UserContext } from './components/Context/UserProvider';
 import MainSignIn from "./components/MainSignIn";
+import AddBeer from "./components/AddBeer";
+import ErrorPage from "./components/ErrorPage";
+
 
 const App = () => {
-
   const { userObj } = useContext(UserContext);
 
   //redirects to the login page unless you are signed in (once you're signed in it saves your user info in local storage and the db)
@@ -53,24 +54,27 @@ const App = () => {
           <Route exact path="/beers">
             <AllBeers />
             </Route>
-            <Route exact path="/beers/:page">
-              <AllBeers  />
-            </Route>
-          <Route path="/beer/:_id">
+          <Route exact path="/beer/:_id">
             <BeerDetails />
           </Route>
-          <Route path="/add/beer">
-            <BeerForm />
+          <Route exact path="/add/beer">
+            <AddBeer />
           </Route>
-          <Route path="/in-stock">
+          <Route exact path="/in-stock">
             <InStock />
           </Route>
-          <Route path="/on-tap">
+          <Route exact path="/on-tap">
             <OnTap />
           </Route>
-          <Route path="/breweries">
+          <Route exact path="/breweries">
             <Breweries />
-                </Route>
+          </Route>
+          <Route path="/beers/:page">
+            <AllBeers  />
+          </Route>
+          <Route path="/error">
+            <ErrorPage />
+          </Route>
             </>
             ) : (
                 <Redirect to="/" />
@@ -110,6 +114,9 @@ const SidebarDiv = styled.div`
 
   @media (max-width: 768px) {
     width: 110px;
+  }
+  @media (max-width: 500px) {
+    width: 90px;
   }
 `;
 

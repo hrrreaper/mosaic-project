@@ -6,7 +6,7 @@ const SmallButton = styled.button`
   letter-spacing: 1px;
   color: #000;
   font-weight: 700;
-  font-size: .80rem;
+  font-size: .8rem;
   cursor: pointer;
   border-radius: 5px;
   width: fit-content;
@@ -25,6 +25,11 @@ const SmallButton = styled.button`
     box-shadow: 3px 3px 5px -2px rgba(0,200,0,0.7);
     background-position: -90% 100%;
   }
+
+  @media (max-width: 768px) {
+    font-size: .65rem;
+  }
+
 `;
 
 export default SmallButton

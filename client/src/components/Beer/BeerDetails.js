@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
 import styled from 'styled-components';
 import Loading from '../Loading';
-import UpdateForm from '../UpdateForm';
-import FormButton from '../FormButton';
+import UpdateForm from './UpdateForm';
+import FormButton from '../Buttons/FormButton';
 import moment from 'moment';
 import { BeerContext } from '../Context/BeerProvider';
 const { REACT_APP_API_ID } = process.env;
@@ -17,6 +17,7 @@ const BeerDetails = () => {
     setUpdateTapOn,
     setUpdateDelete,
     update,
+    setSubmit
   } = useContext(BeerContext);
 
   const [beer, setBeer] = useState(undefined);
@@ -54,7 +55,8 @@ const BeerDetails = () => {
     })
     .then((res) => res.json())
     .then((json) => {
-      console.log("this beer has been deleted from the database")
+      console.log("this beer has been deleted from the database");
+      setSubmit(true);
     })
     .catch((err) => {
       console.log("ERROR", err.message);
@@ -155,7 +157,7 @@ const BeerDetails = () => {
     const tapDate = new Date(beer.tappedOn);
     const tapOutDate = new Date(moment().format("ll"));
     const diffInTime = tapOutDate.getTime() - tapDate.getTime();
-    const diffInDays = diffInTime / (1000 * 3600 * 24);
+    const diffInDays = diffInTime / (1000 * 3600 * 24) + 1;
 
     fetch(`/update/${_id}`, {
       method: "PATCH",
@@ -220,16 +222,23 @@ const BeerDetails = () => {
   return (
     <Wrapper>
       {status === "idle" && (
-          <Div>
-          <div> <Span>Beer:</Span> {beer.beerName}</div>
-          <div> <Span>Style:</Span> {beer.beerStyle}</div>
-          <div> <Span>Brewery:</Span> {beer.brewery}</div>
-          <div> <Span>Location:</Span> {beer.breweryLocation}</div>
-          <div> <Span>ABV:</Span> {beer.ABV}</div>
-          <div> <Span>Tapped:</Span> {beer.tappedOn}</div>
-          <div> <Span>Tapped Out:</Span> {beer.tappedOut}</div>
-          <div> <Span>Days on tap:</Span> {beer.daysOnTap}</div>
-          
+        <Div>
+          <Img src={beer.logo} />
+          <Name> {beer.beerName}</Name>
+          <Brewery> {beer.brewery} </Brewery>
+          <Style>{beer.beerStyle} | <Abv>{beer.ABV}% abv </Abv></Style>
+          {beer.breweryLocation && (
+          <Style> <Span>Location:</Span> {beer.breweryLocation}</Style>
+          )}
+          {beer.tappedOn && (
+          <Style> <Span>Tapped On:</Span> {beer.tappedOn}</Style>
+          )}
+          {beer.tappedOut && (
+          <Style> <Span>Tapped Out:</Span> {beer.tappedOut}</Style>
+          )}
+          {beer.daysOnTap && beer.daysOnTap !== 0 && (
+          <Days> <Span>Days on tap:</Span> {beer.daysOnTap}</Days>
+          )}
           </Div>
       )}
       <BtnDiv>
@@ -259,6 +268,44 @@ const BeerDetails = () => {
   )
 }
 
+const Brewery = styled.div`
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-style: italic;
+  
+`;
+
+const Style = styled.div`
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  
+`;
+
+const Days = styled.div`
+  font-size: 1rem;
+`;
+
+const Abv = styled.span`
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+`;
+
+
+const Img = styled.img`
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  float: left;
+`;
+
+
+const Name = styled.div`
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+`;
+
 const BtnDiv = styled.div`
   display: flex;
   width: 250px;
@@ -271,13 +318,16 @@ const Span = styled.span`
 `;
 
 const Div = styled.div`
+  border-radius:20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 35px;
+  background-color: rgba(0, 250, 0, 0.1);
+  padding: 20px;
   line-height: 1.5;
-  width: fit-content;
+  width: 50vw;
 `;
 
 const Wrapper = styled.div`
+  width: 75vw;
   margin-top: 50px;
   display: flex;
   justify-content: center;

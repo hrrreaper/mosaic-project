@@ -5,7 +5,6 @@ import SelectedSearch from './SelectedSearch';
 
 const UntappdSearchItem = ({ results }) => {
   const { showResults, setShowResults } = useContext(BeerContext);
-
   const [status, setStatus] = useState('');
   const [beer, setBeer] = useState();
 
@@ -26,7 +25,7 @@ const UntappdSearchItem = ({ results }) => {
                   setShowResults(false);
                 }} >
                 <Results>
-                  <Img src={beer.label_image} />
+                  <Img src={beer.label_image_hd} />
                   <TextDiv>
                     <Div><Span>Name:</Span> {beer.name}</Div>
                     <Div><Span>Brewery:</Span> {beer.brewery}</Div>
@@ -51,7 +50,7 @@ const UntappdSearchItem = ({ results }) => {
 }
 
 const Wrapper = styled.div`
-
+  
 @media (max-width: 768px) {
     width:60vw;
   }
@@ -75,7 +74,6 @@ const Img = styled.img`
 
   @media (max-width: 768px) {
     display:none;
-
   }
 `;
 
@@ -92,7 +90,7 @@ const Div = styled.div`
 const Span = styled.span`
   font-weight: 700;
   text-transform: uppercase;
-  font-size: .7rem;
+  
 `;
 
 const Search = styled.li`

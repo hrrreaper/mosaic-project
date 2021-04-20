@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import styled from 'styled-components';
 import { FiSearch } from "react-icons/fi";
 import UntappdSearchItem from './UntappdSearchItem';
-import FormButton from '../FormButton';
+import FormButton from '../Buttons/FormButton';
 const { REACT_APP_API_ID } = process.env;
 
 const UntappdSearch = () => {
@@ -98,6 +98,7 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     justify-content: flex-start;
     align-items: flex-start;
+    margin-left: 20px;
   }
 `;
 

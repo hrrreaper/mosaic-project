@@ -10,6 +10,12 @@ export default createGlobalStyle`
     body {
         background-color: #FFF;
         scroll-behavior: smooth;
+        
+    }
+
+    table {
+        border-collapse: collapse;
+        vertical-align: middle;
     }
     
     *,

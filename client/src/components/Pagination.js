@@ -45,6 +45,12 @@ const StyledLink = styled(NavLink)`
     font-weight: 700;
     box-shadow: rgba(0, 250, 0, 0.3) 0px 2px 8px 0px;
   }
+
+  @media (max-width: 768px) {
+    margin: 5px;
+    font-size: .7rem;
+    
+  }
 `;
 
 const Div = styled.div`

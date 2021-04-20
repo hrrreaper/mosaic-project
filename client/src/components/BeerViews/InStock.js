@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import styled from 'styled-components';
 import { BeerContext } from '../Context/BeerProvider';
-import Beer from './Beer';
+import Beer from '../Beer/Beer';
 
 const InStock = () => {
   const {
@@ -13,12 +13,13 @@ const InStock = () => {
       <Title>
         Beers currently in stock:
       </Title>
-      <DivTitle>
-        <Div>BEER</Div>
-        <Div>STYLE</Div>
-        <Div>BREWERY</Div>
-        <TapDiv>TAP</TapDiv>
-      </DivTitle>
+      <Table>
+      <TableHeader>
+        <Th>BEER</Th>
+        <TypeTh>STYLE</TypeTh>
+        <Th>BREWERY</Th>
+        <TapTh>TAP IT</TapTh>
+      </TableHeader>
       
       {allBeers?.map((beer, index) => {
         if (!beer.tappedOn) {
@@ -34,30 +35,54 @@ const InStock = () => {
           
         }
       })}
+        </Table>
     </Wrapper>
   )
 };
 
   const Wrapper = styled.div`
-  margin: auto;
-  max-width: 80vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   `;
 
-  const DivTitle = styled.div`
-  margin: 10px 20px;
-  display: flex;
-  font-weight: 700;
-  font-size: 1.3rem;
-  max-width: 80vw;
+const Table = styled.table`
+  max-width: 75vw;
+
 `;
 
-const Div = styled.div`
-  width: 500px;
-  text-align: left;
+  const TableHeader = styled.tr`
+  margin: 10px 0;
+  display: flex;
+  font-weight: 700;
   font-size: 1.2rem;
+
+  @media (max-width: 768px) {
+    font-size: .8rem;
+  }
 `;
-const TapDiv = styled.div`
-  width: 150px;
+
+const Th = styled.th`
+  width: 20vw;
+  text-align: left;
+
+  @media (max-width: 500px) {
+    width: 27vw;
+  }
+`;
+
+const TypeTh = styled.th`
+  width: 20vw;
+  text-align: left;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+`;
+
+const TapTh = styled.th`
+  width: 10vw;
   text-align: left;
 `;
 
@@ -65,7 +90,11 @@ const Title = styled.div`
   text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 export default InStock;

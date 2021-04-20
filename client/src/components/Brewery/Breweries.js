@@ -93,7 +93,7 @@ const Breweries = () => {
 };
 
 const Select = styled.select`
-  width: 40%;
+  width: 35vw;
   height: 35px;
   background: white;
   color: gray;
@@ -104,6 +104,11 @@ const Select = styled.select`
   option {
     font-size: .85rem;
     color: #000;
+  }
+
+  @media (max-width: 768px) {
+    height: 25px;
+    font-size: .8rem;
   }
 `;
 
@@ -138,6 +143,10 @@ const DivTitle = styled.h2`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const SubTitle = styled.h3`
@@ -145,6 +154,10 @@ const SubTitle = styled.h3`
   font-weight: 700;
   font-size: 1rem;
   margin: 10px 0;
+
+  @media (max-width: 768px) {
+    font-size: .7rem;
+  }
 `;
 
 

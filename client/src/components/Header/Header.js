@@ -14,7 +14,7 @@ const Header = () => {
 
 const Wrapper = styled.div`
   height: 10vh;
-  width: 95vw;
+  width: 98vw;
   display: flex;
   flex-direction: row;
   align-items: center;

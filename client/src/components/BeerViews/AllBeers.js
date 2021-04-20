@@ -1,12 +1,14 @@
 import React, { useContext, useState } from 'react';
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Loading from '../Loading';
 import { BeerContext } from '../Context/BeerProvider';
-import Beer from './Beer';
+import Beer from '../Beer/Beer';
 import Pagination from '../Pagination';
 import { IoRocketOutline } from 'react-icons/io5';
-import SearchBar from './SearchBar'
+import FilterBeer from '../Beer/FilterBeer';
 import { v4 as uuidv4 } from 'uuid';
+
+
 
 const AllBeers = () => {
   const {
@@ -24,32 +26,33 @@ const AllBeers = () => {
   const currentItems = filteredBeers?.slice(indexOfFirstItem, indexOfLastItem);
   
   //Change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const paginate = (number) => setCurrentPage(number);
 
   //unique beer count
   let uniqueBeers = [...new Set(allBeers?.map(item => item.beerName))];
 
   return (
+    <>
+      <FilterBeer />
     <Wrapper>
-      <SearchBar />
       <Title>
-        All the beers we've had on tap.
+          All the beers we've had on tap
       </Title>
       <SubTitle>
         <SubTitleDiv>
           Total: {allBeers?.length}
         </SubTitleDiv>
         <SubTitleDiv>
-          Unique: {uniqueBeers.length} <IoRocketOutline />
+          Unique: {uniqueBeers.length} 
         </SubTitleDiv>
       </SubTitle>
       {allBeers ? (
-        <>
-          <DivTitle>
-          <Div>BEER</Div>
-          <Div>STYLE</Div>
-          <Div>BREWERY</Div>
-          </DivTitle>
+        <Table>
+          <TableHeader>
+          <Th>BEER</Th>
+          <Th>STYLE</Th>
+          <Th>BREWERY</Th>
+          </TableHeader>
       {currentItems?.map((beer, index) => {
         return <Beer
           key={uuidv4()}
@@ -61,7 +64,7 @@ const AllBeers = () => {
         />
       })}
           
-          </>
+          </Table>
       ) : (
       <Loading />
       )
@@ -73,14 +76,20 @@ const AllBeers = () => {
           paginate={paginate}
       />
       </PagesDiv>
-    </Wrapper>
+      </Wrapper>
+      </>
   )
 }
 
 const Wrapper = styled.div`
   height: 100vh;
-  max-width: 75vw;
-  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+
+const Table = styled.table`
+  margin: 10px;
 `;
 
 const PagesDiv = styled.div`
@@ -90,7 +99,11 @@ const PagesDiv = styled.div`
 const Title = styled.h2`
   text-align: center;
   font-size: 1.2rem;
-  margin: 10px;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: .9rem;
+  }
 `;
 
 const SubTitle = styled.h3`
@@ -98,22 +111,37 @@ const SubTitle = styled.h3`
   font-size: 1rem;
   margin-bottom: 20px;
   text-transform: lowercase;
+
+  @media (max-width: 768px) {
+    font-size: .7rem;
+  }
 `;
 
 const SubTitleDiv = styled.div`
   margin-bottom: 5px;
 `;
 
-const DivTitle = styled.div`
-  margin: 10px;
+
+const TableHeader = styled.tr`
+  margin: 10px 0;
   display: flex;
   font-weight: 700;
+  font-size: 1.2rem;
+
+  @media (max-width: 768px) {
+    font-size: .8rem;
+  }
 `;
 
-const Div = styled.div`
+const Th = styled.th`
   width: 25vw;
   text-align: left;
-  font-size: 1.2rem;
+
+
+    @media (max-width: 768px) {
+    font-size: .8rem;
+    width: 22vw;
+  }
 `;
 
 
