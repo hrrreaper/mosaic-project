@@ -9,7 +9,7 @@ const MainSignIn = () => {
       <Img src={logo} />
       <LoginWrapper>
         <Div>
-        Please Login:
+        Please Login to continue:
         </Div>
       <Login/>
       </LoginWrapper>
@@ -27,13 +27,14 @@ const Wrapper = styled.div`
 `;
 
 const Img = styled.img`
-  max-height: 95vh;
+  max-height: 96vh;
 `;
 
 const Div = styled.div`
-  margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 700;
+  padding-top: 15px;
+  text-align: center;
 `;
 
 const LoginWrapper = styled.div`
@@ -43,11 +44,11 @@ const LoginWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 250px;
-  height: 125px;
+  width: 275px;
+  height: 150px;
   padding: 30px;
-  background-color: rgba(190,250,190,0.9);
-  border-radius: 10px;
+  background-color: rgba(235, 235, 187, 0.7);
+  border-radius: 15px;
 `;
 
 export default MainSignIn;

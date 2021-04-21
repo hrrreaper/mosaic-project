@@ -3,8 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export default createGlobalStyle`
   
     :root {
-    --primary-color: #138a36;
-    --accent-color: #80ff72;
+    --primary-color: rgba(0,250,0,0.1);
     }
 
     body {

@@ -203,14 +203,14 @@ const TypeTd = styled.div`
   width: 20vw;
   padding-right: 10px;
 
-  @media (max-width: 500px) {
-    display: none;
-  }
-
   @media (max-width: 768px) {
     font-size: .7rem;
     width:20vw;
   }
+  @media (max-width: 500px) {
+    display: none;
+  }
+
 `;
 const NameTd = styled.div`
   text-align: left;
@@ -220,12 +220,12 @@ const NameTd = styled.div`
   
   @media (max-width: 768px) {
     font-size: .7rem;
-    width: 20vw;
+    width: 21vw;
     overflow-wrap: break-word;
   }
   @media (max-width: 500px) {
     font-size: .6rem;
-    width:20vw;
+    width: 21vw;
     overflow-wrap: break-word;
   }
 `;
@@ -238,10 +238,6 @@ const DateTd = styled.div`
   padding-right: 10px;
   
   @media (max-width: 768px) {
-    font-size: .7rem;
-    width: 10vw;
-  }
-  @media (max-width: 500px) {
     display: none;
   }
 `;
@@ -253,7 +249,7 @@ const Td = styled.div`
   
   @media (max-width: 768px) {
     font-size: .7rem;
-    width: 25vw;
+    width: 22vw;
     overflow-wrap: break-word;
   }
   @media (max-width: 500px) {
@@ -269,6 +265,10 @@ const TapTd = styled.div`
   width: 10vw;
   padding-right: 10px;
   
+  @media (max-width: 768px) {
+    font-size: .7rem;
+    width: 10vw;
+  }
 `;
 
 const BeerBtn = styled.div`

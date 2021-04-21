@@ -7,6 +7,7 @@ import { GiHops } from "react-icons/gi";
 
 const SelectedSearch = ({ beer, results }) => {
   const {
+    submit,
     setSubmit,
     showResults,
     setShowResults
@@ -19,6 +20,7 @@ const SelectedSearch = ({ beer, results }) => {
   const abv = beer.abv;
   const untappdId = beer.untappd_id;
   const logo = beer.label_image_hd;
+
   
   const handleSubmit = (ev) => {
     ev.preventDefault();
@@ -35,13 +37,14 @@ const SelectedSearch = ({ beer, results }) => {
       .then((json) => {
         console.log("data from post", json.data);
         setStatus("submitted");
-        setSubmit(true);
+        setSubmit(!submit);
       })
   }
   return (
     <>
-      {beer && status === '' && showResults === false && (
         <Wrapper>
+        {beer && status === '' && showResults === false && (
+          <>
           <ImgWrapper>
           <Img src={beer.label_image} />
           </ImgWrapper>
@@ -52,28 +55,36 @@ const SelectedSearch = ({ beer, results }) => {
             <TxtDiv><Span>Style:</Span> {beer.style}</TxtDiv>
             <TxtDiv><Span>ABV:</Span> {beer.abv}</TxtDiv>
             <TxtDiv>{beer.description}</TxtDiv>
+
             <BtnWrapper>
               
             <FormButton onClick={(ev) => handleSubmit(ev)}>add beer</FormButton>
-              <FormButton onClick={() => {
-                setShowResults(true);
-              }}>
+              <FormButton onClick={() => setShowResults(true)}>
                 back to results</FormButton>
             </BtnWrapper>
           </TextWrapper>
-            
-        </Wrapper>
-      ) }
-      
-
-      {status === 'submitted' && (
-        <>
-          <Div>Cheers! {beer.name} has been added. <HopSpan><GiHops className="hop" /></HopSpan></Div>
-        </>  
+        </>
       )}
+      
+      {status === 'submitted' && (
+        <SubmitDiv>
+          <Div>Cheers! {beer.name} has been added. <HopSpan><GiHops className="hop" /></HopSpan></Div>
+          <FormButton onClick={() => setShowResults(true)}>
+            back to results
+            </FormButton>
+        </SubmitDiv>  
+      )}
+        </Wrapper>
+
     </>
   )
 }
+
+const SubmitDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 const rock = keyframes`
   0% {
@@ -100,6 +111,7 @@ const HopSpan = styled.span`
 const Wrapper = styled.div`
   border-radius:20px;
   display: flex;
+  justify-content: center;
   width: 500px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 10px;
@@ -128,9 +140,9 @@ const Img = styled.img`
 `;
 
 const Div = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  text-align: center;
 `;
 
 const TxtDiv = styled.div`

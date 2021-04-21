@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FiSearch } from "react-icons/fi";
 import UntappdSearchItem from './UntappdSearchItem';
 import FormButton from '../Buttons/FormButton';
+import { FaUntappd } from "react-icons/fa";
 const { REACT_APP_API_ID } = process.env;
 
 const UntappdSearch = () => {
@@ -23,7 +24,8 @@ const UntappdSearch = () => {
       })
         .then((res) => res.json())
         .then((json) => {
-          setResults(json.items)
+          setResults(json.items);
+          console.log(json.items);
         })
         .catch((err) => {
         console.log("ERROR", err.message)
@@ -38,7 +40,8 @@ const UntappdSearch = () => {
   return (
     <Wrapper>
       <Form>
-      <Label htmlFor='beer'>search untappd:</Label>
+        <Label htmlFor='beer'>
+          <Icon><FaUntappd size={18} /></Icon> search untappd:</Label>
       <Input
         type="text"
         value={value}
@@ -66,6 +69,7 @@ const UntappdSearch = () => {
             ev.preventDefault();
             setResults();
             setValue('');
+            
         }}
         >
         clear
@@ -138,6 +142,12 @@ const Label = styled.label`
   margin-right: 5px;
   font-weight: 700;
   text-align: right;
+  display: flex;
+  align-items: center;
+`;
+
+const Icon = styled.span`
+  margin-right: 5px;
 `;
 
 const List = styled.ul`

@@ -56,7 +56,7 @@ const StyledLink = styled(NavLink)`
   font-size: .8rem;
   width: 22px;
   height: fit-content;
-  margin: 20px 5px 40px 5px;
+  margin: 10px 5px;
 
   &:hover {
     text-decoration: underline;
@@ -78,6 +78,7 @@ const StyledLink = styled(NavLink)`
 const Div = styled.div`
   display: block;
   width: 75vw;
+  margin-bottom: 50px;
 `;
 
 const Ul = styled.ul`
@@ -117,7 +118,7 @@ const StyledNavLink = styled(NavLink)`
   color: #000;
   font-size: .8rem;
   width: fit-content;
-  margin: 20px 5px 40px 5px;
+  margin: 10px 5px;
 
   &:hover {
     text-decoration: underline;

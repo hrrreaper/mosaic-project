@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { BeerContext } from '../Context/BeerProvider';
 import styled from 'styled-components';
 import SelectedSearch from './SelectedSearch';
@@ -8,6 +8,9 @@ const UntappdSearchItem = ({ results }) => {
   const [status, setStatus] = useState('');
   const [beer, setBeer] = useState();
 
+  useEffect(() => {
+    setShowResults(true);
+  },[])
 
   return (
     <>
@@ -58,13 +61,16 @@ const Wrapper = styled.div`
 
 const Results = styled.div`
   display: flex;
-  justify-content: center;
+  padding-left: 25px;
+  justify-content: flex-start;
   align-items: center;
+  letter-spacing: 2px;
 
   @media (max-width: 768px) {
     justify-content: flex-start;
     align-items: flex-start;
     width:50vw;
+    font-size: .65rem;
   }
 `;
 
@@ -106,11 +112,16 @@ const Search = styled.li`
 `;
 
 const Button = styled.button`
-  width: 500px;
+  outline: none;
+  width: 550px;
   padding: 10px;
   background-color: #FFF;
   border: none;
   cursor: pointer;
+
+    @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
 
 

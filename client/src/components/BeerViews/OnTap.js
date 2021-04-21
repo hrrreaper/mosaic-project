@@ -72,6 +72,11 @@ const Th = styled.div`
   width: 20vw;
   text-align: left;
 
+  @media (max-width: 768px) {
+    font-size: .7rem;
+    width: 22vw;
+  }
+
   @media (max-width: 500px) {
     width: 27vw;
   }
@@ -81,6 +86,10 @@ const TypeTh = styled.div`
   width: 20vw;
   text-align: left;
 
+  @media (max-width: 768px) {
+    font-size: .7rem;
+    width: 22vw;
+  }
   @media (max-width: 500px) {
     display: none;
   }
@@ -89,6 +98,11 @@ const TapTh = styled.div`
   display: table-cell;
   width: 10vw;
   text-align: left;
+
+  @media (max-width: 768px) {
+    font-size: .7rem;
+    width: 10vw;
+  }
 `;
 
 const Title = styled.div`

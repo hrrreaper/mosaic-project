@@ -100,6 +100,7 @@ const Select = styled.select`
   padding-left: 5px;
   font-size: 1rem;
   border: 1px solid grey;
+  border-radius: 5px;
 
   option {
     font-size: .85rem;

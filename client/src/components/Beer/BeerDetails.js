@@ -1,11 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Loading from '../Loading';
 import UpdateForm from './UpdateForm';
 import FormButton from '../Buttons/FormButton';
 import moment from 'moment';
 import { BeerContext } from '../Context/BeerProvider';
+import { IoArrowBack } from "react-icons/io5";
+import { GiHops } from "react-icons/gi";
 const { REACT_APP_API_ID } = process.env;
 
 const BeerDetails = () => {
@@ -15,6 +17,7 @@ const BeerDetails = () => {
     setUpdateTapOut,
     updateTapOn,
     setUpdateTapOn,
+    updateDelete,
     setUpdateDelete,
     update,
     setSubmit
@@ -61,7 +64,7 @@ const BeerDetails = () => {
     .catch((err) => {
       console.log("ERROR", err.message);
     })
-    setUpdateDelete(true);
+    setUpdateDelete(!updateDelete);
     history.goBack();
   }
   
@@ -82,8 +85,8 @@ const BeerDetails = () => {
         .then((res) => res.json())
         .then((json) => {
           setItemId(json.item.id);
-          setUpdateTapOn(true);
-          setIdFlag(true);
+          setUpdateTapOn(!updateTapOn);
+          setIdFlag(!idFlag);
           console.log("get id from here", json.item.id)
         })
       .catch((err) => {
@@ -111,7 +114,7 @@ const BeerDetails = () => {
     })
       .then((res) => res.json())
       .then((json) => {
-        setUpdateTapOn(true);
+        setUpdateTapOn(!updateTapOn);
       })
     .catch((err) => {
       console.log("ERROR", err.message);
@@ -180,7 +183,7 @@ const BeerDetails = () => {
       .then((res) => res.json())
       .then((json) => {
         console.log("data from post", json.data);
-        setUpdateTapOut(true);
+        setUpdateTapOut(!updateTapOut);
       })
     .catch((err) => {
       console.log("ERROR",err.message)
@@ -198,7 +201,7 @@ const BeerDetails = () => {
         .then((res) => res.json())
         .then((json) => {
           console.log(json);
-          setUpdateTapOut(true);
+          setUpdateTapOut(!updateTapOut);
         })
       .catch((err) => {
         console.log("ERROR", err.message);
@@ -222,6 +225,13 @@ const BeerDetails = () => {
   return (
     <Wrapper>
       {status === "idle" && (
+        <>
+          <BackDiv>
+            <FormButton title="go back" onClick={() => history.goBack()}>
+              <IoArrowBack size={19} />
+              <GiHops className="hop" size={17} />
+            </FormButton>
+          </BackDiv>
         <Div>
           <Img src={beer.logo} />
           <Name> {beer.beerName}</Name>
@@ -240,10 +250,11 @@ const BeerDetails = () => {
           <Days> <Span>Days on tap:</Span> {beer.daysOnTap}</Days>
           )}
           </Div>
+        </>  
       )}
       <BtnDiv>
         {status === "idle" && (beer.tappedOn === "" || beer.tappedOn === null ) && (
-          <FormButton onClick={() => handleOnTap()}>On Tap</FormButton>
+          <FormButton onClick={() => handleOnTap()}>Tap it</FormButton>
         )}
         {status === "idle" && (beer.tappedOn !== null) && (beer.tappedOn !== "") && (beer.tappedOut === "" || beer.tappedOut === null) && (
           <FormButton onClick={() => handleTapOut()}>Tap Out</FormButton>
@@ -267,6 +278,42 @@ const BeerDetails = () => {
     </Wrapper>
   )
 }
+
+const rock = keyframes`
+  0% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+`;
+
+const BackDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 225px;
+
+  .hop {
+    color: rgba(0,200,0,0.8);
+    animation: ${rock} 2s ease-in-out forwards infinite;
+  }
+
+  @media (max-width: 768px) {
+    top: 10px;
+    left: 125px;
+  }
+  @media (max-width: 500px) {
+    left: 100px;
+  }
+`;
 
 const Brewery = styled.div`
   font-size: 1.1rem;
@@ -304,6 +351,9 @@ const Name = styled.div`
   margin-bottom: 10px;
   text-transform: uppercase;
 
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const BtnDiv = styled.div`
@@ -323,11 +373,18 @@ const Div = styled.div`
   background-color: rgba(0, 250, 0, 0.1);
   padding: 20px;
   line-height: 1.5;
-  width: 450px;
+  width: 475px;
   text-align: right;
 
   @media (max-width: 768px) {
     width: 300px;
+    margin-bottom: 15px;
+    overflow-wrap: break-word;
+  }
+
+  @media (max-width: 400px) {
+    width: 200px;
+    margin-bottom: 10px;
     overflow-wrap: break-word;
   }
 `;

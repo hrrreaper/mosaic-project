@@ -33,7 +33,7 @@ const FilterBeer = () => {
         placeholder="find a beer"
         value={searchItem}
         onChange={(ev)=> handleChange(ev)} />
-        <FiFilter size={20}/>
+        <FiFilter size={15}/>
       </Wrapper>
     </>
   )
@@ -48,7 +48,8 @@ const Wrapper = styled.div`
 
 const Input = styled.input`
   border-radius: 5px;
-  padding: 4px;
+  font-size: .8rem;
+  padding: 2px;
   border: 1px solid grey;
   outline:none;
   margin-right: 5px;

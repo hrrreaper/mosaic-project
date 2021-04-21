@@ -13,28 +13,32 @@ const Sidebar = () => {
       </Nav>
       <StyledLink to='/add/beer'>
         <IconSpan>
-          <BeerIcon className="beer" size={17}/>
+          <BeerIcon className="beer" size={18}/>
         </IconSpan>
         Add a beer
       </StyledLink>
+
+      <StyledLink to='/in-stock'>
+        <IconSpan>
+          <BeerIcon className="beer" size={18}/>
+        </IconSpan>
+        in stock
+      </StyledLink>
+
+      <StyledLink to='/on-tap'>
+      <IconSpan>
+          <BeerIcon className="beer" size={18} />
+        </IconSpan>
+      on Tap
+      </StyledLink>
+
       <StyledLink to='/beers/1'>
         <IconSpan>
-          <BeerIcon className="beer" size={17}/>
+          <BeerIcon className="beer" size={18}/>
         </IconSpan>
         All Beers
       </StyledLink>
-      <StyledLink to='/on-tap'>
-      <IconSpan>
-          <BeerIcon className="beer" size={17} />
-        </IconSpan>
-      Beer on Tap
-      </StyledLink>
-      <StyledLink to='/in-stock'>
-        <IconSpan>
-          <BeerIcon className="beer" size={17}/>
-        </IconSpan>
-        Beer in stock
-      </StyledLink>
+
       <StyledLink to='/breweries'>
         <IconSpan>
           <BeerIcon className="beer" size={17}/>
