@@ -268,6 +268,7 @@ const TapTd = styled.div`
   text-align: left;
   width: 10vw;
   padding-right: 10px;
+  
 `;
 
 const BeerBtn = styled.div`
@@ -289,14 +290,11 @@ const Wrapper = styled.div`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: ease-in-out 500ms;
   line-height: 1.5;
+  
 
   &:hover {
     font-weight: 700;
     transform: scale(1.02);
-
-    &:nth-child(even) {
-    background-color: none;
-  }
   }
 
   &:nth-child(even) {

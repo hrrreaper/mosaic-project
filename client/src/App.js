@@ -50,7 +50,8 @@ const App = () => {
             )}
             {userObj ? (
               <>
-          <Route exact path="/beers">
+            <Route exact path="/beers">
+              <Redirect to="/beer/1" />
             <AllBeers />
             </Route>
           <Route exact path="/beer/:_id">

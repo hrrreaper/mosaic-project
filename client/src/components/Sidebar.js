@@ -17,7 +17,7 @@ const Sidebar = () => {
         </IconSpan>
         Add a beer
       </StyledLink>
-      <StyledLink to='/beers'>
+      <StyledLink to='/beers/1'>
         <IconSpan>
           <BeerIcon className="beer" size={17}/>
         </IconSpan>

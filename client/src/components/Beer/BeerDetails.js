@@ -323,7 +323,13 @@ const Div = styled.div`
   background-color: rgba(0, 250, 0, 0.1);
   padding: 20px;
   line-height: 1.5;
-  width: 50vw;
+  width: 450px;
+  text-align: right;
+
+  @media (max-width: 768px) {
+    width: 300px;
+    overflow-wrap: break-word;
+  }
 `;
 
 const Wrapper = styled.div`

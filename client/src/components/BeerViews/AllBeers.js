@@ -25,7 +25,7 @@ const AllBeers = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredBeers?.slice(indexOfFirstItem, indexOfLastItem);
   
-  //Change page
+  //Change page number
   const paginate = (number) => setCurrentPage(number);
 
   //unique beer count
@@ -81,6 +81,8 @@ const AllBeers = () => {
           itemsPerPage={itemsPerPage}
           totalItems={filteredBeers?.length}
           paginate={paginate}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
       />
       </PagesDiv>
       </Wrapper>
