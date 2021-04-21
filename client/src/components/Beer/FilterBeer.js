@@ -19,7 +19,8 @@ const FilterBeer = () => {
       setFilteredBeers(allBeers.filter((beer) => {
         let name = beer.beerName.toString().toLowerCase();
         let brewery = beer.brewery.toString().toLowerCase();
-      return (name || brewery).includes(searchItem);
+        let style = beer.beerStyle.toString().toLowerCase();
+        return name.includes(searchItem) || brewery.includes(searchItem) || style.includes(searchItem);
     }))
     }
   }, [searchItem])
