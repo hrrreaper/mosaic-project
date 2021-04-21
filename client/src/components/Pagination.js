@@ -21,7 +21,6 @@ const Pagination = ({ itemsPerPage, totalItems, paginate }) => {
           >
             <Li key={uuidv4()} >{number}</Li>
           </StyledLink>
-          
         ))}
       </Ul>
     </Div>
@@ -49,7 +48,6 @@ const StyledLink = styled(NavLink)`
   @media (max-width: 768px) {
     margin: 5px;
     font-size: .7rem;
-    
   }
 `;
 

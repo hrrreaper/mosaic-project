@@ -11,7 +11,8 @@ const UntappdMenu = ({ name, brewery, abv, img, style, description, tapped }) =>
       <BeerInfo>
       <Name>{name}</Name>
       <Brewery> {brewery} </Brewery>
-      <Style>{style} | <Abv>{abv}% abv </Abv></Style>
+        <Style>{style} </Style>
+        <Abv>{abv}% abv </Abv>
       <Info>{description} </Info>
       </BeerInfo>
     </Wrapper>
@@ -21,7 +22,7 @@ const UntappdMenu = ({ name, brewery, abv, img, style, description, tapped }) =>
 
 const Wrapper = styled.div`
   margin: 20px 10px;
-  width: 300px;
+  width: 350px;
   padding: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
@@ -58,7 +59,7 @@ const Brewery = styled.div`
   
 `;
 
-const Abv = styled.span`
+const Abv = styled.div`
   font-size: .85rem;
   margin-bottom: 10px;
 
@@ -70,7 +71,8 @@ const Abv = styled.span`
 
 const Info = styled.div`
   font-size: .85rem;
-  margin-bottom: 10px;
+  margin: 10px 0 0 0;
+  clear: both;
 
   @media (max-width: 768px) {
     font-size: .75rem;

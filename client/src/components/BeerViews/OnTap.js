@@ -2,6 +2,7 @@ import React, {useContext}  from 'react';
 import styled from 'styled-components';
 import { BeerContext } from '../Context/BeerProvider';
 import Beer from '../Beer/Beer';
+import { Link } from 'react-router-dom';
 
 const OnTap = () => {
     const {
@@ -13,13 +14,15 @@ const OnTap = () => {
       <Title>
         Beer currently on tap:
       </Title>
-      <table>
+      <TableDiv>
+        
       <TableHeader>
         <Th>BEER</Th>
         <TypeTh>STYLE</TypeTh>
         <Th>BREWERY</Th>
         <TapTh>TAP OUT</TapTh>
       </TableHeader>
+        
       
       {allBeers?.map((beer, index) => {
         if ((beer.tappedOn !== null) && (beer.tappedOn !== "") && (beer.tappedOut === "" || beer.tappedOut === null)) {
@@ -30,18 +33,21 @@ const OnTap = () => {
           brewery={beer.brewery}
           type={beer.beerStyle}
           abv={beer.ABV}
-          tapOut={true}
+          tappedOut={true}
           beer={beer}
         />
           
         }
       })}
         
-        </table>
+        </TableDiv>
     </Wrapper>
   )
 }
 
+const TableDiv = styled.div`
+  display: table;
+`;
 const Wrapper = styled.div`
   height: 100vh;
   display: flex;
@@ -49,7 +55,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   `;
 
-const TableHeader = styled.tr`
+const TableHeader = styled.div`
+  display: table-row;
   margin: 10px 0;
   display: flex;
   font-weight: 700;
@@ -60,7 +67,8 @@ const TableHeader = styled.tr`
   }
 `;
 
-const Th = styled.th`
+const Th = styled.div`
+  display: table-cell;
   width: 20vw;
   text-align: left;
 
@@ -68,7 +76,8 @@ const Th = styled.th`
     width: 27vw;
   }
 `;
-const TypeTh = styled.th`
+const TypeTh = styled.div`
+  display: table-cell;
   width: 20vw;
   text-align: left;
 
@@ -76,7 +85,8 @@ const TypeTh = styled.th`
     display: none;
   }
 `;
-const TapTh = styled.th`
+const TapTh = styled.div`
+  display: table-cell;
   width: 10vw;
   text-align: left;
 `;

@@ -41,16 +41,22 @@ const FilterBeer = () => {
 
 const Wrapper = styled.div`
   margin-left: 20px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
 `;
 
 const Input = styled.input`
   border-radius: 5px;
-  padding: 5px;
+  padding: 4px;
   border: 1px solid grey;
   outline:none;
   margin-right: 5px;
+
+  @media (max-width: 768px) {
+    font-size: .7rem;
+    padding: 1px;
+  }
 `;
 
 

@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import moment from 'moment';
 import { BeerContext } from '../Context/BeerProvider';
 import SmallButton from '../Buttons/SmallButton';
 const { REACT_APP_API_ID } = process.env;
 
-const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
+const Beer = ({ name, type, brewery, _id, tappedOn, tappedOut, tapOn, tapOut, beer }) => {
   const history = useHistory();
   const auth = 'Basic ' + Buffer.from("info@mosaichamilton.ca" + ':' + REACT_APP_API_ID).toString('base64');
   const {
@@ -159,11 +159,13 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
   
   return (
     <Wrapper>
-      <BeerBtn onClick={(ev) => {
+      <BeerBtn
+        // to={`/beer/${_id}`}
+        onClick={(ev) => {
         ev.stopPropagation();
         history.push(`/beer/${_id}`)
       }}>
-        {tappedOn || tapOut ? (
+        {tappedOn || tappedOut ? (
           <>
           <Td>{name}</Td>
           <TypeTd>{type}</TypeTd>
@@ -174,6 +176,8 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
           <NameTd>{name}</NameTd>
           <NameTd>{type}</NameTd>
           <NameTd>{brewery}</NameTd>
+          <DateTd>{tapOn}</DateTd>
+          <DateTd>{tapOut}</DateTd>
           </>
         )}
         {tappedOn && (
@@ -182,7 +186,7 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
           <SmallButton onClick={(ev) => handleTapOn(ev)}>tap it</SmallButton>
           </TapTd>
         )}
-        {tapOut && (
+        {tappedOut && (
         <TapTd>
           
           <SmallButton onClick={(ev) => handleTapOut(ev)}>tap out</SmallButton>
@@ -193,11 +197,11 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tapOut, beer }) => {
   )
 }
 
-const TypeTd = styled.td`
-  text-transform: uppercase;
-  font-size: .8rem;
+const TypeTd = styled.div`
+  display: table-cell;
   text-align: left;
   width: 20vw;
+  padding-right: 10px;
 
   @media (max-width: 500px) {
     display: none;
@@ -206,58 +210,68 @@ const TypeTd = styled.td`
   @media (max-width: 768px) {
     font-size: .7rem;
     width:20vw;
-    margin-right: 3px;
   }
 `;
-const NameTd = styled.td`
-  text-transform: uppercase;
-  font-size: .8rem;
+const NameTd = styled.div`
   text-align: left;
-  width: 25vw;
+  width: 18vw;
+  display: table-cell;
+  padding-right: 10px;
   
   @media (max-width: 768px) {
     font-size: .7rem;
     width: 20vw;
-    margin-right: 5px;
     overflow-wrap: break-word;
   }
   @media (max-width: 500px) {
     font-size: .6rem;
     width:20vw;
-    margin-right: 5px;
     overflow-wrap: break-word;
   }
 `;
-const Td = styled.td`
-  text-transform: uppercase;
-  font-size: .8rem;
+
+const DateTd = styled.div`
+  display: table-cell;
+  text-align: left;
+  width: 10vw;
+  overflow-wrap: break-word;
+  padding-right: 10px;
+  
+  @media (max-width: 768px) {
+    font-size: .7rem;
+    width: 10vw;
+  }
+  @media (max-width: 500px) {
+    display: none;
+  }
+`;
+const Td = styled.div`
+  display: table-cell;
   text-align: left;
   width: 20vw;
+  padding-right: 10px;
   
-
   @media (max-width: 768px) {
     font-size: .7rem;
     width: 25vw;
-    margin-right: 5px;
     overflow-wrap: break-word;
   }
   @media (max-width: 500px) {
     font-size: .6rem;
     width: 27vw;
-    margin-right: 5px;
     overflow-wrap: break-word;
   }
 `;
 
-const TapTd = styled.td`
-  text-transform: uppercase;
-  font-size: .75rem;
+const TapTd = styled.div`
+  display: table-cell;
   text-align: left;
   width: 10vw;
-  
+  padding-right: 10px;
 `;
 
-const BeerBtn = styled.button`
+const BeerBtn = styled.div`
+  text-transform: lowercase;
   text-decoration: none;
   outline: none;
   color: black;
@@ -267,13 +281,14 @@ const BeerBtn = styled.button`
   padding: 3px;
   margin: 3px 0;
   vertical-align: middle;
+  font-size: .85rem;
 `;
 
-const Wrapper = styled.tr`
+const Wrapper = styled.div`
+  display: table-row;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: ease-in-out 500ms;
   line-height: 1.5;
-  font-size: 1.2rem;
 
   &:hover {
     font-weight: 700;

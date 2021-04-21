@@ -14,12 +14,14 @@ const InStock = () => {
         Beers currently in stock:
       </Title>
       <Table>
+    
       <TableHeader>
         <Th>BEER</Th>
         <TypeTh>STYLE</TypeTh>
         <Th>BREWERY</Th>
         <TapTh>TAP IT</TapTh>
       </TableHeader>
+      
       
       {allBeers?.map((beer, index) => {
         if (!beer.tappedOn) {
@@ -47,12 +49,14 @@ const InStock = () => {
   flex-direction: column;
   `;
 
-const Table = styled.table`
+const Table = styled.div`
+display: table;
   max-width: 75vw;
 
 `;
 
-  const TableHeader = styled.tr`
+const TableHeader = styled.div`
+  display: table-row;
   margin: 10px 0;
   display: flex;
   font-weight: 700;
@@ -63,7 +67,8 @@ const Table = styled.table`
   }
 `;
 
-const Th = styled.th`
+const Th = styled.div`
+  display: table-cell;
   width: 20vw;
   text-align: left;
 
@@ -72,7 +77,8 @@ const Th = styled.th`
   }
 `;
 
-const TypeTh = styled.th`
+const TypeTh = styled.div`
+display: table-cell;
   width: 20vw;
   text-align: left;
 
@@ -81,7 +87,8 @@ const TypeTh = styled.th`
   }
 `;
 
-const TapTh = styled.th`
+const TapTh = styled.div`
+  display: table-cell;
   width: 10vw;
   text-align: left;
 `;

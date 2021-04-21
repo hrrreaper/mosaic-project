@@ -47,13 +47,18 @@ const AllBeers = () => {
         </SubTitleDiv>
       </SubTitle>
       {allBeers ? (
-        <Table>
+          <Table>
+          
           <TableHeader>
           <Th>BEER</Th>
           <Th>STYLE</Th>
           <Th>BREWERY</Th>
+          <TapTh>TAPPED</TapTh>
+          <TapTh>TAPPED OUT</TapTh>
           </TableHeader>
-      {currentItems?.map((beer, index) => {
+            
+            {currentItems?.map((beer, index) => {
+    
         return <Beer
           key={uuidv4()}
           index={index}
@@ -61,6 +66,8 @@ const AllBeers = () => {
           name={beer.beerName}
           brewery={beer.brewery}
           type={beer.beerStyle}
+          tapOn={beer.tappedOn}
+          tapOut={beer.tappedOut}
         />
       })}
           
@@ -88,8 +95,10 @@ const Wrapper = styled.div`
   flex-direction: column;
 `;
 
-const Table = styled.table`
+const Table = styled.div`
+  display: table;
   margin: 10px;
+  
 `;
 
 const PagesDiv = styled.div`
@@ -121,26 +130,39 @@ const SubTitleDiv = styled.div`
   margin-bottom: 5px;
 `;
 
-
-const TableHeader = styled.tr`
+const TableHeader = styled.div`
+  display: table-row;
   margin: 10px 0;
   display: flex;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
   @media (max-width: 768px) {
     font-size: .8rem;
   }
 `;
 
-const Th = styled.th`
-  width: 25vw;
+const Th = styled.div`
+  display: table-cell;
+  width: 18vw;
   text-align: left;
-
 
     @media (max-width: 768px) {
     font-size: .8rem;
-    width: 22vw;
+    width: 20vw;
+  }
+`;
+const TapTh = styled.div`
+display: table-cell;
+  width: 10vw;
+  text-align: left;
+
+    @media (max-width: 768px) {
+    font-size: .8rem;
+    width: 10vw;
+  }
+    @media (max-width: 500px) {
+    display: none;
   }
 `;
 

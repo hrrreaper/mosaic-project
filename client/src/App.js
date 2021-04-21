@@ -27,7 +27,6 @@ const App = () => {
         <GlobalStyle />
         {userObj && (
           <>
-            
         <HeaderGrid>
         <Header />
         </HeaderGrid>
