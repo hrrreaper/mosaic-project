@@ -228,8 +228,8 @@ const BeerDetails = () => {
         <>
           <BackDiv>
             <FormButton title="go back" onClick={() => history.goBack()}>
-              <IoArrowBack size={19} />
-              <GiHops className="hop" size={17} />
+              <IoArrowBack size={22} />
+              <GiHops className="hop" size={18} />
             </FormButton>
           </BackDiv>
         <Div>
@@ -333,7 +333,7 @@ const Days = styled.div`
 `;
 
 const Abv = styled.span`
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 10px;
 `;
 
@@ -342,7 +342,7 @@ const Img = styled.img`
   margin-right: 10px;
   margin-bottom: 10px;
   width: 100px;
-  float: left;
+  float: right;
 `;
 
 
@@ -374,7 +374,7 @@ const Div = styled.div`
   padding: 20px;
   line-height: 1.5;
   width: 475px;
-  text-align: right;
+  text-align: left;
 
   @media (max-width: 768px) {
     width: 300px;

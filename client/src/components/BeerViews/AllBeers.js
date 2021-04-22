@@ -36,7 +36,7 @@ const AllBeers = () => {
       <FilterBeer />
     <Wrapper>
       <Title>
-          All the beers we've had on tap
+          all the beers we've had on tap
       </Title>
       <SubTitle>
         <SubTitleDiv>
@@ -107,10 +107,20 @@ const PagesDiv = styled.div`
   margin-bottom: 30px;
 `;
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`;
 const Title = styled.h2`
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
+  animation: ${fadeIn} ease 1.5s;
 
   @media (max-width: 768px) {
     font-size: .9rem;
@@ -122,6 +132,7 @@ const SubTitle = styled.h3`
   font-size: 1rem;
   margin-bottom: 20px;
   text-transform: lowercase;
+  animation: ${fadeIn} ease 2s;
 
   @media (max-width: 768px) {
     font-size: .7rem;

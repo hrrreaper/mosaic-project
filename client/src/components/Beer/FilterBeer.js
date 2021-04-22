@@ -36,9 +36,22 @@ const FilterBeer = () => {
         onChange={(ev)=> handleChange(ev)} />
         <FiFilter size={15}/>
       </Wrapper>
+      {searchItem ? (
+      <Div>
+      {filteredBeers.length} matches
+      </Div>
+      ) : (
+        <Div></Div>
+      )}
     </>
   )
 }
+
+const Div = styled.div`
+  display: inline;
+  margin-left: 21px;
+  font-size: .75rem;
+`;
 
 const Wrapper = styled.div`
   margin-left: 20px;

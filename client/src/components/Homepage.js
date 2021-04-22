@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Loading from './Loading';
 import Mosaic from '../assets/mosaictext.png';
 import untappd from '../assets/untappd.png';
@@ -106,19 +106,32 @@ const Wrapper = styled.div`
   padding-bottom: 50px;
 `;
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`;
+
 const Title = styled.h1`
   text-align: center;
   font-size: 2rem;
   margin-bottom: 10px;
+  animation: ${fadeIn} ease 1.5s;
   
   @media (max-width: 768px) {
     font-size: 1rem;
   }
 `;
 
+
 const SubTitle = styled.h2`
   text-align: left;
   font-size: 1.5rem;
+  animation: ${fadeIn} ease 1.5s;
   
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -136,6 +149,7 @@ const Date = styled.div`
 
 const Img = styled.img`
   width: 400px;
+  
 
   @media (max-width: 768px) {
     width: 200px;
@@ -154,6 +168,7 @@ const UntappdImg = styled.img`
   position: relative;
   top: -10px;
   left: -10px;
+  animation: ${fadeIn} ease 1.5s;
 
   @media (max-width: 768px) {
     width: 40px;

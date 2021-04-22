@@ -9,12 +9,13 @@ const FormButton = styled.button`
   font-size: .80rem;
   margin: 15px 0;
   margin-right: 10px;
+  padding: 4px 6px;
   cursor: pointer;
   border-radius: 5px;
   width: fit-content;
-  height: 25px;
+  height: fit-content;
   text-align: center;
-  border: 1px solid grey;
+  border: 1px solid rgba(0,200,0,0.3);
   background-color: rgba(0,200,0,0.1);
   background-size: 200%;
       transition: background-position .4s ease-in-out,

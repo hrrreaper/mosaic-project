@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { v4 as uuidv4 } from 'uuid';
 import { BeerContext } from '../Context/BeerProvider';
 import Loading from '../Loading';
@@ -139,11 +139,23 @@ const Beer = styled.div`
   font-size: .8rem;
 `;
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`;
+
+
 const DivTitle = styled.h2`
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
+  animation: ${fadeIn} ease 1.5s;
 
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -155,6 +167,7 @@ const SubTitle = styled.h3`
   font-weight: 700;
   font-size: 1rem;
   margin: 10px 0;
+  animation: ${fadeIn} ease 1.5s;
 
   @media (max-width: 768px) {
     font-size: .7rem;

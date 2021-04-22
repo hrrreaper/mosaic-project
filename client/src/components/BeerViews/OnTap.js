@@ -1,5 +1,5 @@
 import React, {useContext}  from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { BeerContext } from '../Context/BeerProvider';
 import Beer from '../Beer/Beer';
 import { Link } from 'react-router-dom';
@@ -12,7 +12,7 @@ const OnTap = () => {
   return (
     <Wrapper>
       <Title>
-        Beer currently on tap:
+        beers we currently have on tap
       </Title>
       <TableDiv>
         
@@ -105,11 +105,24 @@ const TapTh = styled.div`
   }
 `;
 
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`;
+
 const Title = styled.div`
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 10px;
   font-weight: 700;
   font-size: 1.5rem;
+  animation: ${fadeIn} ease 1.5s;
 
   @media (max-width: 768px) {
     font-size: 1rem;
