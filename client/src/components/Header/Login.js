@@ -8,20 +8,24 @@ import { IoBeerOutline } from 'react-icons/io5';
 
 const { REACT_APP_GOOGLE_CLIENT } = process.env;
 
-
 const Login = () => {
 
   const { userObj, handleLogin } = useContext(UserContext);
+  
   const clientId = REACT_APP_GOOGLE_CLIENT
   const onSuccess = handleLogin
-  const onFailure = handleLogin
   const cookiePolicy = 'single_host_origin'
+  
+  const onFailure = (res) => {
+    console.log("login failed", res)
+  }
   const { signIn } = useGoogleLogin({
     clientId,
     onSuccess,
     onFailure,
-    cookiePolicy
+    cookiePolicy,
   })
+
   return userObj ? (
     <Wrapper>
       {userObj.name ? <Div> <IoBeerOutline className="beer" size={18}/> Cheers, {userObj.givenName || userObj.givenName[0]}!  </Div> : null}
@@ -32,7 +36,6 @@ const Login = () => {
   ) : (
       <LoginDiv>
         <Button onClick={signIn} >Login with Google</Button>
-      
       </LoginDiv>
   )
 };
@@ -67,7 +70,6 @@ const rock = keyframes`
     transform: rotate(15deg);
   }
 `;
-
 
 const Div = styled.div`
   text-transform: lowercase;
