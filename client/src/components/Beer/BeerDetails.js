@@ -145,7 +145,7 @@ const BeerDetails = () => {
       })
         .then((res) => res.json())
         .then((json) => {
-          console.log("should only run when handleOnTap is called", json.data);
+          console.log(json.data);
         })
         .catch((err) => {
           console.log("ERROR", err.message);
@@ -182,7 +182,6 @@ const BeerDetails = () => {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log("data from post", json.data);
         setUpdateTapOut(!updateTapOut);
       })
     .catch((err) => {

@@ -35,6 +35,7 @@ const Div = styled.div`
   font-weight: 700;
   padding-top: 15px;
   text-align: center;
+  text-shadow: 1px 1px rgba(0,250,0,0.4);
 `;
 
 const LoginWrapper = styled.div`
@@ -47,7 +48,7 @@ const LoginWrapper = styled.div`
   width: 275px;
   height: 150px;
   padding: 30px;
-  background-color: rgba(235, 235, 187, 0.6);
+  background-color: rgba(235, 235, 187, 0.75);
   border-radius: 20px;
 `;
 

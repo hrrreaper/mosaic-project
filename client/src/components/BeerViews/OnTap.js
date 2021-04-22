@@ -2,7 +2,6 @@ import React, {useContext}  from 'react';
 import styled, { keyframes } from 'styled-components';
 import { BeerContext } from '../Context/BeerProvider';
 import Beer from '../Beer/Beer';
-import { Link } from 'react-router-dom';
 
 const OnTap = () => {
     const {
@@ -104,7 +103,6 @@ const TapTh = styled.div`
     width: 10vw;
   }
 `;
-
 
 const fadeIn = keyframes`
   0% {

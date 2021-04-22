@@ -136,6 +136,7 @@ const Input = styled.input`
   width: 30vw;
   height:30px;
   margin-right:10px;
+
 `;
 
 const Label = styled.label`

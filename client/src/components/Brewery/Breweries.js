@@ -78,7 +78,7 @@ const Breweries = () => {
           </iframe>
             
             <BeerList>
-              <SubTitle>Beers we've had on draught from this brewery:</SubTitle>
+              <SubTitle>Beers we've had on tap from this brewery:</SubTitle>
 
               {uniqueBeers.map((beer) => {
                 return <Beer key={uuidv4()} >{beer}</Beer>

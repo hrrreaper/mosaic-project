@@ -35,7 +35,6 @@ const SelectedSearch = ({ beer, results }) => {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log("data from post", json.data);
         setStatus("submitted");
         setSubmit(!submit);
       })

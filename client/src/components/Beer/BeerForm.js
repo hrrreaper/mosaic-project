@@ -29,7 +29,7 @@ const BeerForm = () => {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log("data from post", json.data);
+        console.log( json.data);
         setStatus("submitted");
         setSubmit(true);
       })
@@ -90,15 +90,15 @@ const BeerForm = () => {
           setKegSize(ev.target.value);
         }}
       ></Input>
-          {/* <Label htmlFor="delivery">Delivery Date:</Label> */}
-      {/* <Input
+          <Label htmlFor="delivery">Delivery Date:</Label>
+      <Input
         type="text"
         id="delivery"
         name="delivery"
         onChange={(ev) => {
           setDelivery(ev.target.value);
         }}
-      ></Input> */}
+      ></Input>
 
         <FormButton type="submit" >Submit</FormButton>
         </Form>

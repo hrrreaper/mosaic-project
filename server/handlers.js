@@ -149,8 +149,7 @@ const setUsers = async (req, res) => {
   await client.connect();
   const db = client.db("Mosaic");
     const existingUser = await db.collection("users").findOne({ email: profileObj.email })
-    console.log("existing user", existingUser)
-    console.log("profile", profileObj)
+    
     if (!existingUser || existingUser === null) {
       const results = await db.collection("users").insertOne({
         name: profileObj.name,
@@ -158,7 +157,6 @@ const setUsers = async (req, res) => {
         email: profileObj.email,
         imageUrl: profileObj.imageUrl,
       });
-      console.log("results", results.ops)
       res.status(201).json({
         status: 201,
         data: results.ops,

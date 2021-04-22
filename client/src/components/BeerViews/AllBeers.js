@@ -4,17 +4,14 @@ import Loading from '../Loading';
 import { BeerContext } from '../Context/BeerProvider';
 import Beer from '../Beer/Beer';
 import Pagination from '../Pagination';
-import { IoRocketOutline } from 'react-icons/io5';
 import FilterBeer from '../Beer/FilterBeer';
 import { v4 as uuidv4 } from 'uuid';
-
 
 
 const AllBeers = () => {
   const {
     allBeers,
     filteredBeers,
-    setFilteredBeers,
   } = useContext(BeerContext);
 
   const [currentPage, setCurrentPage] = useState(1);

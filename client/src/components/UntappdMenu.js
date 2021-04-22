@@ -34,6 +34,7 @@ const Wrapper = styled.div`
 
 const ImgDiv = styled.div`
   margin-right: 10px;
+  margin-bottom: 10px;
   float: left;
 
 `;

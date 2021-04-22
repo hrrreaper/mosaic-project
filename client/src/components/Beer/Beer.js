@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { NavLink, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import moment from 'moment';
 import { BeerContext } from '../Context/BeerProvider';
@@ -93,7 +93,7 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tappedOut, tapOn, tapOut, be
       })
         .then((res) => res.json())
         .then((json) => {
-          console.log("should only run when handleOnTap is called", json.data);
+          console.log(json.data);
         })
         .catch((err) => {
           console.log("ERROR", err.message);
@@ -107,7 +107,7 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tappedOut, tapOn, tapOut, be
     const tapDate = new Date(beer.tappedOn);
     const tapOutDate = new Date(moment().format("ll"));
     const diffInTime = tapOutDate.getTime() - tapDate.getTime();
-    const diffInDays = diffInTime / (1000 * 3600 * 24);
+    const diffInDays = diffInTime / (1000 * 3600 * 24) + 1;
 
     fetch(`/update/${_id}`, {
       method: "PATCH",
@@ -129,7 +129,6 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tappedOut, tapOn, tapOut, be
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log("data from post", json.data);
         setUpdateTapOut(true);
       })
     .catch((err) => {

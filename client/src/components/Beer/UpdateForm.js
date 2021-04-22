@@ -35,7 +35,7 @@ const UpdateForm = ({ beer }) => {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log("data from patch", json.data);
+        console.log(json.data);
         setBtnText("Updated!");
         setStatus("edited");
         setUpdate(true);

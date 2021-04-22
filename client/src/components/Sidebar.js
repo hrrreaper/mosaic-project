@@ -12,42 +12,56 @@ const Sidebar = () => {
       <Logo src={logo} alt="logo"/>
       </Nav>
       <StyledLink to='/add/beer'>
+        <Div>
         <IconSpan>
           <BeerIcon className="beer" size={18}/>
         </IconSpan>
         Add a beer
+        </Div>
       </StyledLink>
 
       <StyledLink to='/in-stock'>
+        <Div>
         <IconSpan>
           <BeerIcon className="beer" size={18}/>
         </IconSpan>
         in stock
+        </Div>
       </StyledLink>
 
       <StyledLink to='/on-tap'>
+        <Div>
       <IconSpan>
           <BeerIcon className="beer" size={18} />
         </IconSpan>
       on Tap
+        </Div>
       </StyledLink>
 
       <StyledLink to='/beers/1'>
+        <Div>
         <IconSpan>
           <BeerIcon className="beer" size={18}/>
         </IconSpan>
         All Beers
+        </Div>
       </StyledLink>
 
       <StyledLink to='/breweries'>
+        <Div>
         <IconSpan>
           <BeerIcon className="beer" size={17}/>
         </IconSpan>
         Breweries
+        </Div>
       </StyledLink>
     </Wrapper>
   )
 }
+
+const Div = styled.div`
+  flex-direction: row;
+`;
 
 const Wrapper = styled.div`
   display: flex;
@@ -62,7 +76,6 @@ const Wrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 110px;
-    
   }
 
   @media (max-width: 500px) {
@@ -80,6 +93,9 @@ const StyledLink = styled(NavLink)`
   margin: 20px 0;
   margin-left: 25px;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: fit-content;
 
     @media (max-width: 768px) {
