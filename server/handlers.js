@@ -153,7 +153,7 @@ const setUsers = async (req, res) => {
     if (!existingUser || existingUser === null) {
       const results = await db.collection("users").insertOne({
         name: profileObj.name,
-        firstName: profileObj.givenName,
+        givenName: profileObj.givenName,
         email: profileObj.email,
         imageUrl: profileObj.imageUrl,
       });

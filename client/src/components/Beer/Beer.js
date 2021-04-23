@@ -10,6 +10,8 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tappedOut, tapOn, tapOut, be
   const history = useHistory();
   const auth = 'Basic ' + Buffer.from("info@mosaichamilton.ca" + ':' + REACT_APP_API_ID).toString('base64');
   const {
+    updateTapOut,
+    updateTapOn,
     setUpdateTapOut,
     setUpdateTapOn,
   } = useContext(BeerContext);
@@ -33,7 +35,7 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tappedOut, tapOn, tapOut, be
         .then((res) => res.json())
         .then((json) => {
           setItemId(json.item.id);
-          setUpdateTapOn(true);
+          setUpdateTapOn(!updateTapOn);
           setIdFlag(true);
         })
       .catch((err) => {
@@ -61,7 +63,7 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tappedOut, tapOn, tapOut, be
     })
       .then((res) => res.json())
       .then((json) => {
-        setUpdateTapOn(true);
+        setUpdateTapOn(!updateTapOn);
       })
     .catch((err) => {
       console.log("ERROR", err.message);
@@ -129,15 +131,15 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tappedOut, tapOn, tapOut, be
     })
       .then((res) => res.json())
       .then((json) => {
-        setUpdateTapOut(true);
+        setUpdateTapOut(!updateTapOut);
       })
     .catch((err) => {
       console.log("ERROR",err.message)
     })
-    
-    if (beer.untappdId && beer.itemId) {
-      //if the beer has an untappd id delete it from the menu /// not working yet
-      const id = beer.itemId;
+
+      if (beer.untappdId && beer.itemId) {
+        const id = beer.itemId;
+        console.log(id)
       fetch(`https://business.untappd.com/api/v1/items/${id}`, {
         method: "DELETE",
         headers: {
@@ -147,12 +149,13 @@ const Beer = ({ name, type, brewery, _id, tappedOn, tappedOut, tapOn, tapOut, be
         .then((res) => res.json())
         .then((json) => {
           console.log(json);
-          setUpdateTapOut(true);
+          setUpdateTapOut(!updateTapOut);
         })
       .catch((err) => {
         console.log("ERROR", err.message);
         })
     }
+    
     ev.stopPropagation();
   }
   

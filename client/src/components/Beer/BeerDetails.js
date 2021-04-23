@@ -20,6 +20,7 @@ const BeerDetails = () => {
     updateDelete,
     setUpdateDelete,
     update,
+    submit,
     setSubmit
   } = useContext(BeerContext);
 
@@ -39,7 +40,6 @@ const BeerDetails = () => {
           setStatus("idle");
         })
         .catch((err) => {
-          setStatus("error");
           console.log("ERROR", err.message);
       })
     }
@@ -59,7 +59,7 @@ const BeerDetails = () => {
     .then((res) => res.json())
     .then((json) => {
       console.log("this beer has been deleted from the database");
-      setSubmit(true);
+      setSubmit(!submit);
     })
     .catch((err) => {
       console.log("ERROR", err.message);
@@ -122,7 +122,6 @@ const BeerDetails = () => {
   }
 
   //when you handleOnTap gets called try to save the item id to the database
-  //NOT WORKING RIGHT NOW
   useEffect(() => {
     if (beer && itemId) {
       fetch(`/update/${_id}`, {
@@ -189,7 +188,7 @@ const BeerDetails = () => {
     })
     
     if (beer.untappdId && beer.itemId) {
-      //if the beer has an untappd id delete it from the menu /// not working yet
+      //if the beer has an untappd id delete it from the menu //
       const id = beer.itemId;
       fetch(`https://business.untappd.com/api/v1/items/${id}`, {
         method: "DELETE",
