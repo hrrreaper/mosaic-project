@@ -24,4 +24,4 @@ express()
 
   .use((req, res) => res.status(404).type("txt").send("🤷‍♂️"))
 
-  .listen(8000, () => console.log(`🌍 Listening on port 8000`));
+  .listen(process.env.PORT || 8000, () => console.log(`🌍 Listening on port 8000`));
