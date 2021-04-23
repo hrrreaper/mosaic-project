@@ -25,11 +25,13 @@ const Homepage = () => {
       .then((json) => {
         setMenuInfo(json.items);
         setStatus('idle');
+        console.log(json.items)
       })
       .catch((err) => {
         console.log("ERROR", err.message);
       })
   }, []);
+
   useEffect(() => {
     fetch('https://business.untappd.com/api/v1/sections/610810', {
       headers: {
@@ -41,7 +43,6 @@ const Homepage = () => {
       .then((res) => res.json())
       .then((json) => {
         setUpdatedInfo(json.section.updated_at)
-        
       })
       .catch((err) => {
         console.log("ERROR", err.message);
@@ -75,6 +76,7 @@ const Homepage = () => {
                 style={beer.style}
                 description={beer.description}
                 tapped={beer.updated_at}
+                rating={Number(beer.rating)}
                 />
             )
           })}
@@ -126,7 +128,6 @@ const Title = styled.h1`
     font-size: 1rem;
   }
 `;
-
 
 const SubTitle = styled.h2`
   text-align: left;

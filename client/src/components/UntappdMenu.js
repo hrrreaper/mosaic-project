@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const UntappdMenu = ({ name, brewery, abv, img, style, description, tapped }) => {
+const UntappdMenu = ({ rating, name, brewery, abv, img, style, description, tapped }) => {
   
   return (
     <Wrapper>
@@ -13,12 +13,20 @@ const UntappdMenu = ({ name, brewery, abv, img, style, description, tapped }) =>
       <Brewery> {brewery} </Brewery>
         <Style>{style} </Style>
         <Abv>{abv}% abv </Abv>
+        <Rating><Span>untappd rating: </Span>{rating.toFixed(1)}/5 </Rating>
       <Info>{description} </Info>
       </BeerInfo>
     </Wrapper>
   )
 }
 
+const Rating = styled.div`
+  font-size: .8rem;
+`;
+
+const Span = styled.span`
+  font-weight: 700;
+`;
 
 const Wrapper = styled.div`
   margin: 20px 10px;
@@ -61,7 +69,7 @@ const Brewery = styled.div`
 `;
 
 const Abv = styled.div`
-  font-size: .85rem;
+  font-size: .8rem;
   margin-bottom: 10px;
 
     @media (max-width: 768px) {
@@ -81,7 +89,7 @@ const Info = styled.div`
 `;
 
 const Style = styled.div`
-  font-size: .85rem;
+  font-size: .8rem;
   margin-bottom: 10px;
   
   @media (max-width: 768px) {
@@ -94,7 +102,7 @@ const BeerInfo = styled.div`
 `;
 
 const Img = styled.img`
-  width: 100px;
+  width: 110px;
 
   @media (max-width: 768px) {
     display: none;
