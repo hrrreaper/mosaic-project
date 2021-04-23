@@ -70,7 +70,7 @@ const Wrapper = styled.div`
   z-index: 10;
   float: left;
   height: 110vh;
-  width: 215px;
+  width: 180px;
   top: 0;
   background-color: rgba(0,250,0,0.1);
 
@@ -91,11 +91,8 @@ const StyledLink = styled(NavLink)`
   text-decoration: none;
   color: #000;
   margin: 20px 0;
-  margin-left: 25px;
+  margin-left: 20px;
   padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: fit-content;
 
     @media (max-width: 768px) {
@@ -103,6 +100,7 @@ const StyledLink = styled(NavLink)`
     font-size: .7rem;
     display: flex;
     flex-direction: column;
+    align-items: center; 
   }
 
   @media (max-width: 500px) {
@@ -130,7 +128,8 @@ const StyledLink = styled(NavLink)`
   }
 
   &:hover::after {
-    width: 100%;}
+    width: 100%;
+    }
 
   &:hover {
     color: rgba(0,200,0,0.8);

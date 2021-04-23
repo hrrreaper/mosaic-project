@@ -109,7 +109,7 @@ const SidebarDiv = styled.div`
   position: sticky;
   z-index: 10;
   top: 0;
-  width: 215px;
+  width: 180px;
   height: 100vh;
 
   @media (max-width: 768px) {
