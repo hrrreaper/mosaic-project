@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
+    "build": "cd client && yarn run build",
+    "install-client": "cd client && yarn install",
+    "heroku-postbuild": "yarn install-client && yarn run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

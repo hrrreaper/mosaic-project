@@ -11,6 +11,7 @@ const {
   setUsers,
 } = require('./handlers');
 
+const PORT = process.env.PORT || 8000;
 
 const app = express()
   
@@ -30,10 +31,6 @@ const app = express()
   
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
-    
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-    });
   }
   
-app.listen(process.env.PORT || 8000, () => console.log(`🌍 Listening on port 8000`));
+app.listen(PORT, () => console.log(`🌍 Listening on port 8000`));
