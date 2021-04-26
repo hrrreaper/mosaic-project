@@ -3,8 +3,11 @@
 Keg inventory system with Untappd API integration 
 
 Technologies used: 
+
 Frontend: React.js and Styled Components
+
 Backend: Node following RESTful principles, Express
+
 MongoDB Atlas, Untappd for Business API, Google Maps and OAuth
 
 
