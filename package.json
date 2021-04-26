@@ -2,14 +2,18 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
     "build": "cd client && yarn run build",
     "install-client": "cd client && yarn install",
     "heroku-postbuild": "yarn install-client && yarn run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.15.4",
+    "yarn": "1.22.5"
   },
   "author": "",
   "license": "ISC",
