@@ -24,13 +24,10 @@ const app = express()
   app.patch('/update/:_id', updateBeer)
   app.post('/add/beer', addBeer)
   app.post('/api/v1/auth/google', setUsers)
-
-
-  app.use((req, res) => res.status(404).type("txt").send("🤷‍♂️"))
-
   
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
   }
+  app.use((req, res) => res.status(404).type("txt").send("🤷‍♂️"))
   
-app.listen(PORT, () => console.log(`🌍 Listening on port 8000`));
+  app.listen(PORT, () => console.log(`🌍 Listening on port 8000`));
