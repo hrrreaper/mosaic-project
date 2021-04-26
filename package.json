@@ -18,12 +18,15 @@
     "request": "^2.88.2"
   
   },
+  "engines": {
+    "node": "14.15.4"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "YARN_PRODUCTION=false yarn install --prefix client && yarn run build --prefix client"
+    "heroku-postbuild": "YARN_PRODUCTION=false yarn install --prefix client && yarn build --prefix client"
   },
   "repository": {
     "type": "git",
