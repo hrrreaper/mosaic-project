@@ -6,7 +6,7 @@ Technologies used:
 
 Frontend: React.js and Styled Components
 
-Backend: Node following RESTful principles, Express
+Backend: Node & Express following RESTful principles
 
 MongoDB Atlas, Untappd for Business API, Google Maps and OAuth
 
