@@ -6,7 +6,7 @@ import styled, { keyframes } from "styled-components";
 const Loading = () => {
   return (
     <Div>
-      <SpinIcon icon={loader} size={25} />
+      <SpinIcon icon={loader} size={27} />
     </Div>
   );
 };
