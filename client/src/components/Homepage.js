@@ -14,7 +14,7 @@ const Homepage = () => {
   const [status, setStatus] = useState('loading');
   
   useEffect(() => {
-    fetch('https://business.untappd.com/api/v1/sections/610810/items', {
+    fetch('https://business.untappd.com/api/v1/sections/594915/items', {
       headers: {
         "Accept": "application/json",
         "Content-Type": "application/json",
