@@ -10,7 +10,7 @@ Backend: Node & Express following RESTful principles
 
 MongoDB Atlas, Untappd for Business API, Google Maps and OAuth
 
-View it here: https://mosaic-project.herokuapp.com/
+View demo: https://www.youtube.com/watch?v=dto_rcA2HWo
 
 
 ![mosaic-project-1](https://user-images.githubusercontent.com/74523461/116116702-7181e280-a689-11eb-9b63-cd30b6c46a9f.PNG)
